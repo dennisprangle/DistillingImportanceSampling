@@ -1,0 +1,195 @@
+(tfenv) ndp78@swindale:~/git/DIS_code_release$ python3 Lorenz_example1.py 
+/home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+
+WARNING: The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+If you depend on functionality not listed there, please file an issue.
+
+2020-01-15 10:13:48.377140: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-01-15 10:13:48.397626: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3192000000 Hz
+2020-01-15 10:13:48.398462: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x2ba8390 executing computations on platform Host. Devices:
+2020-01-15 10:13:48.398486: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /home/ndp78/git/DIS_code_release/SDE.py:368: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+2020-01-15 10:13:52.562238: W tensorflow/core/framework/allocator.cc:124] Allocation of 1468896000 exceeds 10% of system memory.
+2020-01-15 10:13:52.696285: W tensorflow/core/framework/allocator.cc:124] Allocation of 1468896000 exceeds 10% of system memory.
+2020-01-15 10:13:52.854723: W tensorflow/core/framework/allocator.cc:124] Allocation of 1468896000 exceeds 10% of system memory.
+2020-01-15 10:13:53.059275: W tensorflow/core/framework/allocator.cc:124] Allocation of 1468896000 exceeds 10% of system memory.
+2020-01-15 10:13:53.356753: W tensorflow/core/framework/allocator.cc:124] Allocation of 1468896000 exceeds 10% of system memory.
+WARNING:tensorflow:From /home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/ops/math_grad.py:80: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /home/ndp78/temp/DIScode/tfenv/lib/python3.6/site-packages/tensorflow/python/ops/array_grad.py:425: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+Iteration  1, epsilon 0.769, ESS 2500.0 elapsed mins 0.5
+Iteration  2, epsilon 0.688, ESS 2500.0 elapsed mins 1.0
+Iteration  3, epsilon 0.688, ESS 991.8 elapsed mins 1.5
+Iteration  4, epsilon 0.688, ESS 1111.6 elapsed mins 1.9
+Iteration  5, epsilon 0.688, ESS 1848.0 elapsed mins 2.4
+Iteration  6, epsilon 0.660, ESS 2500.0 elapsed mins 3.0
+Iteration  7, epsilon 0.660, ESS 2500.0 elapsed mins 3.5
+Iteration  8, epsilon 0.639, ESS 2500.0 elapsed mins 4.0
+Iteration  9, epsilon 0.639, ESS 97.7 elapsed mins 4.5
+Iteration 10, epsilon 0.639, ESS 1577.6 elapsed mins 5.0
+Elapsed time (mins) 5.0
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+Iteration 11, epsilon 0.639, ESS 1620.3 elapsed mins 5.5
+Iteration 12, epsilon 0.639, ESS 187.2 elapsed mins 6.0
+Iteration 13, epsilon 0.639, ESS 795.7 elapsed mins 6.5
+Iteration 14, epsilon 0.639, ESS 641.2 elapsed mins 7.0
+Iteration 15, epsilon 0.634, ESS 2500.0 elapsed mins 7.5
+Iteration 16, epsilon 0.624, ESS 2500.0 elapsed mins 8.0
+Clipping 1 weights
+Iteration 17, epsilon 0.624, ESS 43.1 elapsed mins 8.5
+nans or infs in sample or density!
+Iteration 18, epsilon 0.624, ESS 1866.6 elapsed mins 9.0
+nans or infs in sample or density!
+Iteration 19, epsilon 0.624, ESS 246.5 elapsed mins 9.5
+Iteration 20, epsilon 0.624, ESS 542.7 elapsed mins 10.0
+Elapsed time (mins) 10.0
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+nans or infs in sample or density!
+Iteration 21, epsilon 0.594, ESS 2500.0 elapsed mins 10.6
+nans or infs in sample or density!
+Clipping 1 weights
+Iteration 22, epsilon 0.594, ESS 4.3 elapsed mins 11.1
+nans or infs in sample or density!
+Iteration 23, epsilon 0.594, ESS 589.8 elapsed mins 11.6
+Iteration 24, epsilon 0.594, ESS 1240.8 elapsed mins 12.1
+nans or infs in sample or density!
+Iteration 25, epsilon 0.594, ESS 431.9 elapsed mins 12.6
+Clipping 1 weights
+Iteration 26, epsilon 0.594, ESS 21.6 elapsed mins 13.1
+nans or infs in sample or density!
+Clipping 1 weights
+Iteration 27, epsilon 0.594, ESS 18.9 elapsed mins 13.6
+nans or infs in sample or density!
+Iteration 28, epsilon 0.594, ESS 396.4 elapsed mins 14.1
+Iteration 29, epsilon 0.594, ESS 825.5 elapsed mins 14.6
+Clipping 1 weights
+Iteration 30, epsilon 0.594, ESS 72.1 elapsed mins 15.1
+Elapsed time (mins) 15.1
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+Iteration 31, epsilon 0.594, ESS 676.9 elapsed mins 15.6
+nans or infs in sample or density!
+Iteration 32, epsilon 0.594, ESS 1740.6 elapsed mins 16.1
+nans or infs in sample or density!
+Iteration 33, epsilon 0.594, ESS 1307.7 elapsed mins 16.6
+Clipping 1 weights
+Iteration 34, epsilon 0.594, ESS 17.7 elapsed mins 17.1
+Iteration 35, epsilon 0.594, ESS 453.3 elapsed mins 17.6
+Iteration 36, epsilon 0.594, ESS 1322.8 elapsed mins 18.1
+Iteration 37, epsilon 0.594, ESS 1852.1 elapsed mins 18.6
+nans or infs in sample or density!
+Clipping 1 weights
+Iteration 38, epsilon 0.594, ESS 53.6 elapsed mins 19.1
+Iteration 39, epsilon 0.594, ESS 506.0 elapsed mins 19.6
+Iteration 40, epsilon 0.594, ESS 269.7 elapsed mins 20.1
+Elapsed time (mins) 20.1
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+Iteration 41, epsilon 0.594, ESS 1768.5 elapsed mins 20.7
+Iteration 42, epsilon 0.594, ESS 291.4 elapsed mins 21.2
+Iteration 43, epsilon 0.594, ESS 1067.9 elapsed mins 21.7
+Iteration 44, epsilon 0.594, ESS 623.8 elapsed mins 22.2
+Iteration 45, epsilon 0.594, ESS 972.0 elapsed mins 22.7
+Iteration 46, epsilon 0.594, ESS 358.8 elapsed mins 23.2
+nans or infs in sample or density!
+Iteration 47, epsilon 0.594, ESS 1850.6 elapsed mins 23.7
+Iteration 48, epsilon 0.594, ESS 2350.0 elapsed mins 24.3
+Iteration 49, epsilon 0.594, ESS 1913.3 elapsed mins 24.8
+Iteration 50, epsilon 0.594, ESS 568.1 elapsed mins 25.3
+Elapsed time (mins) 25.3
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+Iteration 51, epsilon 0.594, ESS 804.5 elapsed mins 25.8
+Iteration 52, epsilon 0.594, ESS 2445.5 elapsed mins 26.3
+Iteration 53, epsilon 0.594, ESS 2139.2 elapsed mins 26.8
+Iteration 54, epsilon 0.594, ESS 2448.0 elapsed mins 27.4
+nans or infs in sample or density!
+Iteration 55, epsilon 0.583, ESS 2500.0 elapsed mins 27.9
+Iteration 56, epsilon 0.567, ESS 2500.0 elapsed mins 28.4
+Iteration 57, epsilon 0.567, ESS 1883.6 elapsed mins 28.9
+Iteration 58, epsilon 0.567, ESS 1269.5 elapsed mins 29.4
+Iteration 59, epsilon 0.567, ESS 1055.3 elapsed mins 29.9
+Iteration 60, epsilon 0.551, ESS 2500.0 elapsed mins 30.4
+Elapsed time (mins) 30.4
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+Iteration 61, epsilon 0.551, ESS 1088.0 elapsed mins 31.0
+Iteration 62, epsilon 0.551, ESS 2077.0 elapsed mins 31.5
+Iteration 63, epsilon 0.551, ESS 1196.5 elapsed mins 32.0
+Iteration 64, epsilon 0.551, ESS 731.7 elapsed mins 32.5
+Iteration 65, epsilon 0.518, ESS 2500.0 elapsed mins 33.1
+Iteration 66, epsilon 0.518, ESS 768.5 elapsed mins 33.6
+Iteration 67, epsilon 0.518, ESS 1567.7 elapsed mins 34.1
+Iteration 68, epsilon 0.472, ESS 2500.0 elapsed mins 34.6
+Iteration 69, epsilon 0.472, ESS 1529.6 elapsed mins 35.1
+Iteration 70, epsilon 0.458, ESS 2500.0 elapsed mins 35.6
+Elapsed time (mins) 35.6
+/home/ndp78/git/DIS_code_release/SDE.py:250: RuntimeWarning: invalid value encountered in less
+  keep = np.where(max_abs_x < self.cap_x)[0]
+Iteration 71, epsilon 0.420, ESS 2500.0 elapsed mins 36.2
+Iteration 72, epsilon 0.420, ESS 1270.0 elapsed mins 36.7
+Iteration 73, epsilon 0.420, ESS 1455.1 elapsed mins 37.2
+Iteration 74, epsilon 0.340, ESS 2500.0 elapsed mins 37.7
+Iteration 75, epsilon 0.340, ESS 2270.3 elapsed mins 38.2
+Iteration 76, epsilon 0.322, ESS 2500.0 elapsed mins 38.8
+Iteration 77, epsilon 0.322, ESS 1913.5 elapsed mins 39.3
+Iteration 78, epsilon 0.322, ESS 2370.7 elapsed mins 39.8
+Iteration 79, epsilon 0.322, ESS 2500.0 elapsed mins 40.2
+Iteration 80, epsilon 0.304, ESS 2500.0 elapsed mins 40.7
+Elapsed time (mins) 40.7
+Iteration 81, epsilon 0.156, ESS 2500.0 elapsed mins 41.3
+Iteration 82, epsilon 0.156, ESS 779.3 elapsed mins 41.8
+Iteration 83, epsilon 0.156, ESS 2118.2 elapsed mins 42.3
+Iteration 84, epsilon 0.156, ESS 145.9 elapsed mins 42.8
+Iteration 85, epsilon 0.156, ESS 2465.4 elapsed mins 43.3
+Iteration 86, epsilon 0.113, ESS 2500.0 elapsed mins 43.8
+Iteration 87, epsilon 0.113, ESS 2101.5 elapsed mins 44.4
+Iteration 88, epsilon 0.113, ESS 615.8 elapsed mins 44.9
+Iteration 89, epsilon 0.113, ESS 2338.8 elapsed mins 45.4
+Iteration 90, epsilon 0.047, ESS 2500.0 elapsed mins 45.9
+Elapsed time (mins) 45.9
+Iteration 91, epsilon 0.047, ESS 971.3 elapsed mins 46.5
+Iteration 92, epsilon 0.046, ESS 2500.0 elapsed mins 47.0
+Iteration 93, epsilon 0.046, ESS 1262.6 elapsed mins 47.5
+Iteration 94, epsilon 0.046, ESS 2293.1 elapsed mins 48.0
+Iteration 95, epsilon 0.046, ESS 969.7 elapsed mins 48.5
+Iteration 96, epsilon 0.045, ESS 2500.0 elapsed mins 49.0
+Iteration 97, epsilon 0.045, ESS 1824.5 elapsed mins 49.5
+Iteration 98, epsilon 0.045, ESS 2458.3 elapsed mins 50.0
+Iteration 99, epsilon 0.045, ESS 2226.8 elapsed mins 50.5
+Iteration 100, epsilon 0.045, ESS 1604.9 elapsed mins 51.0
+Elapsed time (mins) 51.0
+Iteration 101, epsilon 0.045, ESS 1513.1 elapsed mins 51.6
+Iteration 102, epsilon 0.000, ESS 3258.9 elapsed mins 52.1
+Iteration 103, epsilon 0.000, ESS 961.5 elapsed mins 52.6
+Iteration 104, epsilon 0.000, ESS 1865.9 elapsed mins 53.1
+Iteration 105, epsilon 0.000, ESS 730.1 elapsed mins 53.6
+Iteration 106, epsilon 0.000, ESS 4323.2 elapsed mins 54.1
+Iteration 107, epsilon 0.000, ESS 773.2 elapsed mins 54.6
+Iteration 108, epsilon 0.000, ESS 2700.0 elapsed mins 55.1
+Iteration 109, epsilon 0.000, ESS 3816.2 elapsed mins 55.6
+Iteration 110, epsilon 0.000, ESS 974.4 elapsed mins 56.1
+Elapsed time (mins) 56.1
