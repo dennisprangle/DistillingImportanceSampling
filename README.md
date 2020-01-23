@@ -1,8 +1,10 @@
-# Code for "Distilled importance sampling" paper
+# Code for "Distilling importance sampling" paper
+
+The paper can be found here: https://arxiv.org/abs/1910.03632
 
 ## Requirements
 
-The following package versions were used for the main run of the code:
+The main run of the code used python 3.6.8 and the following package versions:
 
 matplotlib==3.1.1
 numpy==1.10.4
@@ -12,43 +14,49 @@ seaborn==0.9.0
 tensorflow==1.13.2
 tensorflow-probability==0.6.0
 
-PYTHON VERSION?
+## Contents
 
-## How to run
+### Experiment scripts
 
-The experiments in the paper can be reproduced (up to random seeds) using the scripts
+The distillised importance sampling experiments in the paper can be reproduced (up to random seeds) using the scripts
 
-* `sin_example.py`
+* `Lorenz_example1.py`
+* `Lorenz_example2.py`
 * `MG1_comparison.py`
-* `Lorenz_example.py`
+* `sin_example.py`
 
-**Warning** the Lorenz example code still has a hard-to-reproduce bug, and occasionally crashes.
+**Warning** the Lorenz example code occasionally crashes due to a rare hard-to-reproduce bug.
 
-Other scripts included are
+### Miscellaneous
 
-* `MG1_example.py` - runs a single analysis for the MG1 example - IS THIS UP-TO-DATE? E.G. M CHOICE
-* `MG1_example_sumstats.py` - runs a single analysis for the MG1 example using quantile summaries
-* `MG1_post_plots.py` - creates plots for the MG1 example. This uses MCMC output in the MATLAB file `paper_1_1_1_16_1.mat`.
+* `DIS.py` - code for distillied importance sampling algorithm
+* `Lorenz_data.npy` - dataset used in Lorenz examples
 * `Lorenz_data.py` - generates a dataset for the Lorenz model
+* `Lorenz_functions.py` - shared functions for the Lorenz examples
+* `SDE.py` - classes for discretised SDEs for the Lorenz example, including SDEs with learnable drift and diffusion.
 
-## Implementation details
+### Plots
 
-To run DIS you should create a DIS object, as defined in `DIS.py`,
-and supply this with a model object with the following methods:
+Note these require various results files.
 
-LIST
+* `MG1_post_plots.py` - creates plots for the MG1 example results
+* `pmcmc/Lorenz_ex1_plots.py` - creates plots for Lorenz example 1 (i.e. case with unknown sigma)
 
-Models for the applications in the paper are defined in LIST.
+### PMCMC
 
-Also note that `SDE.py` contains classes for discretised SDEs for the Lorenz example,
-including SDEs with learnable drift and diffusion.
-Principally this is code to sample from them and calculate densities.
+This R code uses the `pomp` package.
 
-## NOTES TO SELF
+* `pmcmc/loglike_tuning.R` - To tune the number of particles in both Lorenz examples
+* `pmcmc/Lorenz63_ex1_pomp.R` - Runs PMCMC for Lorenz example 1
 
-`sin_example.py` WORKS AS-OF 14TH NOV
+### Results
 
-`Lorenz_data.py` WORKS AS-OF 1TTH NOV
+Various output files from the runs of the experiments used in the paper.
 
-`MG1_comparison.py`, `Lorenz_example.py` START RUNNING OK, DIDN'T CHECK FULL RUN YET
-
+* `results/Lorenz63_ex1_mcmc.csv` - PMCMC output for Lorenz example 1
+* `results/Lorenz63_ex1_pomp.Rout` - shell output for PMCMC analysis of Lorenz example 1
+* `results/Lorenz63_ex1.out` - shell output for DIS analysis of Lorenz example 1
+* `results/Lorenz63_ex2.out` - shell output for DIS analysis of Lorenz example 2
+* `results/Lorenz63_example1_pars.npy` - parameter sample from DIS analysis of Lorenz example 1 (resampled IS output)
+* `results/Lorenz63_example2_pars.npy` - parameter sample from DIS analysis of Lorenz example 2 (resampled IS output)
+* `results/paper_1_1_1_16_1.mat` - MCMC output for MG1 example
