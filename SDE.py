@@ -322,7 +322,7 @@ class NeuralLorenzSDE(LorenzSDE):
         ## Initialise neural network for drift
         self.nn_x = self._nn_template(hidden_size_x, 3)
         # and ensure variables initialised, at correct dimension
-        self.nn_x(tf.zeros(shape=(2, 12)))
+        self.nn_x(tf.zeros(shape=(2, 15)))
 
         ## Initialise flow for parameters
         bichain=list(chain.from_iterable([
@@ -403,7 +403,10 @@ class NeuralLorenzSDE(LorenzSDE):
         Then a modification is added to the drift,
         taken from a trainable neural network.
         """
+        drift, _ = super()._get_coefs(x, theta, time_index) # Unmodified Lorenz drift        
+
         x_mat = tf.reshape(x, [-1, self.ncomps])
+        drift_mat = tf.reshape(drift, [-1, self.ncomps])                
         theta_mat = tf.reshape(theta, [-1, self.npars])
         time_indices = tf.reshape(time_index, [-1])
         time_till_next_obs = tf.gather(self.time_till_lookup, time_indices)
@@ -411,12 +414,11 @@ class NeuralLorenzSDE(LorenzSDE):
         next_obs = tf.gather(self.obs_data_lookup, time_indices)
         times = self.dt * tf.cast(time_indices, 'float32')
         times = tf.reshape(times, [-1, 1])
-        inputs = tf.concat((x_mat, theta_mat, time_till_next_obs, next_obs,
-                            times), axis=1)
+        inputs = tf.concat((x_mat, drift_mat, theta_mat, time_till_next_obs,
+                            next_obs, times), axis=1)
         outputs = self.nn_x(inputs)
-        drift_modification = tf.reshape(outputs[:, 1:4], x.shape)
         
-        drift, _ = super()._get_coefs(x, theta, time_index)
+        drift_modification = tf.reshape(outputs[:, 1:4], x.shape)        
         drift += drift_modification
         diffshape = x.shape.as_list()[:-1]
         diff_mult = tf.reshape(outputs[:,0], diffshape + [1,1])

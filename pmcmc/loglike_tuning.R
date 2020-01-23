@@ -70,8 +70,8 @@ abline(h=1.5)
 
 plot(nparticles_seq, time_est)
 
-## Now the case where sigma is fixed to 0.1
-lorenz@params=c(th1=log(10), th2=log(28), th3=log(8/3), sigma=log(0.1))
+## Now the case where sigma is fixed to 0.2
+lorenz@params=c(th1=log(10), th2=log(28), th3=log(8/3), sigma=log(0.2))
 
 nparticles_seq = c(1E3, 1E4, 1E5, 1E6)
 sd_est = 0 * nparticles_seq

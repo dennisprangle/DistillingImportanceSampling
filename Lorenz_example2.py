@@ -34,7 +34,7 @@ initial_target = LorenzSDE(x0=x0, T=T, dt=dt,
 
 lorenz_model = Lorenz_model(x0=x0, T=T, dt=dt, obs_indices=obs_indices,
                             obs_data=obs_data, prior=prior,
-                            initial_target=initial_target, obs_scale=0.1)
+                            initial_target=initial_target, obs_scale=0.2)
 
 ## Approximating family
 dis_approx = NeuralLorenzSDE(x0=x0, T=T, dt=dt,
