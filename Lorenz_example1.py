@@ -40,7 +40,7 @@ lorenz_model = Lorenz_model(x0=x0, T=T, dt=dt, obs_indices=obs_indices,
 dis_approx = NeuralLorenzSDE(x0=x0, T=T, dt=dt,
                               obs_indices=obs_indices, obs_data=obs_data,
                               hidden_size_x=(80,80,80),
-                              hidden_size_theta=(30,30,30), nlayers_theta=16)
+                              hidden_size_theta=(30,30,30), nlayers_theta=8)
 
 dis_opt = tf.train.AdamOptimizer()
 dis = DIS(model=lorenz_model, q=dis_approx, optimiser=dis_opt,
