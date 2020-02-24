@@ -1,5 +1,7 @@
 # Code for "Distilling importance sampling" paper
 
+This code is to reproduce the experiments in the paper [Distilling importance sampling](https://arxiv.org/abs/1910.03632).
+
 ## Versions
 
 We ran the code using python 3.6.8 and the following package versions:
