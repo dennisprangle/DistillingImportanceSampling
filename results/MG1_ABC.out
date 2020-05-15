@@ -1,0 +1,142 @@
+Iteration 1, epsilon inf
+ESS 500, simulations 100000, progress 0.1%, minutes 0.0
+Iteration 2, epsilon 52.04
+ESS 472, simulations 130325, progress 0.1%, minutes 0.1
+Iteration 3, epsilon 35.35
+ESS 469, simulations 166763, progress 0.1%, minutes 0.3
+Iteration 4, epsilon 28.20
+ESS 472, simulations 201536, progress 0.1%, minutes 0.4
+Iteration 5, epsilon 24.09
+ESS 469, simulations 238079, progress 0.1%, minutes 0.6
+Iteration 6, epsilon 21.30
+ESS 467, simulations 274639, progress 0.2%, minutes 0.7
+Iteration 7, epsilon 19.23
+ESS 469, simulations 311688, progress 0.2%, minutes 0.8
+Iteration 8, epsilon 17.65
+ESS 465, simulations 350334, progress 0.2%, minutes 1.0
+Iteration 9, epsilon 16.39
+ESS 443, simulations 390103, progress 0.2%, minutes 1.1
+Iteration 10, epsilon 15.36
+ESS 460, simulations 427746, progress 0.3%, minutes 1.3
+Iteration 11, epsilon 14.50
+ESS 461, simulations 466468, progress 0.3%, minutes 1.4
+Iteration 12, epsilon 13.75
+ESS 459, simulations 507511, progress 0.3%, minutes 1.5
+Iteration 13, epsilon 13.09
+ESS 455, simulations 548461, progress 0.3%, minutes 1.7
+Iteration 14, epsilon 12.51
+ESS 454, simulations 632041, progress 0.4%, minutes 1.8
+Iteration 15, epsilon 12.00
+ESS 464, simulations 712981, progress 0.4%, minutes 2.0
+Iteration 16, epsilon 11.56
+ESS 421, simulations 837700, progress 0.5%, minutes 2.1
+Iteration 17, epsilon 11.15
+ESS 465, simulations 1037468, progress 0.6%, minutes 2.3
+Iteration 18, epsilon 10.78
+ESS 463, simulations 1256929, progress 0.8%, minutes 2.5
+Iteration 19, epsilon 10.43
+ESS 436, simulations 1565429, progress 0.9%, minutes 2.7
+Iteration 20, epsilon 10.11
+ESS 458, simulations 1989156, progress 1.2%, minutes 2.9
+Iteration 21, epsilon 9.82
+ESS 448, simulations 2613363, progress 1.6%, minutes 3.1
+Iteration 22, epsilon 9.55
+ESS 452, simulations 3463577, progress 2.1%, minutes 3.4
+Iteration 23, epsilon 9.30
+ESS 458, simulations 4701040, progress 2.8%, minutes 3.8
+Iteration 24, epsilon 9.06
+ESS 443, simulations 6409859, progress 3.9%, minutes 4.2
+Iteration 25, epsilon 8.83
+ESS 447, simulations 8808447, progress 5.3%, minutes 4.8
+Iteration 26, epsilon 8.61
+ESS 458, simulations 12244355, progress 7.4%, minutes 5.6
+Iteration 27, epsilon 8.40
+ESS 462, simulations 17209600, progress 10.4%, minutes 6.7
+Iteration 28, epsilon 8.20
+ESS 435, simulations 24235238, progress 14.7%, minutes 8.2
+Iteration 29, epsilon 8.01
+ESS 452, simulations 33703410, progress 20.4%, minutes 10.1
+Iteration 30, epsilon 7.83
+ESS 454, simulations 48053694, progress 29.1%, minutes 13.0
+Iteration 31, epsilon 7.65
+ESS 457, simulations 67742450, progress 41.1%, minutes 16.9
+Iteration 32, epsilon 7.48
+ESS 441, simulations 96293957, progress 58.4%, minutes 22.3
+Iteration 33, epsilon 7.31
+ESS 244, simulations 136937658, progress 83.0%, minutes 30.0
+Iteration 34, epsilon 7.15
+ESS 454, simulations 206799671, progress 125.3%, minutes 43.9
+Iteration 1, epsilon inf
+ESS 500, simulations 100000, progress 0.1%, minutes 0.0
+Iteration 2, epsilon 24.83
+ESS 471, simulations 131674, progress 0.1%, minutes 0.1
+Iteration 3, epsilon 16.68
+ESS 475, simulations 165234, progress 0.1%, minutes 0.3
+Iteration 4, epsilon 12.94
+ESS 470, simulations 201108, progress 0.1%, minutes 0.4
+Iteration 5, epsilon 10.50
+ESS 473, simulations 237833, progress 0.1%, minutes 0.6
+Iteration 6, epsilon 8.49
+ESS 460, simulations 276819, progress 0.2%, minutes 0.7
+Iteration 7, epsilon 6.89
+ESS 427, simulations 317675, progress 0.2%, minutes 0.8
+Iteration 8, epsilon 5.80
+ESS 466, simulations 356790, progress 0.2%, minutes 1.0
+Iteration 9, epsilon 4.96
+ESS 452, simulations 402617, progress 0.2%, minutes 1.1
+Iteration 10, epsilon 4.26
+ESS 201, simulations 449092, progress 0.3%, minutes 1.3
+Iteration 11, epsilon 3.65
+ESS 471, simulations 492285, progress 0.3%, minutes 1.4
+Iteration 12, epsilon 3.18
+ESS 416, simulations 543918, progress 0.3%, minutes 1.6
+Iteration 13, epsilon 2.78
+ESS 446, simulations 595676, progress 0.4%, minutes 1.7
+Iteration 14, epsilon 2.46
+ESS 466, simulations 651208, progress 0.4%, minutes 1.8
+Iteration 15, epsilon 2.19
+ESS 413, simulations 708508, progress 0.4%, minutes 2.0
+Iteration 16, epsilon 1.96
+ESS 455, simulations 819892, progress 0.5%, minutes 2.1
+Iteration 17, epsilon 1.76
+ESS 389, simulations 938118, progress 0.6%, minutes 2.3
+Iteration 18, epsilon 1.59
+ESS 428, simulations 1060564, progress 0.6%, minutes 2.4
+Iteration 19, epsilon 1.43
+ESS 442, simulations 1247310, progress 0.8%, minutes 2.6
+Iteration 20, epsilon 1.29
+ESS 439, simulations 1499841, progress 0.9%, minutes 2.8
+Iteration 21, epsilon 1.17
+ESS 441, simulations 1823356, progress 1.1%, minutes 3.0
+Iteration 22, epsilon 1.07
+ESS 452, simulations 2295476, progress 1.4%, minutes 3.2
+Iteration 23, epsilon 0.98
+ESS 397, simulations 2906683, progress 1.8%, minutes 3.4
+Iteration 24, epsilon 0.90
+ESS 403, simulations 3799838, progress 2.3%, minutes 3.7
+Iteration 25, epsilon 0.82
+ESS 435, simulations 5043620, progress 3.1%, minutes 4.0
+Iteration 26, epsilon 0.76
+ESS 393, simulations 6800449, progress 4.1%, minutes 4.5
+Iteration 27, epsilon 0.70
+ESS 439, simulations 9134099, progress 5.5%, minutes 5.0
+Iteration 28, epsilon 0.64
+ESS 436, simulations 12194490, progress 7.4%, minutes 5.7
+Iteration 29, epsilon 0.59
+ESS 429, simulations 16163188, progress 9.8%, minutes 6.5
+Iteration 30, epsilon 0.54
+ESS 336, simulations 21702340, progress 13.2%, minutes 7.5
+Iteration 31, epsilon 0.50
+ESS 413, simulations 31073142, progress 18.8%, minutes 9.3
+Iteration 32, epsilon 0.47
+ESS 388, simulations 41371167, progress 25.1%, minutes 11.1
+Iteration 33, epsilon 0.43
+ESS 383, simulations 55784017, progress 33.8%, minutes 13.7
+Iteration 34, epsilon 0.40
+ESS 390, simulations 73832575, progress 44.7%, minutes 16.9
+Iteration 35, epsilon 0.36
+ESS 336, simulations 96587337, progress 58.5%, minutes 20.8
+Iteration 36, epsilon 0.34
+ESS 397, simulations 134053592, progress 81.2%, minutes 27.3
+Iteration 37, epsilon 0.31
+ESS 193, simulations 184666785, progress 111.9%, minutes 36.0

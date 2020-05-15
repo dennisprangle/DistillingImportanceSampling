@@ -40,6 +40,7 @@ The distilled importance sampling experiments in the paper can be reproduced (up
 These scripts create plots used in the paper. Note that they require various results files.
 
 * `MG1_post_plots.py` - plots for the MG1 example results
+* `abc/MG1_ABC_plots.py` - plots for ABC baseline on MG1 example
 * `pmcmc/Lorenz_ex1_plots.py` - plots for Lorenz example 1 (i.e. case with unknown sigma)
 
 ### PMCMC
@@ -49,10 +50,18 @@ This R code uses the `pomp` package.
 * `pmcmc/loglike_tuning.R` - To tune the number of particles in both Lorenz examples
 * `pmcmc/Lorenz63_ex1_pomp.R` - Runs PMCMC for Lorenz example 1
 
+### ABC
+
+* `abc/MG1_ABC.py` - ABC baseline for the MG1 example
+
 ### Results
 
 Various output files from the runs of the experiments presented in the paper.
 
+* `results/MG1_ABC_sample_no_summaries.pkl` - ABC output for MG1 example (without summary statistics)
+* `results/MG1_ABC_sample_summaries.pkl` - ABC output for MG1 example (with quartile summary statistics)
+* `results/MG1_ABC.out` - shell output for both ABC analyses
+* `results/MG1_ABC_sample_summaries.pkl` - ABC output for MG1 example (with quartile summary statistics)
 * `results/Lorenz63_ex1_mcmc.csv` - PMCMC output for Lorenz example 1
 * `results/Lorenz63_ex1_pomp.Rout` - shell output for PMCMC analysis of Lorenz example 1
 * `results/Lorenz63_ex1.out` - shell output for DIS analysis of Lorenz example 1
