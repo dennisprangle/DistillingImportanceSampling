@@ -12,9 +12,6 @@ tf.enable_eager_execution()
 import matplotlib.pyplot as plt
 plt.ion()
 
-## FOR DEVELOPMENT ONLY?
-tf.random.set_random_seed(1.)
-
 ## Data taken from `particles` package
 obs = [0.55, 0.55, 0.6 , 0.55, 0.5 , 0.5 , 0.55, 0.6 , 0.7 , 0.8 , 0.7 ,
        0.75, 0.75, 0.7 , 0.7 , 0.7 , 0.65, 0.7 , 0.9 , 0.9 , 1.  , 1.1 ,
@@ -40,16 +37,16 @@ ricker_model = RickerModel(x0=x0, T=T, obs=obs, prior=prior)
 
 ## Approximating family
 dis_approx = RickerApprox(x0=x0, T=T, obs=obs,
-                          hidden_size_x=(30,30,30),
+                          hidden_size_x=(50,50,50),
                           hidden_size_theta=(20,20), flow_layers=4)
 
 dis_opt = tf.train.AdamOptimizer()
-## Next line has faster version for testing during development
+## Next line has version for testing during development
 dis = DIS(model=ricker_model, q=dis_approx, optimiser=dis_opt,
-          importance_size=10000, ess_target=2000, max_weight=0.1)
+          importance_size=10000, ess_target=5000, max_weight=0.1)
 ## Next line has tuning suggested from paper
 ##dis = DIS(model=ricker_model, q=dis_approx, optimiser=dis_opt,
-##          importance_size=50000, ess_target=2500, max_weight=0.01)
+##          importance_size=50000, ess_target=2500, max_weight=0.1)
 
 start_time = time()
 
@@ -57,7 +54,7 @@ paths_toplot = 30
 
 i = 0
 while dis.eps > 0.:
-    dis.train(iterations=10)
+    dis.train(iterations=5)
     elapsed = time() - start_time
     print('Elapsed time (mins) {:.1f}'.format(elapsed/60.))
     # Plot some IS output

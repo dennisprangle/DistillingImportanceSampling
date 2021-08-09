@@ -44,7 +44,6 @@ class RickerModel:
         if eps < 1.: # Avoids 0*inf difficulties when eps=1
             log_prob += (1. - eps) * self.obs_log_prob
         log_prob = tf.where(self.any_inf, self.neg_inf_vec, log_prob)
-        #print("log prob", log_prob.numpy()[0:10])
         return log_prob
 
 
@@ -139,6 +138,7 @@ class RickerDistribution():
         nreps = data.shape[0]
         theta = data[:, 0:2]
         x = data[:, 2:]
+
         return self.theta_dist.log_prob(theta) + self._log_prob_x(x, theta)
 
 
@@ -161,7 +161,7 @@ class RickerApprox():
         self.receptive_field = receptive_field
         if receptive_field > 1:
             end_pad = tf.fill([receptive_field], -1.)
-            self.padded_obs = tf.concat([obs / 1000., end_pad], axis=0)
+            self.padded_obs = tf.concat([obs, end_pad], axis=0)
         else:
             self.padded_obs = obs
 
@@ -194,25 +194,15 @@ class RickerApprox():
         variables are stored and added to `trainable_variables`
         """
         def _fn(inputs):
-            first = True
+            h = tf.layers.batch_normalization(inputs)
             for n in hidden_size:
-                if first:
-                    h = tf.layers.dense(
-                        inputs=inputs,
-                        units=n,
-                        activation=tf.nn.elu,
-                        kernel_initializer=tf.initializers.truncated_normal(stddev=0.001),
-                        kernel_regularizer=tf.keras.regularizers.l1(1E-2)
-                    )
-                    first = False
-                else:
-                    h = tf.layers.dense(
-                        inputs=h,
-                        units=n,
-                        activation=tf.nn.elu,
-                        kernel_initializer=tf.initializers.truncated_normal(stddev=0.001),
-                        kernel_regularizer=tf.keras.regularizers.l1(1E-2)
-                    )
+                h = tf.layers.dense(
+                    inputs=h,
+                    units=n,
+                    activation=tf.nn.elu,
+                    kernel_initializer=tf.initializers.truncated_normal(stddev=0.001),
+                    kernel_regularizer=tf.keras.regularizers.l1(1E-2)
+                )
 
             outputs = tf.layers.dense(
                 inputs=h,
@@ -250,7 +240,7 @@ class RickerApprox():
             ##print("t", t)
             xt_prev = xt
             features = [tf.fill([nreps,1], t-1.)]
-            features += [tf.expand_dims(tf.math.tanh(log_xt/10.), axis=1)]
+            features += [tf.expand_dims(log_xt, axis=1)]
             next_obs = self.padded_obs[t:t+self.receptive_field]
             features += [tf.broadcast_to(next_obs,
                                          [nreps, self.receptive_field])]
@@ -282,13 +272,12 @@ class RickerApprox():
         nreps = x.shape[0]
         b0 = theta[:,0]
         b1 = theta[:,1]
-        z = tf.zeros(shape=(nreps, self.T-1))
         xt = x[:,0]
         log_xt = tf.log(xt)
         zlist = []        
         for t in range(1, self.T):
             features = [tf.fill([nreps,1], t-1.)]
-            features += [tf.expand_dims(tf.math.tanh(log_xt/10.), axis=1)]
+            features += [tf.expand_dims(log_xt, axis=1)]
             next_obs = self.padded_obs[t:t+self.receptive_field]
             features += [tf.broadcast_to(next_obs,
                                          [nreps, self.receptive_field])]
@@ -301,7 +290,7 @@ class RickerApprox():
             log_xt = tf.log(xt)
             zt = (log_xt - log_xt_no_noise) / sigma
             zlist += [zt]
-        return z
+        return tf.stack(zlist, axis=1)
 
 
     def _log_det_jacobian(self, z, theta):
@@ -316,7 +305,7 @@ class RickerApprox():
         ldj = tf.zeros(nreps) # Log determinant of Jacobian
         for t in range(1, self.T):
             features = [tf.fill([nreps,1], t-1.)]
-            features += [tf.expand_dims(tf.math.tanh(log_xt/10.), axis=1)]
+            features += [tf.expand_dims(log_xt, axis=1)]
             next_obs = self.padded_obs[t:t+self.receptive_field]
             features += [tf.broadcast_to(next_obs,
                                          [nreps, self.receptive_field])]
@@ -348,6 +337,20 @@ class RickerApprox():
         ## n.b. We could get the Jacobian term from the first pass.
         ## But it wouldn't be correctly differentiable.
         ## (We want to assume our z is fixed, not x.)
+
+        ## Can get nans or inf in log prob calculation because:
+        ## 1) Original simulation overflowed
+        ## 2) Variational parameters changed since simulation
+        ## Set any nans or infs to infinite log prob (causes them to be ignored)
+        lp = log_prob.numpy()
+        lp_inf = np.isinf(lp)
+        lp_nan = np.isnan(lp)
+        lp_bad = np.logical_or(lp_inf, lp_nan)
+        if any(lp_bad):
+            log_prob = tf.where(lp_bad,
+                                np.inf*tf.ones_like(log_prob),
+                                log_prob)
+
         return log_prob
 
     def log_prob(self, data):
@@ -362,4 +365,5 @@ class RickerApprox():
         nreps = data.shape[0]
         theta = data[:, 0:2]
         x = data[:, 2:]
+
         return self.theta_dist.log_prob(theta) + self._log_prob_x(x, theta)
