@@ -37,16 +37,17 @@ ricker_model = RickerModel(x0=x0, T=T, obs=obs, prior=prior)
 
 ## Approximating family
 dis_approx = RickerApprox(x0=x0, T=T, obs=obs,
-                          hidden_size_x=(50,50,50),
-                          hidden_size_theta=(20,20), flow_layers=4)
+                          hidden_size_x=(30,30,30),
+                          hidden_size_theta=(20,20,20), flow_layers=8)
 
-dis_opt = tf.train.AdamOptimizer()
 ## Next line has version for testing during development
-dis = DIS(model=ricker_model, q=dis_approx, optimiser=dis_opt,
-          importance_size=10000, ess_target=5000, max_weight=0.1)
+##dis = DIS(model=ricker_model, q=dis_approx,
+##          importance_size=2000, ess_target=400, max_weight=0.1,
+##          reset_optimizer=True)
 ## Next line has tuning suggested from paper
-##dis = DIS(model=ricker_model, q=dis_approx, optimiser=dis_opt,
-##          importance_size=50000, ess_target=2500, max_weight=0.1)
+dis = DIS(model=ricker_model, q=dis_approx,
+          importance_size=50000, ess_target=2500, max_weight=0.1,
+          reset_optimizer=True)
 
 start_time = time()
 

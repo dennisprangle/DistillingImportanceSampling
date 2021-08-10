@@ -80,6 +80,8 @@ class RickerDistribution():
         z = tf.random_normal(shape=(nreps, self.T-1))
         for t in range(1, self.T):
             log_xt += b0 + b1*xt + z[:,t-1]
+            log_xt = tf.minimum(log_xt, 10.)
+            log_xt = tf.maximum(log_xt, -10.)
             xt = tf.exp(log_xt)
             xlist += [xt]
         x = tf.stack(xlist, axis=1)
@@ -97,16 +99,17 @@ class RickerDistribution():
         nreps = x.shape[0]
         b0 = theta[:,0]
         b1 = theta[:,1]
-        z = tf.zeros(shape=(nreps, self.T-1))
         xt = x[:,0]
         zlist = []
         for t in range(1, self.T):
             xt_prev = xt
             log_xt_no_noise = tf.log(xt_prev) + b0 + b1*xt_prev
+            log_xt_no_noise = tf.minimum(log_xt_no_noise, 10.)
+            log_xt_no_noise = tf.maximum(log_xt_no_noise, -10.)
             xt = x[:,t]
             zt = tf.log(xt) - log_xt_no_noise
             zlist += [zt]
-        return z
+        return tf.stack(zlist, axis=1)
 
     def _log_prob_x(self, x, theta):
         """Return log density of paths conditional on parameters
@@ -122,8 +125,6 @@ class RickerDistribution():
         """
         z = self._get_z(x, theta)
         log_prob = tf.reduce_sum(self.standard_normal.log_prob(z), 1)
-        ## TO DO: MAKE -INFTY IF X INVALID? (NEGATIVE, INFINITE OR NAN)
-        ## ESSENTIALLY REJECTION SAMPLING TO REMOVE "EXTREME" PATHS
         return log_prob
 
     def log_prob(self, data):
@@ -138,7 +139,6 @@ class RickerDistribution():
         nreps = data.shape[0]
         theta = data[:, 0:2]
         x = data[:, 2:]
-
         return self.theta_dist.log_prob(theta) + self._log_prob_x(x, theta)
 
 
@@ -168,7 +168,7 @@ class RickerApprox():
         ## Initialise neural network for noise modification
         self.nn_x = self._nn_template(hidden_size_x)
         ## Ensure variables initialised at correct dimension
-        self.nn_x(tf.zeros(shape=(2, 2+receptive_field)))
+        self.nn_x(tf.zeros(shape=(2, 5+receptive_field)))
 
         ## Initialise flow for parameters
         bichain=list(chain.from_iterable([
@@ -238,8 +238,10 @@ class RickerApprox():
         z = tf.random_normal(shape=(nreps, self.T-1))
         for t in range(1, self.T):
             ##print("t", t)
-            xt_prev = xt
-            features = [tf.fill([nreps,1], t-1.)]
+            log_xt_raw = log_xt + b0 + b1*xt
+            features = [theta]
+            features += [tf.expand_dims(log_xt_raw, axis=1)]
+            features += [tf.fill([nreps,1], t-1.)]
             features += [tf.expand_dims(log_xt, axis=1)]
             next_obs = self.padded_obs[t:t+self.receptive_field]
             features += [tf.broadcast_to(next_obs,
@@ -249,9 +251,11 @@ class RickerApprox():
             nn_out = self.nn_x(features)
             mu = nn_out[:,0]
             ##print("mu", mu.numpy()[0:10])
-            sigma = tf.math.softplus(nn_out[:,1])
+            sigma = tf.math.exp(nn_out[:,1])
             ##print("sigma", sigma.numpy()[0:10])
-            log_xt += b0 + b1*xt_prev + mu + sigma*z[:,t-1]
+            log_xt = log_xt_raw + mu + sigma*z[:,t-1]
+            log_xt = tf.minimum(log_xt, 10.)
+            log_xt = tf.maximum(log_xt, -10.)
             ##print("log_xt", log_xt.numpy()[0:10])
             xt = tf.exp(log_xt)
             ##print("xt", xt.numpy()[0:10])
@@ -276,7 +280,10 @@ class RickerApprox():
         log_xt = tf.log(xt)
         zlist = []        
         for t in range(1, self.T):
-            features = [tf.fill([nreps,1], t-1.)]
+            log_xt_raw = log_xt + b0 + b1*xt
+            features = [theta]
+            features += [tf.expand_dims(log_xt_raw, axis=1)]
+            features += [tf.fill([nreps,1], t-1.)]
             features += [tf.expand_dims(log_xt, axis=1)]
             next_obs = self.padded_obs[t:t+self.receptive_field]
             features += [tf.broadcast_to(next_obs,
@@ -284,8 +291,10 @@ class RickerApprox():
             features = tf.concat(features, axis=1)
             nn_out = self.nn_x(features)
             mu = nn_out[:,0]
-            sigma = tf.math.softplus(nn_out[:,1])
-            log_xt_no_noise = log_xt + b0 + b1*xt - mu
+            sigma = tf.math.exp(nn_out[:,1])
+            log_xt_no_noise = log_xt_raw + mu
+            log_xt_no_noise = tf.minimum(log_xt_no_noise, 10.)
+            log_xt_no_noise = tf.maximum(log_xt_no_noise, -10.)
             xt = x[:,t]
             log_xt = tf.log(xt)
             zt = (log_xt - log_xt_no_noise) / sigma
@@ -304,7 +313,10 @@ class RickerApprox():
         log_xt = tf.log(xt)
         ldj = tf.zeros(nreps) # Log determinant of Jacobian
         for t in range(1, self.T):
-            features = [tf.fill([nreps,1], t-1.)]
+            log_xt_raw = log_xt + b0 + b1*xt
+            features = [theta]
+            features += [tf.expand_dims(log_xt_raw, axis=1)]
+            features += [tf.fill([nreps,1], t-1.)]
             features += [tf.expand_dims(log_xt, axis=1)]
             next_obs = self.padded_obs[t:t+self.receptive_field]
             features += [tf.broadcast_to(next_obs,
@@ -312,8 +324,10 @@ class RickerApprox():
             features = tf.concat(features, axis=1)
             nn_out = self.nn_x(features)
             mu = nn_out[:,0]
-            sigma = tf.math.softplus(nn_out[:,1])
-            log_xt += b0 + b1*xt + mu + sigma*z[:,t-1]
+            sigma = tf.math.exp(nn_out[:,1])
+            log_xt = log_xt_raw + mu + sigma*z[:,t-1]
+            log_xt = tf.minimum(log_xt, 10.)
+            log_xt = tf.maximum(log_xt, -10.)
             xt = tf.exp(log_xt)
             ldj -= tf.log(sigma)
         return ldj
@@ -337,20 +351,6 @@ class RickerApprox():
         ## n.b. We could get the Jacobian term from the first pass.
         ## But it wouldn't be correctly differentiable.
         ## (We want to assume our z is fixed, not x.)
-
-        ## Can get nans or inf in log prob calculation because:
-        ## 1) Original simulation overflowed
-        ## 2) Variational parameters changed since simulation
-        ## Set any nans or infs to infinite log prob (causes them to be ignored)
-        lp = log_prob.numpy()
-        lp_inf = np.isinf(lp)
-        lp_nan = np.isnan(lp)
-        lp_bad = np.logical_or(lp_inf, lp_nan)
-        if any(lp_bad):
-            log_prob = tf.where(lp_bad,
-                                np.inf*tf.ones_like(log_prob),
-                                log_prob)
-
         return log_prob
 
     def log_prob(self, data):
@@ -365,5 +365,4 @@ class RickerApprox():
         nreps = data.shape[0]
         theta = data[:, 0:2]
         x = data[:, 2:]
-
         return self.theta_dist.log_prob(theta) + self._log_prob_x(x, theta)

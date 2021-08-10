@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 from time import time
 
 class DIS:
-    def __init__(self, model, q, optimiser, importance_size,
+    def __init__(self, model, q, importance_size,
                  ess_target, max_bisection_its=50, batch_size=100,
-                 max_weight=1., nbatches=None, log_dir=None):
+                 max_weight=1., nbatches=None, log_dir=None,
+                 reset_optimizer=False):
        """Class to perform a distilled importance sampling analysis
 
        `model` encapsulates model and prior
        `q` is approximate posterior distribution
-       `optimiser` is a tensorflow optimiser object
        `importance_size` is number of importance samples (N in paper)
        `ess_target` is target effective sample size (M in paper)
        `max_bisection_its` controls the ESS selection algorithm
@@ -22,12 +22,14 @@ class DIS:
        `max_weight` is the maximum normalised weight allowed after clipping (omega in paper)
        `nbatches` is how many training batches to create (B in paper)
        `log_dir` tensorboard log directory (None for no logging)
+       `restart_optimizer` is whether to reset the optimizer when eps changes
        """
        self.start_time = time()
        self.elapsed = 0.
        self.model = model
        self.q = q
-       self.optimiser = optimiser
+       self.reset_optimizer = reset_optimizer
+       self.optimiser = tf.train.AdamOptimizer()
        self.importance_size = importance_size
        self.ess_target = ess_target
        self.max_bisection_its = max_bisection_its
@@ -111,22 +113,17 @@ class DIS:
                 lower = eps_guess
             eps_guess = (lower + upper) / 2.
 
-        # Consider returning extreme epsilon values if they are still endpoints
+        # Consider returning eps=0 if it's still an endpoint
         if lower == 0.:
-            w = self.get_weights(eps_guess)
+            w = self.get_weights(0.)
             ess = self.get_ess(w)
             if ess > self.ess_target:
                 return 0., ess, w
 
-        if upper == self.model.max_eps:
-            w = self.get_weights(eps_guess)
-            ess = self.get_ess(w)
-            if ess > self.ess_target:
-                return self.model.max_eps, ess, w
-
-        w = self.get_weights(eps_guess)
+        # Be conservative by returning upper end of remaining range
+        w = self.get_weights(upper)
         ess = self.get_ess(w)
-        return eps_guess, ess, w
+        return upper, ess, w
 
 
     def loss(self, theta):
@@ -193,7 +190,10 @@ class DIS:
                 theta = tf.where(bad_rows, tf.zeros_like(theta), theta)
                                                         
             self.model.likelihood_prelims(theta) # Store summaries weights
+            old_eps = self.eps
             self.eps, ess, w = self.get_eps_and_weights(self.eps)
+            if self.reset_optimizer and self.eps < old_eps:
+                self.optimiser = tf.train.AdamOptimizer()
             w = self.clip_weights(w)
             S = sum(w)
             w /= S
@@ -229,6 +229,6 @@ class DIS:
             self.it_list += [self.t]
 
             # Report status
-            message = "Iteration {:2d}, epsilon {:.3f}, ESS {:.1f} " + \
+            message = "Iteration {:2d}, epsilon {:.6f}, ESS {:.1f} " + \
                       "elapsed mins {:.1f}"
             print(message.format(self.t, self.eps, ess, self.elapsed/60.))
