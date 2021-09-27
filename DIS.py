@@ -68,22 +68,30 @@ class DIS:
         """Clip weights to `self.max_weight`
         Other weights are scaled up proportionately to keep sum equal to 1"""
         S = sum(w)
-        if not any(w > S*self.max_weight):
+        to_clip = (w > S*self.max_weight)
+        n_to_clip = sum(to_clip)
+        if n_to_clip == 0:
             return w
 
-        to_clip = (w >= S*self.max_weight) #nb clip those equal to max_weight
-                                           #so we don't push them over it!
-        n_to_clip = sum(to_clip)
-        print("Clipping {:d} weights".format(n_to_clip))
+        print("Truncating {:d} weights".format(n_to_clip))
         to_not_clip = np.logical_not(to_clip)
         sum_unclipped = sum(w[to_not_clip])
         if sum_unclipped == 0:
             # Impossible to clip further!
             return w
-        w[to_clip] = self.max_weight * sum_unclipped \
-                     / (1. - self.max_weight * n_to_clip)
-        return self.clip_weights(w)
-
+        clip_to = self.max_weight * sum_unclipped \
+                  / (1. - self.max_weight * n_to_clip)
+        max_unclipped = np.max(w[to_not_clip])
+        ## clip_to calculation is done so that
+        ## after w[to_clip]=clip_to
+        ## w[to_clip] / sum(w) all equal max_weight
+        ## **But** we don't want to clip below next smallest weight
+        if clip_to >= max_unclipped:
+            w[to_clip] = clip_to
+            return w
+        else:
+            w[to_clip] = max_unclipped
+            return clip_weights(w)
 
     def get_ess(self, w):
         """Calculates effective sample size of normalised importance sampling weights"""
@@ -111,22 +119,17 @@ class DIS:
                 lower = eps_guess
             eps_guess = (lower + upper) / 2.
 
-        # Consider returning extreme epsilon values if they are still endpoints
+        # Consider returning eps=0 if it's still an endpoint
         if lower == 0.:
-            w = self.get_weights(eps_guess)
+            w = self.get_weights(0.)
             ess = self.get_ess(w)
             if ess > self.ess_target:
                 return 0., ess, w
 
-        if upper == self.model.max_eps:
-            w = self.get_weights(eps_guess)
-            ess = self.get_ess(w)
-            if ess > self.ess_target:
-                return self.model.max_eps, ess, w
-
-        w = self.get_weights(eps_guess)
+        # Be conservative by returning upper end of remaining range
+        w = self.get_weights(upper)
         ess = self.get_ess(w)
-        return eps_guess, ess, w
+        return upper, ess, w
 
 
     def loss(self, theta):

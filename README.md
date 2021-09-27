@@ -2,7 +2,13 @@
 
 This code is to reproduce the experiments in the paper [Distilling importance sampling](https://arxiv.org/abs/1910.03632).
 
-## Versions
+## Version history
+
+v1.0 is the code used in version 3 of the arxiv paper (which includes all the code used in the earlier arxiv submissions)
+
+v1.1 adds some bug fixes
+
+## Python package versions
 
 We ran the code using python 3.6.8 and the following package versions:
 
