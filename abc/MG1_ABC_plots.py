@@ -8,7 +8,7 @@ plt.ion()
 abc_no_summaries = pd.read_pickle("MG1_ABC_sample_no_summaries.pkl")
 abc_summaries = pd.read_pickle("MG1_ABC_sample_summaries.pkl")
 
-d = scipy.io.loadmat('paper_1_1_1_16_1.mat')
+d = scipy.io.loadmat('../paper_1_1_1_16_1.mat')
 p = d['par_mat']
 
 p[:,1] += p[:,0]
@@ -58,3 +58,20 @@ axes[2,0].set_ylabel('ABC summaries')
 f.tight_layout()
 
 plt.savefig('ABC_post.pdf')
+
+## Now get some summaries of results
+abc_sum = abc_summaries.to_numpy()
+abc_nosum = abc_no_summaries.to_numpy()
+mcmc_np = mcmc.to_numpy()
+mcmc_np = mcmc_np[1000:100000:99, (2,0,1)] # Remove burn-in, thin and swap columns to match abc output
+dis_np = np.load("../MG1_pars_N5000_frac0.05.npy")
+
+print("MCMC, means ", np.mean(mcmc_np, axis=0))
+print("ABC with summaries, means ", np.mean(abc_sum, axis=0))
+print("ABC no summaries, means ", np.mean(abc_nosum, axis=0))
+print("DIS, means ", np.mean(dis_np, axis=0))
+
+print("MCMC, intervals ", np.quantile(mcmc_np, q=(0.025,0.975), axis=0))
+print("ABC with summaries, intervals ", np.quantile(abc_sum, q=(0.025,0.975), axis=0))
+print("ABC no summaries, intervals ", np.quantile(abc_nosum, q=(0.025,0.975), axis=0))
+print("DIS, intervals ", np.quantile(dis_np, q=(0.025,0.975), axis=0))

@@ -3,11 +3,11 @@ library(pomp)
 library(mcmcse)
 
 # Data (as in Lorenz_data.npy)
-yobs = c(-13.55, -16.19,  30.77,
-          1.51,  -3.54,  14.27,
-        -18.93, -21.09,  32.1,
-         10.09,   9.88,  31.29,
-          5.31,   6.76,  19.93)
+yobs = c(-11.4800,  -4.1700,  36.7000,
+         -10.8600, -17.5000,  22.4300,
+           4.0900,   4.4300,  20.6200,
+           6.1500,  13.3500,  12.5800,
+          -1.4500,  -5.8100,  25.1700)
 
 yobs = matrix(yobs, ncol=3, byrow=TRUE)
 colnames(yobs) = c("y1","y2","y3")
@@ -59,12 +59,12 @@ prop.var = rbind(c( 0.016, 0.002,  0.003,-0.008),
 colnames(prop.var) = c("th1","th2","th3","sigma")
 rownames(prop.var) = c("th1","th2","th3","sigma")
 
-mcmc_out = pmcmc(lorenz, Nmcmc = 8E4, Np=50,
+mcmc_out = pmcmc(lorenz, Nmcmc = 8E4, Np=300,
                  dprior = lorenz.dprior,
                  proposal = mvn.rw(prop.var),
                  verbose=FALSE)
 
-out = data.frame(traces(mcmc_out))[,4:7]
+out = data.frame(traces(mcmc_out))[,3:6]
 
 multiESS(out)
 
