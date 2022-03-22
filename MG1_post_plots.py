@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 plt.ion()
 
-q = np.load('MG1_pars_N50000_frac0.05.npy')
+q = np.load('MG1_pars_N5000_frac0.05.npy')
 dis = pd.DataFrame(q, columns=['arrival rate', 'min service', 'max service'])
 
 d = scipy.io.loadmat('paper_1_1_1_16_1.mat')

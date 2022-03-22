@@ -217,14 +217,14 @@ def sample_abc_posterior(n, eps, deps_obs, batch_size=1000, use_prior=True,
 
 
 
-def abc_pmc(deps_obs, n_to_accept, prob_fraction, max_sims=10**6,
-            batch_size=1000, use_summaries=False):
+def abc_pmc(deps_obs, n_to_accept, prob_fraction, batch_size=1000, use_summaries=False, max_mins=60.):
     """Run ABC PMC
     `dep_obs` - observed inter-departure times
     `n_to_accept` - how many ABC acceptances are required in each iteration
     `prob_fraction` - used in updating epsilon
-    `max_sims` - maximum number of ABC simulations to perform
     `batch_size` - batch size for vectorised simulations
+    `use_summaries` - whether to use ABC summary statistics
+    `max_mins` - stop after this many minutes
 
     Returns a data frame of a sample from the final iteration
     (based on importance resampling)
@@ -236,7 +236,8 @@ def abc_pmc(deps_obs, n_to_accept, prob_fraction, max_sims=10**6,
     total_sims = 0
     theta = None
     w = None
-    while total_sims < max_sims:
+    elapsed_mins = 0.
+    while elapsed_mins < max_mins:
         print('Iteration {:d}, epsilon {:.2f}'.format(iteration, eps))
         (theta, sq_dist, w, sims) \
             = sample_abc_posterior(n_to_accept, eps, deps_obs,
@@ -247,9 +248,9 @@ def abc_pmc(deps_obs, n_to_accept, prob_fraction, max_sims=10**6,
                                    use_summaries=use_summaries)
         total_sims += sims
         ess = (sum(w)**2.)/sum(w**2.)
+        elapsed_mins = (time() - start_time) / 60.
         print('ESS {:.0f}, simulations {:d}, progress {:.1f}%, minutes {:.1f}'.\
-              format(ess, total_sims, 100.*total_sims/max_sims,
-                     (time()-start_time)/60.))
+              format(ess, total_sims, 100.*elapsed_mins/max_mins, elapsed_mins))
         sys.stdout.flush()
         eps = get_eps(sq_dist, w, eps, prob_fraction)
         iteration += 1
@@ -279,12 +280,9 @@ deps_obs = np.array(
     17.13184198,  4.64447435, 12.10859597,  6.86436748,  4.199275  ,
     11.70312317,  7.06592802, 16.28106949,  8.66159665,  4.33875566])
 
-nsims = 1.65*(10**8)
-df_no_summaries = abc_pmc(deps_obs, n_to_accept=500, prob_fraction=0.7,
-                          max_sims=nsims, batch_size=10**5,
-                          use_summaries=False)
+df_no_summaries = abc_pmc(deps_obs, n_to_accept=250, prob_fraction=0.7,
+                          batch_size=10**5, use_summaries=False)
 df_no_summaries.to_pickle("MG1_ABC_sample_no_summaries.pkl")
-df_summaries = abc_pmc(deps_obs, n_to_accept=500, prob_fraction=0.7,
-                       max_sims=nsims, batch_size=10**5,
-                       use_summaries=True)
+df_summaries = abc_pmc(deps_obs, n_to_accept=250, prob_fraction=0.7,
+                       batch_size=10**5, use_summaries=True)
 df_summaries.to_pickle("MG1_ABC_sample_summaries.pkl")

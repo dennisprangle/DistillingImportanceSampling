@@ -1,0 +1,41 @@
+Pretraining iterations 10, loss 2964.1, ESS (from 100 samples) 6.2
+Pretraining iterations 20, loss 2726.9, ESS (from 100 samples) 20.3
+Pretraining iterations 30, loss 2547.0, ESS (from 100 samples) 15.6
+Pretraining iterations 40, loss 2503.0, ESS (from 100 samples) 9.0
+Pretraining iterations 50, loss 2517.4, ESS (from 100 samples) 36.4
+Pretraining iterations 60, loss 2450.1, ESS (from 100 samples) 24.4
+Pretraining iterations 70, loss 2509.0, ESS (from 100 samples) 37.7
+Pretraining iterations 80, loss 2476.1, ESS (from 100 samples) 46.9
+Pretraining iterations 90, loss 2473.3, ESS (from 100 samples) 59.7
+Iteration  1, epsilon 0.930, ESS 250.0, elapsed mins 0.1
+Iteration  2, epsilon 0.903, ESS 250.0, elapsed mins 0.1
+Iteration  3, epsilon 0.903, ESS 167.3, elapsed mins 0.1
+Iteration  4, epsilon 0.701, ESS 250.0, elapsed mins 0.2
+Iteration  5, epsilon 0.701, ESS 214.3, elapsed mins 0.2
+Iteration  6, epsilon 0.680, ESS 250.0, elapsed mins 0.3
+Iteration  7, epsilon 0.680, ESS 125.1, elapsed mins 0.3
+Iteration  8, epsilon 0.649, ESS 250.0, elapsed mins 0.4
+Iteration  9, epsilon 0.649, ESS 247.2, elapsed mins 0.4
+Iteration 10, epsilon 0.632, ESS 250.0, elapsed mins 0.5
+Iteration 11, epsilon 0.557, ESS 250.0, elapsed mins 0.5
+Iteration 12, epsilon 0.557, ESS 57.6, elapsed mins 0.6
+Iteration 13, epsilon 0.477, ESS 250.0, elapsed mins 0.6
+Iteration 14, epsilon 0.477, ESS 222.6, elapsed mins 0.7
+Iteration 15, epsilon 0.477, ESS 128.2, elapsed mins 0.7
+Iteration 16, epsilon 0.477, ESS 165.5, elapsed mins 0.8
+Iteration 17, epsilon 0.477, ESS 217.7, elapsed mins 0.8
+Iteration 18, epsilon 0.477, ESS 228.0, elapsed mins 0.9
+Iteration 19, epsilon 0.456, ESS 250.0, elapsed mins 0.9
+Iteration 20, epsilon 0.456, ESS 174.8, elapsed mins 1.0
+Iteration 21, epsilon 0.445, ESS 250.0, elapsed mins 1.0
+Iteration 22, epsilon 0.445, ESS 181.3, elapsed mins 1.1
+Iteration 23, epsilon 0.445, ESS 223.4, elapsed mins 1.1
+Iteration 24, epsilon 0.445, ESS 243.2, elapsed mins 1.2
+Iteration 25, epsilon 0.408, ESS 250.0, elapsed mins 1.3
+Truncating 1 weights
+Iteration 26, epsilon 0.408, ESS 80.4, elapsed mins 1.3
+Iteration 27, epsilon 0.322, ESS 250.0, elapsed mins 1.4
+Iteration 28, epsilon 0.322, ESS 114.1, elapsed mins 1.4
+Iteration 29, epsilon 0.322, ESS 180.0, elapsed mins 1.5
+Iteration 30, epsilon 0.000, ESS 272.0, elapsed mins 1.5
+Effective sample size 46108.935360705436, elapsed sec 3.1
