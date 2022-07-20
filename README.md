@@ -4,11 +4,10 @@ This code is to reproduce the experiments in the paper [Distilling importance sa
 
 ## Version history
 
-v1.0 is Tensorflow code used in versions 1-3 of the arxiv paper
-
-v1.1 adds some bug fixes
-
-v2.0 is PyTorch code for version 4 of the arxiv paper
+* v1.0 is Tensorflow code used in versions 1-3 of the arxiv paper
+* v1.1 adds some bug fixes
+* v2.0 is PyTorch code for version 4 of the arxiv paper
+* V2.1 has some minor modification to plotting code for version 5 of the arxiv paper
 
 ## Python package versions
 

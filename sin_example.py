@@ -8,7 +8,9 @@ from models.sin import SinModel
 from utils import resample
 import numpy as np
 import matplotlib.pyplot as plt
+
 plt.ion()
+plt.rc('font', size=16)
 
 torch.manual_seed(111)
 
@@ -55,12 +57,13 @@ for i in range(20):
     selected = dis.train_sample.sample(nplot)
     plt.figure()
     plt.scatter(x=proposals[:,0], y=proposals[:,1], c="blue",
-                alpha=0.6, marker="o", edgecolors="none")
-    plt.scatter(x=selected[:,0], y=selected[:,1], c="red", marker="+")
+                alpha=0.6, marker="o", edgecolors="none", label="proposal")
+    plt.scatter(x=selected[:,0], y=selected[:,1], c="red", marker="+", label="target")
     plt.xlim((-5.,5.))
     plt.ylim((-2.,2.))
-    plt.title("Iteration {:d}, epsilon={:.3f}".format(dis.iterations_done,
-                                                      dis.eps))
+    plt.title(f"Iteration {dis.iterations_done:d}, epsilon={dis.eps:.3f}")
+    if dis.iterations_done == 12: # Only need legend in one plot for final figure
+        plt.legend(loc="lower right")
     plt.savefig("sin{:d}.pdf".format(dis.iterations_done))
     plt.pause(0.1)
 

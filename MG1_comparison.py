@@ -100,6 +100,7 @@ pd.to_pickle(output, "mg1_comparison.pkl")
 
 pl1 = sns.relplot(x="time", y="eps", style="is samples", hue="ess frac",
                   kind="line",
+                  palette=sns.color_palette("rocket", n_colors=3), # A palette that's ok in black-and-white
                   data=output)
 
 pl1.set(yscale="log")
