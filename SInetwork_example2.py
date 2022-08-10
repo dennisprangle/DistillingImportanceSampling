@@ -157,7 +157,7 @@ while dis12.eps > 0. or dis12.ess < 250.:
         #   "node_color": mode_inf.tolist()[0],
         "node_color": post_infnodes.tolist(),
         "edge_color": post_w,
-        "width": 3,
+        "width": 5,
         "cmap":cmap,
         "with_labels": False,
         "edge_cmap": plt.cm.Blues,
@@ -167,7 +167,7 @@ while dis12.eps > 0. or dis12.ess < 250.:
     options_true = {
         "node_color": ["r","w","r","r","r","r","r","w","r","r"],
         "edge_color": 'r',
-        "width": 1,
+        "width": 2,
         "with_labels": True,
         "font_size":14,
         #   "alpha":.8,
