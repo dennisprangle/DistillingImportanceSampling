@@ -9,7 +9,7 @@ from copy import deepcopy
 class DIS:
     def __init__(self, model, approx_dist, optimizer, importance_sample_size,
                  ess_target, max_bisection_its=50, batch_size=100,
-                 max_weight=1., nbatches=None):
+                 max_weight=1., l2_penalty=0., nbatches=None):
        """Class to perform a distilled importance sampling analysis
 
        `model` a `Model` object encapsulating model and prior
@@ -20,6 +20,7 @@ class DIS:
        `max_bisection_its` controls the ESS selection algorithm
        `batch_size` is training batch size (`n` in paper)
        `max_weight` is the maximum normalised weight allowed after clipping (omega in paper)
+       `l2_penalty` is L2 penalty applied to parameters (excluding bias)
        `nbatches` is how many training batches to create (`B` in paper). Defaults to `ess_target` / `batch_size` (rounded).
        """
        self.start_time = time()
@@ -32,12 +33,14 @@ class DIS:
        self.max_bisection_its = max_bisection_its
        self.batch_size = batch_size
        self.max_weight = max_weight
+       self.l2_penalty = l2_penalty
        if nbatches is None:
            self.nbatches = np.ceil(ess_target / batch_size).astype('int')
        else:
            self.nbatches = nbatches
        self.iterations_done = 0
        self.eps = model.max_eps
+       self.best_eps = model.max_eps
        self.history = {
            'elapsed_time':[],
            'epsilon':[],
@@ -64,12 +67,6 @@ class DIS:
     def get_loss(self, params):
         """Calculate loss under parameters from current target distribution"""
         return -torch.sum(self.approx_dist.log_prob(params))
-
-    def get_weighted_loss(self, weighted_sample):
-        """Calculate loss under parameters from current target distribution"""
-        l = self.approx_dist.log_prob(weighted_sample.particles)
-        w = weighted_sample.weights
-        return -torch.sum(l*w)
 
     def pretrain(self, initial_target, goal=0.9, report_every=100):
         """Train approximation to match an initial target
@@ -104,16 +101,25 @@ class DIS:
         `iterations` is how many iterations to perform.
         Training can then be continued by calling `train` again."""
         for i in range(iterations):
-            self.train_sample = self.get_sample()
-            new_eps = self.train_sample.find_eps(self.ess_target, self.eps)
-            # nb new_eps will equal self.eps if ess_target can't be met
-            self.train_sample.update_epsilon(new_eps)
-            self.eps = new_eps
-            S = self.train_sample.truncate_weights(self.max_weight)
-            total_loss = 0.
+            with torch.no_grad():
+                self.train_sample = self.get_sample()
+                new_eps = self.train_sample.find_eps(self.ess_target, self.eps, self.max_bisection_its)
+                if new_eps < self.best_eps:
+                    # nb new_eps will equal self.eps if ess_target can't be met
+                    self.best_eps = new_eps
+                    self.best_approx_dist = deepcopy(self.approx_dist)
+                self.train_sample.update_epsilon(new_eps)
+                self.ess = effective_sample_size(self.train_sample.weights)
+                self.eps = new_eps
+                self.is_sample = self.train_sample.sample(1000).detach() # Useful for plots
+                S = self.train_sample.truncate_weights(self.max_weight)
+                total_loss = 0.
             for _ in range(self.nbatches):
                 batch = self.train_sample.sample(self.batch_size).detach()
                 loss = S * self.get_loss(batch)
+                for name, par in self.approx_dist.named_parameters():
+                    if 'bias' not in name:
+                        loss += torch.pow(par, 2.0).sum() * self.l2_penalty
                 total_loss += loss.detach()
                 self.optimizer.zero_grad()
                 loss.backward()
@@ -124,12 +130,11 @@ class DIS:
             self.history['elapsed_time'].append(self.elapsed_time)
             self.history['epsilon'].append(self.eps)
             self.history['iterations_done'].append(self.iterations_done)
-            self.ess = effective_sample_size(self.train_sample.weights)
 
             # Report status
             print(
                 f"Iteration {self.iterations_done:2d}, "
                 f"epsilon {self.eps:.3f}, "
-                f"ESS {self.ess:.1f}, "
+                f"ESS (untruncated) {self.ess:.1f}, "
                 f"elapsed mins {self.elapsed_time/60:.1f}"
             )

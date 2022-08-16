@@ -97,7 +97,7 @@ while dis12.eps > 0. or dis12.ess < 250.:
     """
     nsamp = 1000
     proposals = dis12.train_sample.particles[0:nsamp]
-    params = dis12.train_sample.sample(nsamp)
+    params = dis12.is_sample
     prop_infection, prop_contact = model.convert_inputs(proposals)[0:2]
     sel_infection, sel_contact = model.convert_inputs(params)[0:2]
 

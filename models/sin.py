@@ -1,37 +1,35 @@
 import torch
-from torch.distributions import MultivariateNormal
+from torch.distributions.uniform import Uniform
+from torch.distributions.independent import Independent
 import numpy as np
-from models.models import Model
-from models.weighted_sample import InitialFinalWeightedSample
+from models.models import SimulatorModel
 
-class SinModel(Model):
+class SinModel(SimulatorModel):
     """A simple sinusoidal model"""
-    def __init__(self):
-        self.max_eps = 1.
-        self.initial_target = MultivariateNormal(torch.zeros(2), 4*torch.eye(2))
-        ## i.e. two independent N(0,2^2) distributions
+    def __init__(self, observations=torch.zeros([1,1])):
+        self.max_eps = 10. ## Initial ABC bandwidth
+        self.prior = Uniform(
+            low = torch.tensor([-np.pi, -np.pi]),
+            high = torch.tensor([np.pi, np.pi]),
+            validate_args=False
+        )
+        self.prior = Independent(self.prior, 1)
+        ## i.e. two independent uniform distributions on [-pi, pi]
+        super().__init__(observations, observations_are_data=True)
 
-    def log_initial_target(self, inputs):
-        """Calculate (unnormalised) log initial target
+    def log_prior(self, inputs):
+        """Calculate vector of log prior densities of `inputs`
 
-        This is a bivariate N(0,4I) density"""
-        return self.initial_target.log_prob(inputs)
+        For this model they are two independent uniform distributions on [-pi, pi]"""
+        supported = torch.all(
+            torch.abs(inputs) <= np.pi,
+            dim=1
+        )
+        return torch.log(supported)
 
-    def log_final_target(self, inputs):
-        """Calculate (unnormalised) log final target"""
+    def simulator(self, inputs):
+        """Perform simulations"""
         th1 = inputs[:,0]
         th2 = inputs[:,1]
-        n = th1.shape[0]
-        p = torch.where(torch.abs(th1) < np.pi,
-                        torch.ones(n), torch.zeros(n))
-        p = torch.log(p)
-        p += -100. * torch.pow((th2 - torch.sin(th1)), 2)
-        return p
-
-    def run(self, inputs, log_proposal):
-        return InitialFinalWeightedSample(
-            inputs,
-            log_proposal,
-            self.log_initial_target(inputs),
-            self.log_final_target(inputs)
-        )
+        x = th2 - torch.sin(th1)
+        return x.reshape([-1,1])

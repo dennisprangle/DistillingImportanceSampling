@@ -78,7 +78,7 @@ dis2.train(iterations=30)
 
 nsamp = 10000
 proposals = dis2.train_sample.particles[0:nsamp]
-params = dis2.train_sample.sample(nsamp)
+params = dis2.is_sample
 prop_infection, prop_contact = model.convert_inputs(proposals)[0:2]
 sel_infection, sel_contact = model.convert_inputs(params)[0:2]
 

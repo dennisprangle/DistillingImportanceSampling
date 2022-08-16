@@ -1,13 +1,15 @@
+from DIS import DIS
+import torch
+from models.MG1 import MG1Model
 import scipy.io
 import numpy as np
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
+import pickle
 plt.ion()
 
-q = np.load('MG1_pars_N5000_frac0.05.npy')
-dis = pd.DataFrame(q, columns=['arrival rate', 'min service', 'max service'])
-
+# Prepare MCMC output
 d = scipy.io.loadmat('paper_1_1_1_16_1.mat')
 p = d['par_mat']
 
@@ -26,6 +28,38 @@ mcmc.plot(x='iteration', y='arrival rate', kind='line')
 # (Also, longer chains might be needed to capture the tails)
 mcmc = mcmc[1000:100000:10]
 
+# Get fitted DIS proposal and use it for importance sampling
+with open(f'MG1_dist_N5000_frac0.05.pkl', 'rb') as infile:
+    approx_dist = pickle.load(infile)
+
+comparison_summary = pd.read_pickle('mg1_comparison.pkl')
+subset = (comparison_summary["is samples"] == 5000) &
+         (comparison_summary["ess frac"] == 0.05)
+eps = comparison_summary[subset]["eps"].min()
+
+obs = torch.tensor(
+    [4.67931388, 33.32367159, 16.1354178 ,  4.26184914, 21.51870177,
+     19.26768645, 17.41684327,  4.39394293,  4.98717158,  4.00745068,
+     17.13184198,  4.64447435, 12.10859597,  6.86436748,  4.199275  ,
+     11.70312317,  7.06592802, 16.28106949,  8.66159665,  4.33875566])
+ninputs = 43
+
+model = MG1Model(obs)
+
+dis = DIS(model, approx_dist, None,
+          importance_sample_size=5000,
+          ess_target=250, max_weight=0.1)
+dis.eps = eps
+
+with torch.no_grad():
+    params = dis.get_sample(100000)
+params = params.sample(10000).detach()
+arrival_rate, min_service, service_width, _, _ = model.convert_inputs(params)
+max_service = min_service + service_width
+pars_samp = torch.stack([arrival_rate, min_service, max_service], axis=1)
+dis = pd.DataFrame(pars_samp, columns=['arrival rate', 'min service', 'max service'])
+
+# Plot posterior histograms
 bins1 = np.arange(0., 0.2, 0.01)
 bins2 = np.arange(2.01, 5.01, 0.2)
 bins3 = np.arange(3.5, 8., 0.3)
