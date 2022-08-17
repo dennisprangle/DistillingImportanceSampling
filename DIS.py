@@ -40,7 +40,6 @@ class DIS:
            self.nbatches = nbatches
        self.iterations_done = 0
        self.eps = model.max_eps
-       self.best_eps = model.max_eps
        self.history = {
            'elapsed_time':[],
            'epsilon':[],
@@ -104,10 +103,6 @@ class DIS:
             with torch.no_grad():
                 self.train_sample = self.get_sample()
                 new_eps = self.train_sample.find_eps(self.ess_target, self.eps, self.max_bisection_its)
-                if new_eps < self.best_eps:
-                    # nb new_eps will equal self.eps if ess_target can't be met
-                    self.best_eps = new_eps
-                    self.best_approx_dist = deepcopy(self.approx_dist)
                 self.train_sample.update_epsilon(new_eps)
                 self.ess = effective_sample_size(self.train_sample.weights)
                 self.eps = new_eps

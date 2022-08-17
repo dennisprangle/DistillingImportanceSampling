@@ -33,8 +33,7 @@ with open(f'MG1_dist_N5000_frac0.05.pkl', 'rb') as infile:
     approx_dist = pickle.load(infile)
 
 comparison_summary = pd.read_pickle('mg1_comparison.pkl')
-subset = (comparison_summary["is samples"] == 5000) &
-         (comparison_summary["ess frac"] == 0.05)
+subset = (comparison_summary["is samples"] == 5000) & (comparison_summary["ess frac"] == 0.05)
 eps = comparison_summary[subset]["eps"].min()
 
 obs = torch.tensor(
@@ -46,23 +45,25 @@ ninputs = 43
 
 model = MG1Model(obs)
 
-dis = DIS(model, approx_dist, None,
+dis_obj = DIS(model, approx_dist, None,
           importance_sample_size=5000,
           ess_target=250, max_weight=0.1)
-dis.eps = eps
 
+torch.manual_seed(1)
 with torch.no_grad():
-    params = dis.get_sample(100000)
-params = params.sample(10000).detach()
+    weighted_params = dis_obj.get_sample(750000) # Limited by my PC's memory
+weighted_params.update_epsilon(eps)
+params = weighted_params.sample(10000).detach()
 arrival_rate, min_service, service_width, _, _ = model.convert_inputs(params)
 max_service = min_service + service_width
 pars_samp = torch.stack([arrival_rate, min_service, max_service], axis=1)
 dis = pd.DataFrame(pars_samp, columns=['arrival rate', 'min service', 'max service'])
+dis.to_pickle('MG1_DIS_sample.pkl')
 
 # Plot posterior histograms
-bins1 = np.arange(0., 0.2, 0.01)
-bins2 = np.arange(2.01, 5.01, 0.2)
-bins3 = np.arange(3.5, 8., 0.3)
+bins1 = np.linspace(0., 0.2, 20)
+bins2 = np.linspace(0., 6., 20)
+bins3 = np.linspace(0., 10., 20)
 
 f, axes = plt.subplots(2, 3)
 sns.distplot(mcmc['arrival rate'], bins=bins1, kde=False, norm_hist=True,
