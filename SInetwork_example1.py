@@ -72,22 +72,20 @@ dis2 = DIS(model, approx_dist, optimizer,
           importance_sample_size=5000, ess_target=250, max_weight=0.1)
 dis2.pretrain(initial_target=model.initial_target, goal=0.5, report_every=10)
 
-dis2.train(iterations=30)
-
-
+while dis2.eps > 0. or dis2.ess < 250.:
+    dis2.train(iterations=1)
 
 nsamp = 10000
-proposals = dis2.train_sample.particles[0:nsamp]
-params = dis2.is_sample
-prop_infection, prop_contact = model.convert_inputs(proposals)[0:2]
+with torch.no_grad():
+    weighted_params = dis2.get_sample(10*nsamp)
+weighted_params.update_epsilon(0.0)
+params = weighted_params.sample(nsamp).detach()
 sel_infection, sel_contact = model.convert_inputs(params)[0:2]
-
-
 
 "Run the likelihood-based analysis"
 
 modlik = SInetworkLikelihood(obs[0],5, stats.beta(1,1), stats.beta(1,1))
-IS = ImpSamp(modlik, S=100000, size=10000)
+IS = ImpSamp(modlik, S=10*nsamp, size=nsamp)
 sample = IS.sample()
 
 plt.hist(sample[:,0], density=True, alpha=0.6)
