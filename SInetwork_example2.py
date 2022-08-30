@@ -94,12 +94,11 @@ while dis12.eps > 0. or dis12.ess < 250.:
 """
 Results visualization
 """
-nsamp = 10000
+nsamp = 1000
 with torch.no_grad():
-    weighted_params = dis2.get_sample(10*nsamp)
+    weighted_params = dis12.get_sample(20*nsamp)
 weighted_params.update_epsilon(dis12.eps)
 params = weighted_params.sample(nsamp).detach()
-prop_infection, prop_contact = model.convert_inputs(proposals)[0:2]
 sel_infection, sel_contact = model.convert_inputs(params)[0:2]
 
 "plot posterior distributions"
@@ -209,5 +208,3 @@ corr_matrix = np.corrcoef(edge_pars)
 plt.imshow(corr_matrix, cmap="hot")
 plt.colorbar()
 plt.savefig('SI_ex2_corr.pdf')
-plt.pause(0.1)
-
