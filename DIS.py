@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from utils import resample, effective_sample_size
-from models.models import Model
+from models.models import SimulatorModel
 from random import shuffle
 from time import time
 from copy import deepcopy
@@ -12,7 +12,7 @@ class DIS:
                  max_weight=1., l2_penalty=0., nbatches=None):
        """Class to perform a distilled importance sampling analysis
 
-       `model` a `Model` object encapsulating model and prior
+       `model` a `SimulatorModel` object encapsulating model and prior
        `approx_dist` is a trainable distribution which will approximate the target. Any object with `sample` and `log_prob` methods can be used. This allows the user to choose between various libraries for distributions.
        `optimizer` is a torch `Optimizer` object for the variables used in `approx_dist`
        `importance_sample_size` is number of importance samples (`N` in paper)
