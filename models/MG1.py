@@ -1,5 +1,6 @@
 import torch
 from torch.nn.functional import relu
+from torch.distributions import MultivariateNormal
 from models.models import SimulatorModel
 
 class MG1Model(SimulatorModel):
@@ -26,6 +27,8 @@ class MG1Model(SimulatorModel):
         self.max_arrival = max_arrival
         self.max_eps = 10. ## Initial ABC bandwidth
         self.standard_normal = torch.distributions.Normal(0., 1.)
+        n_inputs = 3+2*nobs
+        self.prior = MultivariateNormal(torch.zeros(n_inputs), torch.eye(n_inputs))
         super().__init__(observations, observations_are_data=True)
 
     def log_prior(self, inputs):

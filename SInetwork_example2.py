@@ -54,8 +54,6 @@ ninputs = 57
 
 "Model for analysis"
 model = SInetworkModel( observations=obs,  n_nodes=10, n_inputs=ninputs)
-model.max_eps = 50
-
 
 " Setting up normalising flows "
 base_dist = distributions.StandardNormal(shape=[ninputs])
@@ -71,13 +69,6 @@ transform = transforms.MaskedPiecewiseRationalQuadraticAutoregressiveTransform(
 
 approx_dist = flows.Flow(transform, base_dist)
 
-def init_weights(m):
-    if isinstance(m, torch.nn.Linear):
-        torch.nn.init.normal_(m.weight, std=0.01)
-        m.bias.data.fill_(0.)
-
-approx_dist.apply(init_weights)
-
 optimizer = torch.optim.Adam(
     approx_dist.parameters()
 )
@@ -86,7 +77,7 @@ optimizer = torch.optim.Adam(
 
 dis12 = DIS(model, approx_dist, optimizer,
           importance_sample_size=5000, ess_target=250, max_weight=0.1)
-dis12.pretrain(initial_target=model.initial_target, goal=0.5, report_every=10)
+dis12.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
 
 while dis12.eps > 0. or dis12.ess < 250.:
     dis12.train(iterations=1)

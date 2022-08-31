@@ -12,12 +12,6 @@ import pickle
 import matplotlib.pyplot as plt
 plt.ion()
 
-## Initialise weights, following https://stackoverflow.com/a/49433937
-def init_weights(m):
-    if isinstance(m, torch.nn.Linear):
-        torch.nn.init.normal_(m.weight, std=0.01)
-        m.bias.data.fill_(0.)
-
 def run_sim(is_size, ess_frac):
     ## Synthetic observations used in paper
     ## (originally generated using earlier tensorflow code)
@@ -44,13 +38,13 @@ def run_sim(is_size, ess_frac):
 
     approx_dist = flows.Flow(transform, base_dist)
 
-    approx_dist.apply(init_weights)
-
     optimizer = torch.optim.Adam(approx_dist.parameters())
 
     dis = DIS(model, approx_dist, optimizer,
               importance_sample_size=is_size,
               ess_target=is_size*ess_frac, max_weight=0.1)
+
+    dis.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
 
     while dis.elapsed_time < 60. * 60.: #stop shortly after 60 mins
        dis.train(iterations=1)

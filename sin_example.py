@@ -18,27 +18,6 @@ model = SinModel()
 ## Set up flow for approximate distribution
 num_layers = 4
 base_dist = distributions.StandardNormal(shape=[2])
-# transform = []
-
-# ## This is taken from nflows examples
-# def create_net(in_features, out_features):
-#     return nn.nets.ResidualNet(
-#         in_features, out_features, hidden_features=10, num_blocks=10
-#    )
-
-# for _ in range(num_layers):
-#     transform.append(ReversePermutation(features=2))
-#     ## Next line uses an alternative flow layer
-#     ##transform.append(MaskedAffineAutoregressiveTransform(features=2,
-#     ##  hidden_features=6))
-#     tf = AffineCouplingTransform(
-#         mask=[1,0],
-#         transform_net_create_fn=create_net,
-#         scale_activation=AffineCouplingTransform.GENERAL_SCALE_ACTIVATION
-#     )
-#     transform.append(tf)
-
-# transform = CompositeTransform(transform)
 
 transform = MaskedPiecewiseRationalQuadraticAutoregressiveTransform(
     features = 2,

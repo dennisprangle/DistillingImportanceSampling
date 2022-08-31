@@ -15,12 +15,6 @@ plt.ion()
 
 torch.manual_seed(111)
 
-## Initialise weights, following https://stackoverflow.com/a/49433937
-def init_weights(m):
-    if isinstance(m, torch.nn.Linear):
-        torch.nn.init.normal_(m.weight, std=0.01)
-        m.bias.data.fill_(0.)
-
 is_size = 5000
 ess_frac = 0.05
 
@@ -74,13 +68,13 @@ transform = MaskedPiecewiseRationalQuadraticAutoregressiveTransform(
 
 approx_dist = flows.Flow(transform, base_dist)
 
-approx_dist.apply(init_weights)
-
 optimizer = torch.optim.Adam(approx_dist.parameters())
 
 dis = DIS(model, approx_dist, optimizer,
           importance_sample_size=is_size,
           ess_target=is_size*ess_frac, max_weight=0.1)
+
+dis.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
 
 mins_to_run = 60.
 while dis.elapsed_time < 60. * mins_to_run: #stop shortly after specified time

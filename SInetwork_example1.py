@@ -42,8 +42,6 @@ p_inf = torch.distributions.Normal(0., 1.).cdf(torch.tensor(-0.1000))
 p_con = torch.distributions.Normal(0., 1.).cdf(torch.tensor(-0.4151))
 "Model for analysis"
 model = SInetworkModel( observations=obs,  n_nodes=5, n_inputs=ninputs)
-model.max_eps = 2
-
 
 " Setting up normalising flows "
 base_dist = distributions.StandardNormal(shape=[ninputs])
@@ -70,7 +68,7 @@ optimizer = torch.optim.Adam(
 
 dis2 = DIS(model, approx_dist, optimizer,
           importance_sample_size=5000, ess_target=250, max_weight=0.1)
-dis2.pretrain(initial_target=model.initial_target, goal=0.5, report_every=10)
+dis2.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
 
 while dis2.eps > 0. or dis2.ess < 250.:
     dis2.train(iterations=1)
