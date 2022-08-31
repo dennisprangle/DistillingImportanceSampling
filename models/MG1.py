@@ -25,7 +25,6 @@ class MG1Model(SimulatorModel):
             nobs = observations.shape[0]
         self.nobs = nobs
         self.max_arrival = max_arrival
-        self.max_eps = 10. ## Initial ABC bandwidth
         self.standard_normal = torch.distributions.Normal(0., 1.)
         n_inputs = 3+2*nobs
         self.prior = MultivariateNormal(torch.zeros(n_inputs), torch.eye(n_inputs))

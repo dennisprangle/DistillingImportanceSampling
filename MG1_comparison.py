@@ -44,7 +44,7 @@ def run_sim(is_size, ess_frac):
               importance_sample_size=is_size,
               ess_target=is_size*ess_frac, max_weight=0.1)
 
-    dis.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
+    dis.pretrain(initial_target=model.prior, goal=0.75, report_every=10)
 
     while dis.elapsed_time < 60. * 60.: #stop shortly after 60 mins
        dis.train(iterations=1)

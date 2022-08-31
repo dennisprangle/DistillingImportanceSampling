@@ -34,7 +34,7 @@ optimizer = torch.optim.Adam(approx_dist.parameters())
 dis = DIS(model, approx_dist, optimizer,
           importance_sample_size=4000, ess_target=2000, max_weight=0.1)
 
-dis.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
+dis.pretrain(initial_target=model.prior, goal=0.75, report_every=10)
 
 for i in range(6):
     ## Do some training

@@ -7,10 +7,6 @@ from models.weighted_sample import SimulatorWeightedSample, LikelihoodWeightedSa
 # Several subclasses are at the end of the file.
 
 class Model:
-    def __init__():
-        self.max_eps = 1. ## Value of epsilon for initial tempering
-                          ## Some subclasses will need to override this
-
     """Encapsulates model and prior"""
     def run(self, inputs, log_proposal):
         """Perform several model samples and return results as `WeightedSample` object

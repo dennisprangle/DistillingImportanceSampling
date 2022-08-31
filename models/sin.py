@@ -7,7 +7,6 @@ from models.models import SimulatorModel
 class SinModel(SimulatorModel):
     """A simple sinusoidal model"""
     def __init__(self, observations=torch.zeros([1,1])):
-        self.max_eps = 10. ## Initial ABC bandwidth
         self.prior = Uniform(
             low = torch.tensor([-np.pi, -np.pi]),
             high = torch.tensor([np.pi, np.pi]),

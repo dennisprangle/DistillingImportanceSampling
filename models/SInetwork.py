@@ -38,8 +38,7 @@ class SInetworkModel(SimulatorModel):
             infection_start_point = torch.Tensor(observations[0][0])
             time_observed = list(range(len(observations[0])))
             n_timestep = len(time_observed)  
-            
-        self.max_eps = 2. #Initial ABC bandwidth
+
         self.infection_start_point = infection_start_point
         self.time_observed = time_observed
         self.standard_normal = torch.distributions.Normal(0., 1.)

@@ -43,29 +43,6 @@ transform = MaskedPiecewiseRationalQuadraticAutoregressiveTransform(
 )
 ## End of spline flow
 
-## Real NVP flow
-# mask = torch.cat([torch.ones(21), torch.zeros(22)], dim=0)
-# num_layers = 16
-# transform = []
-
-# def create_net(in_features, out_features):
-#     return nn.nets.ResidualNet(
-#         in_features, out_features, hidden_features=20, num_blocks=10
-#     )
-    
-# for _ in range(num_layers):
-#     transform.append(RandomPermutation(features=ninputs))
-#     tf = AffineCouplingTransform(
-#         mask=mask,
-#         transform_net_create_fn=create_net,
-#         scale_activation=lambda x : (torch.exp(x) + 1e-3).clamp(0, 3)
-#     )
-#     transform.append(tf)
-
-# transform = CompositeTransform(transform)
-## End of real NVP flow
-
-
 approx_dist = flows.Flow(transform, base_dist)
 
 optimizer = torch.optim.Adam(approx_dist.parameters())
@@ -74,7 +51,7 @@ dis = DIS(model, approx_dist, optimizer,
           importance_sample_size=is_size,
           ess_target=is_size*ess_frac, max_weight=0.1)
 
-dis.pretrain(initial_target=model.prior, goal=0.5, report_every=10)
+dis.pretrain(initial_target=model.prior, goal=0.75, report_every=10)
 
 mins_to_run = 60.
 while dis.elapsed_time < 60. * mins_to_run: #stop shortly after specified time

@@ -39,7 +39,7 @@ class DIS:
        else:
            self.nbatches = nbatches
        self.iterations_done = 0
-       self.eps = model.max_eps
+       self.eps = np.infty
        self.history = {
            'elapsed_time':[],
            'epsilon':[],
@@ -67,7 +67,7 @@ class DIS:
         """Calculate loss under parameters from current target distribution"""
         return -torch.sum(self.approx_dist.log_prob(params))
 
-    def pretrain(self, initial_target, goal=0.9, report_every=100):
+    def pretrain(self, initial_target, goal=0.75, report_every=100):
         """Train approximation to match an initial target
 
         `initial_target` distribution. Any object with `log_prob` and `sample` method can be used. This allows the user to choose between various libraries for distributions.

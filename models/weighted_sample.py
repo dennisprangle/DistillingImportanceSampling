@@ -48,7 +48,10 @@ class WeightedSample:
 
         lower = 0.
         for i in range(bisection_its):
-            eps_guess = (lower + upper) / 2.
+            if upper == np.inf:
+                eps_guess = lower + 100.
+            else:
+                eps_guess = (lower + upper) / 2.
             w = self.get_alternate_weights(eps_guess)
             ess = effective_sample_size(w)
             if ess > target_ess:
