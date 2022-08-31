@@ -9,7 +9,7 @@ from copy import deepcopy
 class DIS:
     def __init__(self, model, approx_dist, optimizer, importance_sample_size,
                  ess_target, max_bisection_its=50, batch_size=100,
-                 max_weight=1., l2_penalty=0., nbatches=None):
+                 max_weight=1., nbatches=None):
        """Class to perform a distilled importance sampling analysis
 
        `model` a `SimulatorModel` object encapsulating model and prior
@@ -20,7 +20,6 @@ class DIS:
        `max_bisection_its` controls the ESS selection algorithm
        `batch_size` is training batch size (`n` in paper)
        `max_weight` is the maximum normalised weight allowed after clipping (omega in paper)
-       `l2_penalty` is L2 penalty applied to parameters (excluding bias)
        `nbatches` is how many training batches to create (`B` in paper). Defaults to `ess_target` / `batch_size` (rounded).
        """
        self.start_time = time()
@@ -33,7 +32,6 @@ class DIS:
        self.max_bisection_its = max_bisection_its
        self.batch_size = batch_size
        self.max_weight = max_weight
-       self.l2_penalty = l2_penalty
        if nbatches is None:
            self.nbatches = np.ceil(ess_target / batch_size).astype('int')
        else:
@@ -112,9 +110,6 @@ class DIS:
             for _ in range(self.nbatches):
                 batch = self.train_sample.sample(self.batch_size).detach()
                 loss = S * self.get_loss(batch)
-                for name, par in self.approx_dist.named_parameters():
-                    if 'bias' not in name:
-                        loss += torch.pow(par, 2.0).sum() * self.l2_penalty
                 total_loss += loss.detach()
                 self.optimizer.zero_grad()
                 loss.backward()
