@@ -50,7 +50,7 @@ class MG1Model(SimulatorModel):
 
         Alternatively, if `inputs` has 3 columns, only parameters are calculated, with `None` returned for the latent variables.
         """
-        inputs_u = self.standard_normal.cdf(inputs)
+        inputs_u = self.standard_normal.cdf(inputs) # TODO: update to use utils.norm_to_unif instead
         ## Get standard form of parameters
         arrival_rate = inputs_u[:,0] / 3.
         min_service = inputs_u[:,1] * 10.
