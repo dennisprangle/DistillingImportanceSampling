@@ -78,43 +78,48 @@ class WeightedSample:
             w = self.weights * torch.exp(sqd_norm*a)
 
         wsum = w.sum()
-        if not wsum > 0.:
-            raise ValueError(f'Sum of weights is {wsum} but should be positive')
+        if wsum > 0.:
+            w /= wsum
 
-        return w / wsum
+        return w
 
-    def find_eps(self, target_ess, upper, bisection_its=50):
+    def find_eps(self, target_ess, upper, min_bisection_its=50, max_ess_error=0.01):
         """Return epsilon value <= `upper` giving ess matching `target_ess` as closely as possible
 
-        Bisection search is performed using `bisection_its` iterations
+        Bisection search is performed using at least `min_bisection_its` iterations.
+        To terminate the ESS must also be within `max_ess_error` of `target_ess`.
         """
+        # Return upper bound if it can't achieve target ESS
         w = self.get_alternate_weights(upper)
         ess = effective_sample_size(w)
         if ess < target_ess:
             return upper
 
+        # Return lower bound (zero) if it can achieve target ESS
         lower = 0.
-        for i in range(bisection_its):
+        w = self.get_alternate_weights(lower)
+        ess = effective_sample_size(w)
+        if ess > target_ess:
+            return lower
+
+        # Perform bisection
+        ess_diff = ess - target_ess
+        iteration = 0
+        while iteration <= min_bisection_its and np.abs(ess_diff) > max_ess_error:
             if upper == np.inf:
-                eps_guess = lower + 100.
+                middle = lower + 100.
             else:
-                eps_guess = (lower + upper) / 2.
-            w = self.get_alternate_weights(eps_guess)
+                middle = (lower + upper) / 2.
+            w = self.get_alternate_weights(middle)
             ess = effective_sample_size(w)
-            if ess > target_ess:
-                upper = eps_guess
+            ess_diff = ess - target_ess
+            if ess_diff > 0.:
+                upper = middle
             else:
-                lower = eps_guess
+                lower = middle
+            iteration += 1
 
-        # Consider returning eps=0 if it's still an endpoint
-        if lower == 0.:
-            w = self.get_alternate_weights(0.)
-            ess = effective_sample_size(w)
-            if ess > target_ess:
-                return 0.
-
-        # Be conservative by returning upper end of remaining range
-        return upper
+        return middle
 
     def truncate_weights(self, max_weight):
         """Truncate weights in-place
