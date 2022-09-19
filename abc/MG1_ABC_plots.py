@@ -64,7 +64,7 @@ abc_sum = abc_summaries.to_numpy()
 abc_nosum = abc_no_summaries.to_numpy()
 mcmc_np = mcmc.to_numpy()
 mcmc_np = mcmc_np[1000:100000:99, (2,0,1)] # Remove burn-in, thin and swap columns to match abc output
-dis_np = np.load("../MG1_pars_N5000_frac0.05.npy")
+dis_np = pd.read_pickle("../MG1_DIS_sample.pkl").to_numpy()
 
 print("MCMC, means ", np.mean(mcmc_np, axis=0))
 print("ABC with summaries, means ", np.mean(abc_sum, axis=0))

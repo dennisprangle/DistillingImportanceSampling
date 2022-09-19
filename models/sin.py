@@ -1,37 +1,25 @@
 import torch
-from torch.distributions import MultivariateNormal
 import numpy as np
-from models.models import Model
-from models.weighted_sample import InitialFinalWeightedSample
+from torch.distributions import MultivariateNormal
+from models.models import SimulatorModel
+from utils import norm_to_unif
 
-class SinModel(Model):
+class SinModel(SimulatorModel):
     """A simple sinusoidal model"""
-    def __init__(self):
-        self.max_eps = 1.
-        self.initial_target = MultivariateNormal(torch.zeros(2), 4*torch.eye(2))
-        ## i.e. two independent N(0,2^2) distributions
+    def __init__(self, observations=torch.zeros([1,1])):
+        self.standard_normal = torch.distributions.Normal(0., 1.)
+        self.prior = MultivariateNormal(torch.zeros(2), torch.eye(2))
+        super().__init__(observations, observations_are_data=True)
 
-    def log_initial_target(self, inputs):
-        """Calculate (unnormalised) log initial target
+    def log_prior(self, inputs):
+        """Calculate vector of log prior densities of `inputs`
 
-        This is a bivariate N(0,4I) density"""
-        return self.initial_target.log_prob(inputs)
-
-    def log_final_target(self, inputs):
-        """Calculate (unnormalised) log final target"""
-        th1 = inputs[:,0]
-        th2 = inputs[:,1]
-        n = th1.shape[0]
-        p = torch.where(torch.abs(th1) < np.pi,
-                        torch.ones(n), torch.zeros(n))
-        p = torch.log(p)
-        p += -100. * torch.pow((th2 - torch.sin(th1)), 2)
-        return p
-
-    def run(self, inputs, log_proposal):
-        return InitialFinalWeightedSample(
-            inputs,
-            log_proposal,
-            self.log_initial_target(inputs),
-            self.log_final_target(inputs)
-        )
+        For this model they are independent N(0,1)"""
+        return torch.sum(self.standard_normal.log_prob(inputs), dim=1)
+    
+    def simulator(self, inputs):
+        """Perform simulations"""
+        theta = norm_to_unif(inputs[:,0], -np.pi, np.pi)
+        x = inputs[:,1]
+        y = -torch.sin(theta) + x
+        return y.reshape([-1,1])

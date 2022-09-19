@@ -1,782 +1,1038 @@
-Pretraining iterations 10, loss 8111.2, ESS (from 100 samples) 42.5
-Pretraining iterations 20, loss 8187.9, ESS (from 100 samples) 42.6
-Pretraining iterations 30, loss 8085.0, ESS (from 100 samples) 52.3
-Iteration  1, epsilon 1.931, ESS 250.0, elapsed mins 0.4
-Iteration  2, epsilon 1.752, ESS 250.0, elapsed mins 0.7
-Iteration  3, epsilon 1.520, ESS 250.0, elapsed mins 1.1
-Iteration  4, epsilon 1.520, ESS 220.3, elapsed mins 1.5
-Iteration  5, epsilon 1.520, ESS 214.7, elapsed mins 1.9
-Iteration  6, epsilon 1.474, ESS 250.0, elapsed mins 2.4
-Iteration  7, epsilon 1.274, ESS 250.0, elapsed mins 2.8
-Iteration  8, epsilon 1.274, ESS 105.2, elapsed mins 3.3
-Iteration  9, epsilon 1.274, ESS 135.2, elapsed mins 3.8
-Iteration 10, epsilon 1.274, ESS 165.9, elapsed mins 4.3
-Iteration 11, epsilon 1.274, ESS 238.5, elapsed mins 4.9
-Iteration 12, epsilon 1.274, ESS 178.9, elapsed mins 5.4
-Iteration 13, epsilon 1.256, ESS 250.0, elapsed mins 5.9
-Iteration 14, epsilon 1.256, ESS 86.3, elapsed mins 6.4
-Iteration 15, epsilon 1.226, ESS 250.0, elapsed mins 7.0
-Iteration 16, epsilon 1.220, ESS 250.0, elapsed mins 7.5
-Iteration 17, epsilon 1.220, ESS 235.4, elapsed mins 8.1
-Iteration 18, epsilon 1.190, ESS 250.0, elapsed mins 8.6
-Iteration 19, epsilon 1.190, ESS 172.5, elapsed mins 9.2
-Iteration 20, epsilon 1.190, ESS 241.6, elapsed mins 9.8
-Iteration 21, epsilon 1.190, ESS 216.6, elapsed mins 10.5
-Iteration 22, epsilon 1.190, ESS 249.6, elapsed mins 11.0
-Iteration 23, epsilon 1.190, ESS 250.0, elapsed mins 11.6
-Iteration 24, epsilon 1.190, ESS 213.3, elapsed mins 12.2
-Iteration 25, epsilon 1.135, ESS 250.0, elapsed mins 12.8
-Iteration 26, epsilon 1.095, ESS 250.0, elapsed mins 13.3
-Iteration 27, epsilon 1.009, ESS 250.0, elapsed mins 13.9
-Iteration 28, epsilon 1.009, ESS 207.6, elapsed mins 14.5
-Iteration 29, epsilon 1.009, ESS 200.9, elapsed mins 15.1
-Iteration 30, epsilon 1.009, ESS 173.6, elapsed mins 15.6
-Iteration 31, epsilon 1.009, ESS 76.5, elapsed mins 16.2
-Iteration 32, epsilon 1.009, ESS 238.8, elapsed mins 16.8
-Iteration 33, epsilon 1.009, ESS 146.5, elapsed mins 17.4
+Pretraining iterations 10, loss 9629.1, ESS (from 100 samples) 2.1
+Pretraining iterations 20, loss 9052.5, ESS (from 100 samples) 1.2
+Pretraining iterations 30, loss 8638.9, ESS (from 100 samples) 8.1
+Pretraining iterations 40, loss 8495.7, ESS (from 100 samples) 9.8
+Pretraining iterations 50, loss 8462.7, ESS (from 100 samples) 8.9
+Pretraining iterations 60, loss 8355.8, ESS (from 100 samples) 15.3
+Pretraining iterations 70, loss 8222.9, ESS (from 100 samples) 3.1
+Pretraining iterations 80, loss 8207.4, ESS (from 100 samples) 24.1
+Pretraining iterations 90, loss 8238.9, ESS (from 100 samples) 28.8
+Pretraining iterations 100, loss 8199.0, ESS (from 100 samples) 6.8
+Pretraining iterations 110, loss 8182.7, ESS (from 100 samples) 13.0
+Pretraining iterations 120, loss 8129.5, ESS (from 100 samples) 34.5
+Pretraining iterations 130, loss 8172.5, ESS (from 100 samples) 39.8
+Pretraining iterations 140, loss 8128.6, ESS (from 100 samples) 33.7
+Pretraining iterations 150, loss 8180.8, ESS (from 100 samples) 41.8
+Pretraining iterations 160, loss 8114.8, ESS (from 100 samples) 52.4
+Pretraining iterations 170, loss 8131.4, ESS (from 100 samples) 39.1
+Pretraining iterations 180, loss 8078.4, ESS (from 100 samples) 32.0
+Pretraining iterations 190, loss 8119.0, ESS (from 100 samples) 43.0
+Pretraining iterations 200, loss 8174.7, ESS (from 100 samples) 42.9
+Pretraining iterations 210, loss 8121.2, ESS (from 100 samples) 53.2
+Pretraining iterations 220, loss 8192.5, ESS (from 100 samples) 53.1
+Pretraining iterations 230, loss 8066.2, ESS (from 100 samples) 40.4
+Pretraining iterations 240, loss 8120.6, ESS (from 100 samples) 48.1
+Pretraining iterations 250, loss 8176.1, ESS (from 100 samples) 58.4
+Pretraining iterations 260, loss 8161.2, ESS (from 100 samples) 61.0
+Pretraining iterations 270, loss 8106.7, ESS (from 100 samples) 58.0
+Pretraining iterations 280, loss 8158.5, ESS (from 100 samples) 59.8
+Pretraining iterations 290, loss 8196.9, ESS (from 100 samples) 59.7
+Pretraining iterations 300, loss 8092.8, ESS (from 100 samples) 64.2
+Pretraining iterations 310, loss 8080.8, ESS (from 100 samples) 67.0
+Pretraining iterations 320, loss 8235.9, ESS (from 100 samples) 59.2
+Pretraining iterations 330, loss 8101.7, ESS (from 100 samples) 62.3
+Pretraining iterations 340, loss 8102.0, ESS (from 100 samples) 42.0
+Pretraining iterations 350, loss 8207.5, ESS (from 100 samples) 64.6
+Pretraining iterations 360, loss 8197.7, ESS (from 100 samples) 39.0
+Pretraining iterations 370, loss 8082.9, ESS (from 100 samples) 65.7
+Pretraining iterations 380, loss 8039.8, ESS (from 100 samples) 56.8
+Pretraining iterations 390, loss 8107.8, ESS (from 100 samples) 61.1
+Pretraining iterations 400, loss 8239.7, ESS (from 100 samples) 70.8
+Pretraining iterations 410, loss 8108.8, ESS (from 100 samples) 63.9
+Pretraining iterations 420, loss 8038.1, ESS (from 100 samples) 41.1
+Pretraining iterations 430, loss 8077.1, ESS (from 100 samples) 60.9
+Pretraining iterations 440, loss 8066.6, ESS (from 100 samples) 66.5
+Pretraining iterations 450, loss 8085.4, ESS (from 100 samples) 68.4
+Pretraining iterations 460, loss 8110.1, ESS (from 100 samples) 63.0
+Pretraining iterations 470, loss 8194.1, ESS (from 100 samples) 66.7
+Pretraining iterations 480, loss 8222.0, ESS (from 100 samples) 74.1
+Pretraining iterations 490, loss 8191.6, ESS (from 100 samples) 68.2
+Pretraining iterations 500, loss 8071.0, ESS (from 100 samples) 69.3
+Pretraining iterations 510, loss 8058.9, ESS (from 100 samples) 74.0
+Pretraining iterations 520, loss 8116.5, ESS (from 100 samples) 65.1
+Pretraining iterations 530, loss 8077.8, ESS (from 100 samples) 62.0
+Pretraining iterations 540, loss 8169.9, ESS (from 100 samples) 77.3
+Iteration  1, epsilon 1.729, ESS (untruncated) 250.0, elapsed mins 0.6
+Iteration  2, epsilon 1.587, ESS (untruncated) 250.0, elapsed mins 1.0
+Iteration  3, epsilon 1.457, ESS (untruncated) 250.0, elapsed mins 1.3
+Iteration  4, epsilon 1.439, ESS (untruncated) 250.0, elapsed mins 1.7
+Iteration  5, epsilon 1.270, ESS (untruncated) 250.0, elapsed mins 2.2
+Iteration  6, epsilon 1.270, ESS (untruncated) 183.3, elapsed mins 2.6
+Iteration  7, epsilon 1.270, ESS (untruncated) 133.5, elapsed mins 3.1
+Iteration  8, epsilon 1.183, ESS (untruncated) 250.0, elapsed mins 3.6
+Iteration  9, epsilon 1.183, ESS (untruncated) 209.9, elapsed mins 4.1
 Truncating 1 weights
-Iteration 34, epsilon 1.009, ESS 71.7, elapsed mins 18.0
-Iteration 35, epsilon 1.009, ESS 150.6, elapsed mins 18.5
-Iteration 36, epsilon 1.009, ESS 147.1, elapsed mins 19.1
-Iteration 37, epsilon 1.009, ESS 222.6, elapsed mins 19.7
-Iteration 38, epsilon 0.895, ESS 250.0, elapsed mins 20.3
-Truncating 1 weights
-Iteration 39, epsilon 0.895, ESS 64.9, elapsed mins 20.8
-Iteration 40, epsilon 0.895, ESS 159.9, elapsed mins 21.4
-Iteration 41, epsilon 0.895, ESS 214.4, elapsed mins 22.1
-Iteration 42, epsilon 0.895, ESS 175.8, elapsed mins 22.6
-Iteration 43, epsilon 0.895, ESS 116.3, elapsed mins 23.2
-Iteration 44, epsilon 0.876, ESS 250.0, elapsed mins 23.8
-Iteration 45, epsilon 0.876, ESS 157.9, elapsed mins 24.3
-Iteration 46, epsilon 0.876, ESS 107.1, elapsed mins 24.9
-Iteration 47, epsilon 0.876, ESS 177.0, elapsed mins 25.5
-Truncating 1 weights
-Iteration 48, epsilon 0.876, ESS 71.6, elapsed mins 26.0
-Iteration 49, epsilon 0.876, ESS 248.0, elapsed mins 26.6
-Iteration 50, epsilon 0.876, ESS 156.8, elapsed mins 27.1
-Iteration 51, epsilon 0.748, ESS 250.0, elapsed mins 27.7
+Iteration 10, epsilon 1.183, ESS (untruncated) 21.4, elapsed mins 4.7
 Truncating 2 weights
-Iteration 52, epsilon 0.748, ESS 38.7, elapsed mins 28.2
+Iteration 11, epsilon 1.183, ESS (untruncated) 24.0, elapsed mins 5.2
+Iteration 12, epsilon 1.183, ESS (untruncated) 196.4, elapsed mins 5.7
+Iteration 13, epsilon 1.183, ESS (untruncated) 170.4, elapsed mins 6.3
+Iteration 14, epsilon 1.183, ESS (untruncated) 165.1, elapsed mins 6.8
+Iteration 15, epsilon 1.183, ESS (untruncated) 203.1, elapsed mins 7.3
 Truncating 1 weights
-Iteration 53, epsilon 0.748, ESS 65.8, elapsed mins 28.7
-Iteration 54, epsilon 0.748, ESS 174.4, elapsed mins 29.3
-Iteration 55, epsilon 0.748, ESS 108.7, elapsed mins 29.8
-Iteration 56, epsilon 0.748, ESS 102.3, elapsed mins 30.3
-Iteration 57, epsilon 0.748, ESS 193.5, elapsed mins 30.9
-Iteration 58, epsilon 0.748, ESS 133.1, elapsed mins 31.4
-Iteration 59, epsilon 0.711, ESS 250.0, elapsed mins 32.0
-Iteration 60, epsilon 0.711, ESS 102.1, elapsed mins 32.5
-Iteration 61, epsilon 0.678, ESS 250.0, elapsed mins 33.1
-Iteration 62, epsilon 0.678, ESS 207.7, elapsed mins 33.7
-Iteration 63, epsilon 0.678, ESS 141.1, elapsed mins 34.3
-Iteration 64, epsilon 0.678, ESS 180.3, elapsed mins 34.9
+Iteration 16, epsilon 1.183, ESS (untruncated) 45.3, elapsed mins 7.9
+Iteration 17, epsilon 1.165, ESS (untruncated) 250.0, elapsed mins 8.4
+Iteration 18, epsilon 1.165, ESS (untruncated) 120.7, elapsed mins 8.9
+Iteration 19, epsilon 1.165, ESS (untruncated) 159.7, elapsed mins 9.4
+Iteration 20, epsilon 1.165, ESS (untruncated) 238.8, elapsed mins 10.0
+Iteration 21, epsilon 1.111, ESS (untruncated) 250.0, elapsed mins 10.5
+Iteration 22, epsilon 1.111, ESS (untruncated) 176.2, elapsed mins 11.0
+Iteration 23, epsilon 1.111, ESS (untruncated) 85.7, elapsed mins 11.6
+Iteration 24, epsilon 1.111, ESS (untruncated) 143.4, elapsed mins 12.1
+Iteration 25, epsilon 1.111, ESS (untruncated) 135.5, elapsed mins 12.6
+Iteration 26, epsilon 1.077, ESS (untruncated) 250.0, elapsed mins 13.2
+Iteration 27, epsilon 1.077, ESS (untruncated) 75.1, elapsed mins 13.7
+Iteration 28, epsilon 1.077, ESS (untruncated) 188.0, elapsed mins 14.3
+Iteration 29, epsilon 0.943, ESS (untruncated) 250.0, elapsed mins 14.8
+Iteration 30, epsilon 0.943, ESS (untruncated) 129.8, elapsed mins 15.3
 Truncating 1 weights
-Iteration 65, epsilon 0.678, ESS 70.5, elapsed mins 35.4
-Iteration 66, epsilon 0.678, ESS 109.5, elapsed mins 36.0
-Iteration 67, epsilon 0.638, ESS 250.0, elapsed mins 36.5
-Iteration 68, epsilon 0.638, ESS 89.7, elapsed mins 37.0
-Iteration 69, epsilon 0.638, ESS 135.9, elapsed mins 37.5
-Iteration 70, epsilon 0.638, ESS 181.6, elapsed mins 38.1
-Iteration 71, epsilon 0.638, ESS 209.7, elapsed mins 38.6
-Iteration 72, epsilon 0.638, ESS 240.0, elapsed mins 39.1
-Iteration 73, epsilon 0.638, ESS 204.6, elapsed mins 39.7
-Iteration 74, epsilon 0.638, ESS 208.7, elapsed mins 40.2
-Iteration 75, epsilon 0.558, ESS 250.0, elapsed mins 40.7
-Iteration 76, epsilon 0.558, ESS 65.4, elapsed mins 41.2
-Iteration 77, epsilon 0.558, ESS 179.0, elapsed mins 41.7
-Iteration 78, epsilon 0.558, ESS 129.6, elapsed mins 42.3
+Iteration 31, epsilon 0.943, ESS (untruncated) 49.2, elapsed mins 15.9
+Iteration 32, epsilon 0.943, ESS (untruncated) 216.4, elapsed mins 16.5
+Iteration 33, epsilon 0.943, ESS (untruncated) 211.6, elapsed mins 17.0
+Iteration 34, epsilon 0.943, ESS (untruncated) 147.5, elapsed mins 17.6
+Iteration 35, epsilon 0.943, ESS (untruncated) 98.2, elapsed mins 18.1
+Iteration 36, epsilon 0.943, ESS (untruncated) 107.9, elapsed mins 18.7
+Iteration 37, epsilon 0.943, ESS (untruncated) 160.9, elapsed mins 19.2
+Iteration 38, epsilon 0.943, ESS (untruncated) 80.9, elapsed mins 19.8
+Iteration 39, epsilon 0.943, ESS (untruncated) 84.2, elapsed mins 20.3
+Iteration 40, epsilon 0.943, ESS (untruncated) 225.8, elapsed mins 20.8
+Iteration 41, epsilon 0.943, ESS (untruncated) 199.5, elapsed mins 21.4
+Iteration 42, epsilon 0.943, ESS (untruncated) 124.8, elapsed mins 21.9
+Iteration 43, epsilon 0.943, ESS (untruncated) 183.7, elapsed mins 22.5
+Iteration 44, epsilon 0.943, ESS (untruncated) 100.2, elapsed mins 23.0
+Iteration 45, epsilon 0.943, ESS (untruncated) 90.7, elapsed mins 23.6
+Iteration 46, epsilon 0.943, ESS (untruncated) 147.8, elapsed mins 24.1
+Iteration 47, epsilon 0.943, ESS (untruncated) 143.4, elapsed mins 24.7
+Iteration 48, epsilon 0.943, ESS (untruncated) 212.3, elapsed mins 25.2
 Truncating 1 weights
-Iteration 79, epsilon 0.558, ESS 53.9, elapsed mins 42.8
-Iteration 80, epsilon 0.558, ESS 103.1, elapsed mins 43.3
-Iteration 81, epsilon 0.558, ESS 98.8, elapsed mins 43.9
-Iteration 82, epsilon 0.558, ESS 209.9, elapsed mins 44.4
-Iteration 83, epsilon 0.558, ESS 143.3, elapsed mins 44.9
-Iteration 84, epsilon 0.558, ESS 151.6, elapsed mins 45.4
-Iteration 85, epsilon 0.558, ESS 109.8, elapsed mins 45.9
-Iteration 86, epsilon 0.558, ESS 117.1, elapsed mins 46.4
-Iteration 87, epsilon 0.558, ESS 58.5, elapsed mins 46.9
+Iteration 49, epsilon 0.943, ESS (untruncated) 33.0, elapsed mins 25.7
+Iteration 50, epsilon 0.943, ESS (untruncated) 236.1, elapsed mins 26.3
+Iteration 51, epsilon 0.943, ESS (untruncated) 121.2, elapsed mins 26.8
+Iteration 52, epsilon 0.943, ESS (untruncated) 159.2, elapsed mins 27.3
+Iteration 53, epsilon 0.885, ESS (untruncated) 250.0, elapsed mins 27.9
+Iteration 54, epsilon 0.885, ESS (untruncated) 204.7, elapsed mins 28.4
+Iteration 55, epsilon 0.881, ESS (untruncated) 250.0, elapsed mins 29.0
+Iteration 56, epsilon 0.881, ESS (untruncated) 148.8, elapsed mins 29.5
+Iteration 57, epsilon 0.727, ESS (untruncated) 250.0, elapsed mins 30.1
+Iteration 58, epsilon 0.727, ESS (untruncated) 224.1, elapsed mins 30.6
+Iteration 59, epsilon 0.727, ESS (untruncated) 249.1, elapsed mins 31.2
+Iteration 60, epsilon 0.727, ESS (untruncated) 96.5, elapsed mins 31.7
+Iteration 61, epsilon 0.727, ESS (untruncated) 131.7, elapsed mins 32.3
+Iteration 62, epsilon 0.685, ESS (untruncated) 250.0, elapsed mins 32.8
+Iteration 63, epsilon 0.685, ESS (untruncated) 187.2, elapsed mins 33.4
+Iteration 64, epsilon 0.685, ESS (untruncated) 157.6, elapsed mins 33.9
+Iteration 65, epsilon 0.656, ESS (untruncated) 250.0, elapsed mins 34.4
 Truncating 1 weights
-Iteration 88, epsilon 0.558, ESS 77.3, elapsed mins 47.4
-Iteration 89, epsilon 0.558, ESS 130.3, elapsed mins 47.9
+Iteration 66, epsilon 0.656, ESS (untruncated) 50.2, elapsed mins 34.9
+Iteration 67, epsilon 0.656, ESS (untruncated) 132.2, elapsed mins 35.4
+Iteration 68, epsilon 0.656, ESS (untruncated) 155.2, elapsed mins 35.9
+Iteration 69, epsilon 0.656, ESS (untruncated) 181.3, elapsed mins 36.4
+Iteration 70, epsilon 0.656, ESS (untruncated) 243.8, elapsed mins 36.9
+Iteration 71, epsilon 0.656, ESS (untruncated) 152.7, elapsed mins 37.4
 Truncating 1 weights
-Iteration 90, epsilon 0.558, ESS 44.3, elapsed mins 48.4
+Iteration 72, epsilon 0.656, ESS (untruncated) 41.8, elapsed mins 38.0
+Iteration 73, epsilon 0.656, ESS (untruncated) 207.1, elapsed mins 38.5
+Iteration 74, epsilon 0.656, ESS (untruncated) 100.0, elapsed mins 39.0
 Truncating 1 weights
-Iteration 91, epsilon 0.558, ESS 69.2, elapsed mins 48.9
-Iteration 92, epsilon 0.558, ESS 177.4, elapsed mins 49.4
+Iteration 75, epsilon 0.656, ESS (untruncated) 53.9, elapsed mins 39.6
+Iteration 76, epsilon 0.656, ESS (untruncated) 81.6, elapsed mins 40.1
+Iteration 77, epsilon 0.656, ESS (untruncated) 56.1, elapsed mins 40.6
+Iteration 78, epsilon 0.656, ESS (untruncated) 201.0, elapsed mins 41.1
+Iteration 79, epsilon 0.656, ESS (untruncated) 240.5, elapsed mins 41.7
+Iteration 80, epsilon 0.656, ESS (untruncated) 200.7, elapsed mins 42.2
 Truncating 1 weights
-Iteration 93, epsilon 0.558, ESS 62.5, elapsed mins 49.9
-Iteration 94, epsilon 0.558, ESS 162.3, elapsed mins 50.4
-Iteration 95, epsilon 0.558, ESS 129.7, elapsed mins 50.9
-Iteration 96, epsilon 0.558, ESS 136.7, elapsed mins 51.4
+Iteration 81, epsilon 0.656, ESS (untruncated) 18.1, elapsed mins 42.7
+Iteration 82, epsilon 0.656, ESS (untruncated) 162.7, elapsed mins 43.2
+Iteration 83, epsilon 0.656, ESS (untruncated) 206.6, elapsed mins 43.8
+Iteration 84, epsilon 0.656, ESS (untruncated) 107.2, elapsed mins 44.3
+Iteration 85, epsilon 0.656, ESS (untruncated) 177.1, elapsed mins 44.8
+Iteration 86, epsilon 0.656, ESS (untruncated) 176.2, elapsed mins 45.3
+Iteration 87, epsilon 0.656, ESS (untruncated) 156.5, elapsed mins 45.9
+Iteration 88, epsilon 0.656, ESS (untruncated) 82.6, elapsed mins 46.4
+Iteration 89, epsilon 0.534, ESS (untruncated) 250.0, elapsed mins 46.9
 Truncating 1 weights
-Iteration 97, epsilon 0.558, ESS 67.3, elapsed mins 51.8
-Iteration 98, epsilon 0.558, ESS 185.9, elapsed mins 52.3
-Iteration 99, epsilon 0.558, ESS 135.2, elapsed mins 52.8
+Iteration 90, epsilon 0.534, ESS (untruncated) 44.9, elapsed mins 47.4
+Iteration 91, epsilon 0.534, ESS (untruncated) 67.9, elapsed mins 47.9
+Iteration 92, epsilon 0.534, ESS (untruncated) 45.7, elapsed mins 48.5
+Iteration 93, epsilon 0.534, ESS (untruncated) 56.1, elapsed mins 49.0
+Iteration 94, epsilon 0.534, ESS (untruncated) 65.5, elapsed mins 49.4
 Truncating 1 weights
-Iteration 100, epsilon 0.558, ESS 60.0, elapsed mins 53.3
-Iteration 101, epsilon 0.558, ESS 102.3, elapsed mins 53.9
+Iteration 95, epsilon 0.534, ESS (untruncated) 19.5, elapsed mins 49.9
+Iteration 96, epsilon 0.534, ESS (untruncated) 67.3, elapsed mins 50.4
+Iteration 97, epsilon 0.534, ESS (untruncated) 90.0, elapsed mins 50.8
+Iteration 98, epsilon 0.534, ESS (untruncated) 80.0, elapsed mins 51.3
 Truncating 1 weights
-Iteration 102, epsilon 0.558, ESS 78.1, elapsed mins 54.4
+Iteration 99, epsilon 0.534, ESS (untruncated) 50.9, elapsed mins 51.8
+Iteration 100, epsilon 0.534, ESS (untruncated) 111.9, elapsed mins 52.2
+Iteration 101, epsilon 0.534, ESS (untruncated) 202.9, elapsed mins 52.7
+Iteration 102, epsilon 0.534, ESS (untruncated) 88.0, elapsed mins 53.2
+Iteration 103, epsilon 0.534, ESS (untruncated) 79.7, elapsed mins 53.8
+Iteration 104, epsilon 0.534, ESS (untruncated) 189.1, elapsed mins 54.2
 Truncating 1 weights
-Iteration 103, epsilon 0.558, ESS 52.0, elapsed mins 54.9
-Iteration 104, epsilon 0.554, ESS 250.0, elapsed mins 55.4
+Iteration 105, epsilon 0.534, ESS (untruncated) 59.0, elapsed mins 54.7
 Truncating 1 weights
-Iteration 105, epsilon 0.554, ESS 53.3, elapsed mins 55.9
-Iteration 106, epsilon 0.554, ESS 184.2, elapsed mins 56.3
-Iteration 107, epsilon 0.554, ESS 108.6, elapsed mins 56.8
-Iteration 108, epsilon 0.554, ESS 163.0, elapsed mins 57.3
-Iteration 109, epsilon 0.552, ESS 250.0, elapsed mins 57.8
-Iteration 110, epsilon 0.552, ESS 132.3, elapsed mins 58.3
-Iteration 111, epsilon 0.552, ESS 174.6, elapsed mins 58.8
-Iteration 112, epsilon 0.552, ESS 199.0, elapsed mins 59.3
-Iteration 113, epsilon 0.552, ESS 236.8, elapsed mins 59.8
+Iteration 106, epsilon 0.534, ESS (untruncated) 49.3, elapsed mins 55.2
 Truncating 1 weights
-Iteration 114, epsilon 0.552, ESS 77.9, elapsed mins 60.3
-Iteration 115, epsilon 0.552, ESS 193.7, elapsed mins 60.8
-Iteration 116, epsilon 0.552, ESS 126.8, elapsed mins 61.4
-Iteration 117, epsilon 0.552, ESS 249.1, elapsed mins 61.9
+Iteration 107, epsilon 0.534, ESS (untruncated) 40.6, elapsed mins 55.7
+Iteration 108, epsilon 0.534, ESS (untruncated) 163.8, elapsed mins 56.2
+Iteration 109, epsilon 0.534, ESS (untruncated) 121.6, elapsed mins 56.6
+Iteration 110, epsilon 0.534, ESS (untruncated) 199.3, elapsed mins 57.1
+Iteration 111, epsilon 0.534, ESS (untruncated) 81.1, elapsed mins 57.6
+Iteration 112, epsilon 0.534, ESS (untruncated) 164.8, elapsed mins 58.1
+Iteration 113, epsilon 0.534, ESS (untruncated) 126.4, elapsed mins 58.6
+Iteration 114, epsilon 0.534, ESS (untruncated) 121.2, elapsed mins 59.1
+Iteration 115, epsilon 0.534, ESS (untruncated) 103.4, elapsed mins 59.6
+Iteration 116, epsilon 0.534, ESS (untruncated) 36.3, elapsed mins 60.1
+Iteration 117, epsilon 0.534, ESS (untruncated) 129.6, elapsed mins 60.5
 Truncating 1 weights
-Iteration 118, epsilon 0.552, ESS 65.3, elapsed mins 62.4
-Iteration 119, epsilon 0.552, ESS 113.2, elapsed mins 62.9
-Iteration 120, epsilon 0.552, ESS 101.1, elapsed mins 63.4
-Iteration 121, epsilon 0.552, ESS 134.8, elapsed mins 64.0
-Iteration 122, epsilon 0.552, ESS 129.4, elapsed mins 64.5
-Iteration 123, epsilon 0.552, ESS 117.0, elapsed mins 65.0
-Iteration 124, epsilon 0.552, ESS 233.2, elapsed mins 65.5
-Iteration 125, epsilon 0.552, ESS 160.7, elapsed mins 66.0
+Iteration 118, epsilon 0.534, ESS (untruncated) 3.9, elapsed mins 61.0
+Iteration 119, epsilon 0.534, ESS (untruncated) 171.9, elapsed mins 61.5
+Iteration 120, epsilon 0.534, ESS (untruncated) 149.0, elapsed mins 62.0
+Iteration 121, epsilon 0.534, ESS (untruncated) 129.6, elapsed mins 62.4
+Iteration 122, epsilon 0.534, ESS (untruncated) 195.8, elapsed mins 62.9
+Iteration 123, epsilon 0.534, ESS (untruncated) 174.7, elapsed mins 63.4
+Iteration 124, epsilon 0.534, ESS (untruncated) 113.6, elapsed mins 63.9
+Iteration 125, epsilon 0.534, ESS (untruncated) 146.4, elapsed mins 64.4
 Truncating 1 weights
-Iteration 126, epsilon 0.552, ESS 64.0, elapsed mins 66.5
-Iteration 127, epsilon 0.552, ESS 156.9, elapsed mins 67.1
-Iteration 128, epsilon 0.552, ESS 158.6, elapsed mins 67.6
-Iteration 129, epsilon 0.552, ESS 128.5, elapsed mins 68.1
-Iteration 130, epsilon 0.552, ESS 237.1, elapsed mins 68.6
+Iteration 126, epsilon 0.534, ESS (untruncated) 18.9, elapsed mins 64.8
+Iteration 127, epsilon 0.534, ESS (untruncated) 150.9, elapsed mins 65.3
+Iteration 128, epsilon 0.534, ESS (untruncated) 234.8, elapsed mins 65.8
+Iteration 129, epsilon 0.534, ESS (untruncated) 155.0, elapsed mins 66.3
+Iteration 130, epsilon 0.534, ESS (untruncated) 91.5, elapsed mins 66.8
+Iteration 131, epsilon 0.534, ESS (untruncated) 104.1, elapsed mins 67.3
+Iteration 132, epsilon 0.534, ESS (untruncated) 41.5, elapsed mins 67.8
 Truncating 1 weights
-Iteration 131, epsilon 0.552, ESS 74.8, elapsed mins 69.1
-Iteration 132, epsilon 0.552, ESS 145.2, elapsed mins 69.7
-Iteration 133, epsilon 0.552, ESS 182.3, elapsed mins 70.2
-Iteration 134, epsilon 0.552, ESS 211.1, elapsed mins 70.7
+Iteration 133, epsilon 0.534, ESS (untruncated) 6.4, elapsed mins 68.3
+Iteration 134, epsilon 0.534, ESS (untruncated) 70.9, elapsed mins 68.8
 Truncating 1 weights
-Iteration 135, epsilon 0.552, ESS 81.6, elapsed mins 71.2
-Iteration 136, epsilon 0.552, ESS 243.3, elapsed mins 71.7
-Iteration 137, epsilon 0.552, ESS 187.3, elapsed mins 72.2
+Iteration 135, epsilon 0.534, ESS (untruncated) 3.9, elapsed mins 69.3
+Iteration 136, epsilon 0.534, ESS (untruncated) 123.7, elapsed mins 69.7
+Iteration 137, epsilon 0.534, ESS (untruncated) 196.4, elapsed mins 70.2
 Truncating 1 weights
-Iteration 138, epsilon 0.552, ESS 72.1, elapsed mins 72.7
-Iteration 139, epsilon 0.552, ESS 198.6, elapsed mins 73.2
+Iteration 138, epsilon 0.534, ESS (untruncated) 59.9, elapsed mins 70.6
+Iteration 139, epsilon 0.534, ESS (untruncated) 62.4, elapsed mins 71.1
+Iteration 140, epsilon 0.534, ESS (untruncated) 132.2, elapsed mins 71.6
+Iteration 141, epsilon 0.534, ESS (untruncated) 163.1, elapsed mins 72.1
+Iteration 142, epsilon 0.534, ESS (untruncated) 149.8, elapsed mins 72.6
+Iteration 143, epsilon 0.534, ESS (untruncated) 85.3, elapsed mins 73.1
+Iteration 144, epsilon 0.534, ESS (untruncated) 186.3, elapsed mins 73.6
+Iteration 145, epsilon 0.534, ESS (untruncated) 189.2, elapsed mins 74.1
+Iteration 146, epsilon 0.534, ESS (untruncated) 153.5, elapsed mins 74.5
 Truncating 1 weights
-Iteration 140, epsilon 0.552, ESS 64.7, elapsed mins 73.7
-Iteration 141, epsilon 0.501, ESS 250.0, elapsed mins 74.3
-Iteration 142, epsilon 0.501, ESS 112.6, elapsed mins 74.8
+Iteration 147, epsilon 0.534, ESS (untruncated) 33.3, elapsed mins 75.0
+Iteration 148, epsilon 0.534, ESS (untruncated) 85.5, elapsed mins 75.5
+Iteration 149, epsilon 0.534, ESS (untruncated) 194.4, elapsed mins 76.0
 Truncating 1 weights
-Iteration 143, epsilon 0.501, ESS 69.4, elapsed mins 75.3
-Iteration 144, epsilon 0.501, ESS 212.9, elapsed mins 75.8
-Iteration 145, epsilon 0.501, ESS 162.5, elapsed mins 76.3
-Iteration 146, epsilon 0.501, ESS 137.4, elapsed mins 76.8
-Iteration 147, epsilon 0.501, ESS 153.1, elapsed mins 77.3
-Iteration 148, epsilon 0.501, ESS 157.7, elapsed mins 77.8
-Iteration 149, epsilon 0.501, ESS 87.5, elapsed mins 78.3
-Iteration 150, epsilon 0.501, ESS 175.0, elapsed mins 78.8
-Iteration 151, epsilon 0.499, ESS 250.0, elapsed mins 79.3
-Iteration 152, epsilon 0.499, ESS 77.7, elapsed mins 79.8
-Iteration 153, epsilon 0.499, ESS 238.0, elapsed mins 80.2
-Iteration 154, epsilon 0.499, ESS 143.4, elapsed mins 80.7
-Iteration 155, epsilon 0.499, ESS 155.7, elapsed mins 81.2
-Iteration 156, epsilon 0.499, ESS 92.9, elapsed mins 81.7
-Iteration 157, epsilon 0.499, ESS 201.6, elapsed mins 82.2
-Iteration 158, epsilon 0.487, ESS 250.0, elapsed mins 82.7
+Iteration 150, epsilon 0.534, ESS (untruncated) 5.7, elapsed mins 76.5
 Truncating 1 weights
-Iteration 159, epsilon 0.487, ESS 71.1, elapsed mins 83.2
-Iteration 160, epsilon 0.487, ESS 158.8, elapsed mins 83.7
-Iteration 161, epsilon 0.487, ESS 127.2, elapsed mins 84.3
-Iteration 162, epsilon 0.487, ESS 75.7, elapsed mins 84.8
-Iteration 163, epsilon 0.487, ESS 218.2, elapsed mins 85.2
-Iteration 164, epsilon 0.475, ESS 250.0, elapsed mins 85.7
-Iteration 165, epsilon 0.475, ESS 59.0, elapsed mins 86.2
-Iteration 166, epsilon 0.475, ESS 113.7, elapsed mins 86.7
+Iteration 151, epsilon 0.534, ESS (untruncated) 3.4, elapsed mins 77.0
+Iteration 152, epsilon 0.534, ESS (untruncated) 197.3, elapsed mins 77.5
+Iteration 153, epsilon 0.534, ESS (untruncated) 111.9, elapsed mins 77.9
+Iteration 154, epsilon 0.534, ESS (untruncated) 71.9, elapsed mins 78.4
+Iteration 155, epsilon 0.534, ESS (untruncated) 179.3, elapsed mins 78.9
+Iteration 156, epsilon 0.534, ESS (untruncated) 136.9, elapsed mins 79.4
+Iteration 157, epsilon 0.534, ESS (untruncated) 156.0, elapsed mins 79.8
+Iteration 158, epsilon 0.534, ESS (untruncated) 208.6, elapsed mins 80.3
+Iteration 159, epsilon 0.534, ESS (untruncated) 96.8, elapsed mins 80.8
+Iteration 160, epsilon 0.534, ESS (untruncated) 179.0, elapsed mins 81.3
+Iteration 161, epsilon 0.534, ESS (untruncated) 86.7, elapsed mins 81.8
+Iteration 162, epsilon 0.534, ESS (untruncated) 132.8, elapsed mins 82.3
+Iteration 163, epsilon 0.518, ESS (untruncated) 250.0, elapsed mins 82.8
+Iteration 164, epsilon 0.518, ESS (untruncated) 106.0, elapsed mins 83.3
+Iteration 165, epsilon 0.518, ESS (untruncated) 65.8, elapsed mins 83.7
+Iteration 166, epsilon 0.518, ESS (untruncated) 69.4, elapsed mins 84.2
+Iteration 167, epsilon 0.518, ESS (untruncated) 93.6, elapsed mins 84.7
+Iteration 168, epsilon 0.518, ESS (untruncated) 171.5, elapsed mins 85.1
+Iteration 169, epsilon 0.518, ESS (untruncated) 103.6, elapsed mins 85.6
+Iteration 170, epsilon 0.518, ESS (untruncated) 60.5, elapsed mins 86.1
+Iteration 171, epsilon 0.518, ESS (untruncated) 154.3, elapsed mins 86.5
+Iteration 172, epsilon 0.518, ESS (untruncated) 226.1, elapsed mins 87.0
+Iteration 173, epsilon 0.518, ESS (untruncated) 165.5, elapsed mins 87.5
+Iteration 174, epsilon 0.518, ESS (untruncated) 145.3, elapsed mins 87.9
 Truncating 1 weights
-Iteration 167, epsilon 0.475, ESS 68.5, elapsed mins 87.1
-Iteration 168, epsilon 0.475, ESS 68.1, elapsed mins 87.6
+Iteration 175, epsilon 0.518, ESS (untruncated) 48.3, elapsed mins 88.4
+Iteration 176, epsilon 0.518, ESS (untruncated) 70.0, elapsed mins 88.9
+Iteration 177, epsilon 0.518, ESS (untruncated) 163.8, elapsed mins 89.4
+Iteration 178, epsilon 0.518, ESS (untruncated) 76.8, elapsed mins 89.9
+Iteration 179, epsilon 0.518, ESS (untruncated) 144.8, elapsed mins 90.3
+Iteration 180, epsilon 0.518, ESS (untruncated) 167.7, elapsed mins 90.8
+Iteration 181, epsilon 0.518, ESS (untruncated) 218.9, elapsed mins 91.3
+Iteration 182, epsilon 0.518, ESS (untruncated) 84.5, elapsed mins 91.8
+Iteration 183, epsilon 0.503, ESS (untruncated) 250.0, elapsed mins 92.2
+Iteration 184, epsilon 0.503, ESS (untruncated) 114.8, elapsed mins 92.7
 Truncating 1 weights
-Iteration 169, epsilon 0.475, ESS 64.4, elapsed mins 88.1
+Iteration 185, epsilon 0.503, ESS (untruncated) 8.0, elapsed mins 93.2
+Iteration 186, epsilon 0.503, ESS (untruncated) 119.3, elapsed mins 93.6
+Iteration 187, epsilon 0.503, ESS (untruncated) 135.7, elapsed mins 94.1
 Truncating 1 weights
-Iteration 170, epsilon 0.475, ESS 52.7, elapsed mins 88.6
-Iteration 171, epsilon 0.475, ESS 137.8, elapsed mins 89.1
-Iteration 172, epsilon 0.475, ESS 163.7, elapsed mins 89.5
-Iteration 173, epsilon 0.475, ESS 101.8, elapsed mins 90.0
-Iteration 174, epsilon 0.475, ESS 157.6, elapsed mins 90.5
-Iteration 175, epsilon 0.475, ESS 90.8, elapsed mins 91.0
-Iteration 176, epsilon 0.475, ESS 94.4, elapsed mins 91.4
-Iteration 177, epsilon 0.475, ESS 199.7, elapsed mins 91.9
-Iteration 178, epsilon 0.475, ESS 133.1, elapsed mins 92.3
-Iteration 179, epsilon 0.475, ESS 131.7, elapsed mins 92.8
-Iteration 180, epsilon 0.475, ESS 130.9, elapsed mins 93.3
-Iteration 181, epsilon 0.475, ESS 232.6, elapsed mins 93.9
-Iteration 182, epsilon 0.475, ESS 90.2, elapsed mins 94.4
-Iteration 183, epsilon 0.475, ESS 148.0, elapsed mins 94.9
+Iteration 188, epsilon 0.503, ESS (untruncated) 22.0, elapsed mins 94.6
+Iteration 189, epsilon 0.503, ESS (untruncated) 133.1, elapsed mins 95.0
+Iteration 190, epsilon 0.503, ESS (untruncated) 127.5, elapsed mins 95.5
+Iteration 191, epsilon 0.503, ESS (untruncated) 58.5, elapsed mins 96.0
+Iteration 192, epsilon 0.503, ESS (untruncated) 201.9, elapsed mins 96.4
+Iteration 193, epsilon 0.503, ESS (untruncated) 240.5, elapsed mins 96.9
+Iteration 194, epsilon 0.503, ESS (untruncated) 195.6, elapsed mins 97.3
+Iteration 195, epsilon 0.490, ESS (untruncated) 250.0, elapsed mins 97.8
+Iteration 196, epsilon 0.490, ESS (untruncated) 175.9, elapsed mins 98.3
+Iteration 197, epsilon 0.490, ESS (untruncated) 240.4, elapsed mins 98.8
+Iteration 198, epsilon 0.490, ESS (untruncated) 116.8, elapsed mins 99.3
+Iteration 199, epsilon 0.490, ESS (untruncated) 61.2, elapsed mins 99.7
+Iteration 200, epsilon 0.490, ESS (untruncated) 114.0, elapsed mins 100.2
+Iteration 201, epsilon 0.490, ESS (untruncated) 88.1, elapsed mins 100.6
+Iteration 202, epsilon 0.490, ESS (untruncated) 63.6, elapsed mins 101.1
+Iteration 203, epsilon 0.490, ESS (untruncated) 141.2, elapsed mins 101.5
+Iteration 204, epsilon 0.490, ESS (untruncated) 85.4, elapsed mins 102.0
+Iteration 205, epsilon 0.490, ESS (untruncated) 92.2, elapsed mins 102.5
+Iteration 206, epsilon 0.490, ESS (untruncated) 137.9, elapsed mins 102.9
+Iteration 207, epsilon 0.490, ESS (untruncated) 75.7, elapsed mins 103.4
 Truncating 1 weights
-Iteration 184, epsilon 0.475, ESS 42.7, elapsed mins 95.3
-Iteration 185, epsilon 0.475, ESS 119.6, elapsed mins 95.8
-Iteration 186, epsilon 0.475, ESS 226.7, elapsed mins 96.3
-Iteration 187, epsilon 0.475, ESS 231.2, elapsed mins 96.8
-Iteration 188, epsilon 0.475, ESS 151.9, elapsed mins 97.3
-Iteration 189, epsilon 0.475, ESS 79.3, elapsed mins 97.7
+Iteration 208, epsilon 0.490, ESS (untruncated) 42.2, elapsed mins 103.9
+Iteration 209, epsilon 0.490, ESS (untruncated) 125.9, elapsed mins 104.3
+Iteration 210, epsilon 0.490, ESS (untruncated) 136.6, elapsed mins 104.8
+Iteration 211, epsilon 0.490, ESS (untruncated) 71.4, elapsed mins 105.2
+Iteration 212, epsilon 0.490, ESS (untruncated) 152.1, elapsed mins 105.7
+Iteration 213, epsilon 0.490, ESS (untruncated) 193.7, elapsed mins 106.2
+Iteration 214, epsilon 0.490, ESS (untruncated) 213.2, elapsed mins 106.6
+Iteration 215, epsilon 0.490, ESS (untruncated) 177.1, elapsed mins 107.1
+Iteration 216, epsilon 0.490, ESS (untruncated) 156.8, elapsed mins 107.6
+Iteration 217, epsilon 0.490, ESS (untruncated) 250.0, elapsed mins 108.1
+Iteration 218, epsilon 0.490, ESS (untruncated) 133.2, elapsed mins 108.5
+Iteration 219, epsilon 0.490, ESS (untruncated) 145.7, elapsed mins 109.0
+Iteration 220, epsilon 0.490, ESS (untruncated) 231.0, elapsed mins 109.5
+Iteration 221, epsilon 0.490, ESS (untruncated) 229.3, elapsed mins 109.9
+Iteration 222, epsilon 0.490, ESS (untruncated) 169.8, elapsed mins 110.4
+Iteration 223, epsilon 0.490, ESS (untruncated) 56.6, elapsed mins 110.9
+Iteration 224, epsilon 0.490, ESS (untruncated) 166.4, elapsed mins 111.4
+Iteration 225, epsilon 0.490, ESS (untruncated) 142.1, elapsed mins 111.8
+Iteration 226, epsilon 0.490, ESS (untruncated) 181.5, elapsed mins 112.3
+Iteration 227, epsilon 0.490, ESS (untruncated) 82.6, elapsed mins 112.7
+Iteration 228, epsilon 0.490, ESS (untruncated) 159.0, elapsed mins 113.2
+Iteration 229, epsilon 0.490, ESS (untruncated) 207.8, elapsed mins 113.7
+Iteration 230, epsilon 0.490, ESS (untruncated) 183.5, elapsed mins 114.1
+Iteration 231, epsilon 0.490, ESS (untruncated) 145.4, elapsed mins 114.6
 Truncating 1 weights
-Iteration 190, epsilon 0.475, ESS 73.0, elapsed mins 98.2
-Iteration 191, epsilon 0.475, ESS 56.5, elapsed mins 98.7
-Iteration 192, epsilon 0.475, ESS 152.1, elapsed mins 99.2
-Iteration 193, epsilon 0.475, ESS 136.2, elapsed mins 99.6
-Iteration 194, epsilon 0.475, ESS 230.1, elapsed mins 100.1
-Iteration 195, epsilon 0.475, ESS 221.4, elapsed mins 100.6
-Iteration 196, epsilon 0.475, ESS 244.6, elapsed mins 101.0
-Iteration 197, epsilon 0.475, ESS 98.5, elapsed mins 101.5
-Iteration 198, epsilon 0.475, ESS 65.5, elapsed mins 102.0
-Truncating 1 weights
-Iteration 199, epsilon 0.475, ESS 68.2, elapsed mins 102.5
-Iteration 200, epsilon 0.475, ESS 107.9, elapsed mins 102.9
-Iteration 201, epsilon 0.475, ESS 142.5, elapsed mins 103.5
-Truncating 1 weights
-Iteration 202, epsilon 0.475, ESS 44.0, elapsed mins 103.9
-Iteration 203, epsilon 0.475, ESS 102.5, elapsed mins 104.4
-Truncating 1 weights
-Iteration 204, epsilon 0.475, ESS 59.2, elapsed mins 104.9
-Iteration 205, epsilon 0.475, ESS 126.5, elapsed mins 105.3
-Truncating 1 weights
-Iteration 206, epsilon 0.475, ESS 68.9, elapsed mins 105.8
-Iteration 207, epsilon 0.475, ESS 143.6, elapsed mins 106.3
-Iteration 208, epsilon 0.475, ESS 189.8, elapsed mins 106.8
-Iteration 209, epsilon 0.475, ESS 189.3, elapsed mins 107.2
-Iteration 210, epsilon 0.475, ESS 121.2, elapsed mins 107.7
-Iteration 211, epsilon 0.475, ESS 128.9, elapsed mins 108.2
-Iteration 212, epsilon 0.475, ESS 105.6, elapsed mins 108.7
-Iteration 213, epsilon 0.475, ESS 237.6, elapsed mins 109.1
-Iteration 214, epsilon 0.475, ESS 110.8, elapsed mins 109.6
-Iteration 215, epsilon 0.475, ESS 165.4, elapsed mins 110.1
-Iteration 216, epsilon 0.475, ESS 127.1, elapsed mins 110.5
-Iteration 217, epsilon 0.475, ESS 129.9, elapsed mins 111.0
-Iteration 218, epsilon 0.475, ESS 207.4, elapsed mins 111.5
-Iteration 219, epsilon 0.475, ESS 172.4, elapsed mins 112.0
-Iteration 220, epsilon 0.475, ESS 111.7, elapsed mins 112.4
-Iteration 221, epsilon 0.475, ESS 107.0, elapsed mins 113.0
-Iteration 222, epsilon 0.475, ESS 121.4, elapsed mins 113.5
-Iteration 223, epsilon 0.475, ESS 165.0, elapsed mins 114.0
-Iteration 224, epsilon 0.475, ESS 219.2, elapsed mins 114.5
-Iteration 225, epsilon 0.475, ESS 185.8, elapsed mins 115.0
-Iteration 226, epsilon 0.468, ESS 250.0, elapsed mins 115.5
-Iteration 227, epsilon 0.468, ESS 179.6, elapsed mins 115.9
-Iteration 228, epsilon 0.468, ESS 141.6, elapsed mins 116.4
-Iteration 229, epsilon 0.458, ESS 250.0, elapsed mins 116.9
-Iteration 230, epsilon 0.458, ESS 191.5, elapsed mins 117.4
-Iteration 231, epsilon 0.458, ESS 211.6, elapsed mins 117.8
-Iteration 232, epsilon 0.458, ESS 181.3, elapsed mins 118.3
-Iteration 233, epsilon 0.450, ESS 250.0, elapsed mins 118.8
-Iteration 234, epsilon 0.450, ESS 91.1, elapsed mins 119.2
-Iteration 235, epsilon 0.450, ESS 157.7, elapsed mins 119.7
-Truncating 1 weights
-Iteration 236, epsilon 0.450, ESS 65.1, elapsed mins 120.1
-Truncating 1 weights
-Iteration 237, epsilon 0.450, ESS 76.1, elapsed mins 120.6
-Iteration 238, epsilon 0.450, ESS 247.0, elapsed mins 121.0
-Iteration 239, epsilon 0.450, ESS 164.8, elapsed mins 121.5
-Truncating 1 weights
-Iteration 240, epsilon 0.450, ESS 68.9, elapsed mins 121.9
-Iteration 241, epsilon 0.450, ESS 83.0, elapsed mins 122.5
-Iteration 242, epsilon 0.450, ESS 141.6, elapsed mins 123.0
-Iteration 243, epsilon 0.450, ESS 206.6, elapsed mins 123.5
-Iteration 244, epsilon 0.450, ESS 193.2, elapsed mins 124.0
-Iteration 245, epsilon 0.450, ESS 158.0, elapsed mins 124.4
-Iteration 246, epsilon 0.450, ESS 143.6, elapsed mins 124.9
-Iteration 247, epsilon 0.450, ESS 155.2, elapsed mins 125.4
-Iteration 248, epsilon 0.450, ESS 98.6, elapsed mins 125.9
-Iteration 249, epsilon 0.450, ESS 108.8, elapsed mins 126.3
-Iteration 250, epsilon 0.450, ESS 124.6, elapsed mins 126.8
-Iteration 251, epsilon 0.450, ESS 181.5, elapsed mins 127.2
-Iteration 252, epsilon 0.450, ESS 77.2, elapsed mins 127.7
-Iteration 253, epsilon 0.450, ESS 94.3, elapsed mins 128.2
-Truncating 1 weights
-Iteration 254, epsilon 0.450, ESS 71.8, elapsed mins 128.6
-Iteration 255, epsilon 0.450, ESS 174.3, elapsed mins 129.1
-Iteration 256, epsilon 0.450, ESS 118.5, elapsed mins 129.5
-Iteration 257, epsilon 0.450, ESS 203.0, elapsed mins 130.0
-Iteration 258, epsilon 0.450, ESS 119.0, elapsed mins 130.5
-Iteration 259, epsilon 0.450, ESS 191.7, elapsed mins 130.9
-Iteration 260, epsilon 0.450, ESS 185.7, elapsed mins 131.4
-Truncating 1 weights
-Iteration 261, epsilon 0.450, ESS 61.9, elapsed mins 132.0
-Iteration 262, epsilon 0.450, ESS 142.1, elapsed mins 132.4
-Iteration 263, epsilon 0.450, ESS 201.3, elapsed mins 132.9
-Truncating 1 weights
-Iteration 264, epsilon 0.450, ESS 55.3, elapsed mins 133.4
-Iteration 265, epsilon 0.450, ESS 204.7, elapsed mins 133.8
-Truncating 1 weights
-Iteration 266, epsilon 0.450, ESS 54.7, elapsed mins 134.3
-Iteration 267, epsilon 0.450, ESS 99.4, elapsed mins 134.8
-Iteration 268, epsilon 0.450, ESS 158.5, elapsed mins 135.2
-Iteration 269, epsilon 0.450, ESS 135.0, elapsed mins 135.7
-Iteration 270, epsilon 0.450, ESS 192.9, elapsed mins 136.1
-Iteration 271, epsilon 0.449, ESS 250.0, elapsed mins 136.6
-Truncating 1 weights
-Iteration 272, epsilon 0.449, ESS 66.2, elapsed mins 137.1
-Iteration 273, epsilon 0.420, ESS 250.0, elapsed mins 137.6
-Iteration 274, epsilon 0.420, ESS 74.8, elapsed mins 138.0
-Iteration 275, epsilon 0.420, ESS 120.9, elapsed mins 138.5
-Truncating 1 weights
-Iteration 276, epsilon 0.420, ESS 55.4, elapsed mins 138.9
-Truncating 1 weights
-Iteration 277, epsilon 0.420, ESS 61.1, elapsed mins 139.4
-Iteration 278, epsilon 0.420, ESS 128.3, elapsed mins 139.8
-Iteration 279, epsilon 0.420, ESS 77.1, elapsed mins 140.3
-Iteration 280, epsilon 0.420, ESS 102.4, elapsed mins 140.7
-Iteration 281, epsilon 0.420, ESS 75.9, elapsed mins 141.3
-Truncating 1 weights
-Iteration 282, epsilon 0.420, ESS 67.8, elapsed mins 141.7
-Iteration 283, epsilon 0.420, ESS 141.3, elapsed mins 142.2
-Iteration 284, epsilon 0.420, ESS 98.0, elapsed mins 142.6
-Iteration 285, epsilon 0.420, ESS 120.6, elapsed mins 143.1
-Iteration 286, epsilon 0.420, ESS 125.5, elapsed mins 143.5
-Iteration 287, epsilon 0.420, ESS 190.0, elapsed mins 144.0
-Iteration 288, epsilon 0.420, ESS 201.1, elapsed mins 144.5
-Iteration 289, epsilon 0.420, ESS 86.0, elapsed mins 144.9
-Iteration 290, epsilon 0.420, ESS 101.6, elapsed mins 145.4
-Iteration 291, epsilon 0.420, ESS 179.8, elapsed mins 145.9
-Iteration 292, epsilon 0.420, ESS 138.5, elapsed mins 146.3
-Iteration 293, epsilon 0.420, ESS 69.9, elapsed mins 146.7
-Iteration 294, epsilon 0.420, ESS 91.4, elapsed mins 147.2
-Iteration 295, epsilon 0.420, ESS 127.0, elapsed mins 147.6
-Iteration 296, epsilon 0.420, ESS 76.5, elapsed mins 148.1
-Iteration 297, epsilon 0.420, ESS 87.9, elapsed mins 148.5
-Iteration 298, epsilon 0.420, ESS 120.7, elapsed mins 148.9
-Iteration 299, epsilon 0.420, ESS 73.0, elapsed mins 149.4
-Iteration 300, epsilon 0.420, ESS 87.6, elapsed mins 149.8
-Iteration 301, epsilon 0.420, ESS 74.6, elapsed mins 150.4
-Truncating 1 weights
-Iteration 302, epsilon 0.420, ESS 63.7, elapsed mins 150.8
-Iteration 303, epsilon 0.420, ESS 107.8, elapsed mins 151.3
-Iteration 304, epsilon 0.420, ESS 176.9, elapsed mins 151.7
-Iteration 305, epsilon 0.420, ESS 127.3, elapsed mins 152.2
-Iteration 306, epsilon 0.420, ESS 223.4, elapsed mins 152.6
-Iteration 307, epsilon 0.420, ESS 143.4, elapsed mins 153.1
-Truncating 1 weights
+Iteration 232, epsilon 0.490, ESS (untruncated) 7.5, elapsed mins 115.1
 Truncating 2 weights
-Iteration 308, epsilon 0.420, ESS 42.6, elapsed mins 153.5
-Iteration 309, epsilon 0.420, ESS 67.0, elapsed mins 154.0
-Iteration 310, epsilon 0.420, ESS 191.8, elapsed mins 154.5
-Iteration 311, epsilon 0.420, ESS 137.8, elapsed mins 155.0
-Iteration 312, epsilon 0.420, ESS 241.8, elapsed mins 155.4
-Iteration 313, epsilon 0.420, ESS 183.6, elapsed mins 155.9
+Iteration 233, epsilon 0.490, ESS (untruncated) 14.0, elapsed mins 115.5
+Iteration 234, epsilon 0.490, ESS (untruncated) 110.3, elapsed mins 116.0
 Truncating 1 weights
-Iteration 314, epsilon 0.420, ESS 69.1, elapsed mins 156.3
-Iteration 315, epsilon 0.420, ESS 190.5, elapsed mins 156.8
+Iteration 235, epsilon 0.490, ESS (untruncated) 46.7, elapsed mins 116.5
+Iteration 236, epsilon 0.490, ESS (untruncated) 117.4, elapsed mins 116.9
+Iteration 237, epsilon 0.490, ESS (untruncated) 90.4, elapsed mins 117.4
+Iteration 238, epsilon 0.490, ESS (untruncated) 117.6, elapsed mins 117.8
+Iteration 239, epsilon 0.490, ESS (untruncated) 168.9, elapsed mins 118.3
+Iteration 240, epsilon 0.490, ESS (untruncated) 188.9, elapsed mins 118.7
 Truncating 1 weights
-Iteration 316, epsilon 0.420, ESS 66.4, elapsed mins 157.2
-Iteration 317, epsilon 0.420, ESS 102.2, elapsed mins 157.7
-Iteration 318, epsilon 0.420, ESS 138.5, elapsed mins 158.1
-Iteration 319, epsilon 0.420, ESS 198.9, elapsed mins 158.6
+Iteration 241, epsilon 0.490, ESS (untruncated) 44.2, elapsed mins 119.2
+Iteration 242, epsilon 0.490, ESS (untruncated) 52.9, elapsed mins 119.6
+Iteration 243, epsilon 0.490, ESS (untruncated) 136.7, elapsed mins 120.1
+Iteration 244, epsilon 0.490, ESS (untruncated) 144.9, elapsed mins 120.6
+Iteration 245, epsilon 0.490, ESS (untruncated) 94.8, elapsed mins 121.1
+Iteration 246, epsilon 0.490, ESS (untruncated) 71.7, elapsed mins 121.5
 Truncating 1 weights
-Iteration 320, epsilon 0.420, ESS 62.6, elapsed mins 159.0
-Iteration 321, epsilon 0.420, ESS 102.5, elapsed mins 159.6
-Iteration 322, epsilon 0.420, ESS 87.6, elapsed mins 160.0
-Iteration 323, epsilon 0.420, ESS 202.3, elapsed mins 160.5
-Iteration 324, epsilon 0.420, ESS 156.1, elapsed mins 160.9
-Iteration 325, epsilon 0.420, ESS 227.1, elapsed mins 161.3
-Iteration 326, epsilon 0.420, ESS 179.9, elapsed mins 161.8
-Iteration 327, epsilon 0.420, ESS 217.6, elapsed mins 162.3
-Iteration 328, epsilon 0.420, ESS 80.9, elapsed mins 162.7
-Iteration 329, epsilon 0.420, ESS 197.0, elapsed mins 163.2
-Iteration 330, epsilon 0.420, ESS 225.1, elapsed mins 163.6
-Iteration 331, epsilon 0.420, ESS 92.3, elapsed mins 164.1
-Iteration 332, epsilon 0.420, ESS 143.8, elapsed mins 164.6
-Iteration 333, epsilon 0.406, ESS 250.0, elapsed mins 165.0
+Iteration 247, epsilon 0.490, ESS (untruncated) 48.1, elapsed mins 122.0
 Truncating 1 weights
-Iteration 334, epsilon 0.406, ESS 57.0, elapsed mins 165.5
-Iteration 335, epsilon 0.406, ESS 92.3, elapsed mins 166.0
-Iteration 336, epsilon 0.406, ESS 72.0, elapsed mins 166.4
-Iteration 337, epsilon 0.406, ESS 142.2, elapsed mins 166.8
-Iteration 338, epsilon 0.406, ESS 130.0, elapsed mins 167.3
-Iteration 339, epsilon 0.406, ESS 55.6, elapsed mins 167.7
-Iteration 340, epsilon 0.406, ESS 75.6, elapsed mins 168.1
+Iteration 248, epsilon 0.490, ESS (untruncated) 42.2, elapsed mins 122.5
+Iteration 249, epsilon 0.490, ESS (untruncated) 118.3, elapsed mins 122.9
+Iteration 250, epsilon 0.490, ESS (untruncated) 164.2, elapsed mins 123.4
+Iteration 251, epsilon 0.490, ESS (untruncated) 84.7, elapsed mins 123.8
+Iteration 252, epsilon 0.490, ESS (untruncated) 134.4, elapsed mins 124.3
+Iteration 253, epsilon 0.490, ESS (untruncated) 157.7, elapsed mins 124.8
 Truncating 1 weights
-Iteration 341, epsilon 0.406, ESS 67.5, elapsed mins 168.6
-Iteration 342, epsilon 0.406, ESS 64.7, elapsed mins 169.1
-Iteration 343, epsilon 0.406, ESS 69.4, elapsed mins 169.5
-Iteration 344, epsilon 0.406, ESS 131.5, elapsed mins 170.0
-Iteration 345, epsilon 0.389, ESS 250.0, elapsed mins 170.4
-Iteration 346, epsilon 0.389, ESS 111.1, elapsed mins 170.9
-Iteration 347, epsilon 0.389, ESS 134.8, elapsed mins 171.3
+Iteration 254, epsilon 0.490, ESS (untruncated) 47.4, elapsed mins 125.2
+Iteration 255, epsilon 0.490, ESS (untruncated) 87.8, elapsed mins 125.7
+Iteration 256, epsilon 0.490, ESS (untruncated) 121.0, elapsed mins 126.2
+Iteration 257, epsilon 0.490, ESS (untruncated) 133.0, elapsed mins 126.6
+Iteration 258, epsilon 0.490, ESS (untruncated) 167.5, elapsed mins 127.1
+Iteration 259, epsilon 0.490, ESS (untruncated) 125.8, elapsed mins 127.6
+Iteration 260, epsilon 0.490, ESS (untruncated) 175.4, elapsed mins 128.0
+Iteration 261, epsilon 0.490, ESS (untruncated) 131.9, elapsed mins 128.5
+Iteration 262, epsilon 0.490, ESS (untruncated) 133.7, elapsed mins 129.0
+Iteration 263, epsilon 0.490, ESS (untruncated) 159.1, elapsed mins 129.5
+Iteration 264, epsilon 0.490, ESS (untruncated) 200.5, elapsed mins 130.0
+Iteration 265, epsilon 0.490, ESS (untruncated) 151.4, elapsed mins 130.4
+Iteration 266, epsilon 0.490, ESS (untruncated) 97.6, elapsed mins 130.9
+Iteration 267, epsilon 0.490, ESS (untruncated) 195.8, elapsed mins 131.3
+Iteration 268, epsilon 0.490, ESS (untruncated) 103.2, elapsed mins 131.8
+Iteration 269, epsilon 0.490, ESS (untruncated) 144.0, elapsed mins 132.3
+Iteration 270, epsilon 0.490, ESS (untruncated) 84.9, elapsed mins 132.7
+Iteration 271, epsilon 0.490, ESS (untruncated) 108.3, elapsed mins 133.2
 Truncating 1 weights
-Iteration 348, epsilon 0.389, ESS 64.3, elapsed mins 171.8
-Iteration 349, epsilon 0.389, ESS 62.6, elapsed mins 172.2
-Truncating 1 weights
-Iteration 350, epsilon 0.389, ESS 62.0, elapsed mins 172.6
-Iteration 351, epsilon 0.389, ESS 124.7, elapsed mins 173.1
-Iteration 352, epsilon 0.389, ESS 87.1, elapsed mins 173.5
-Iteration 353, epsilon 0.389, ESS 112.0, elapsed mins 174.0
-Iteration 354, epsilon 0.389, ESS 173.4, elapsed mins 174.4
-Iteration 355, epsilon 0.389, ESS 129.9, elapsed mins 174.8
-Iteration 356, epsilon 0.389, ESS 105.9, elapsed mins 175.3
-Iteration 357, epsilon 0.389, ESS 173.8, elapsed mins 175.7
-Iteration 358, epsilon 0.389, ESS 111.8, elapsed mins 176.1
-Truncating 1 weights
-Iteration 359, epsilon 0.389, ESS 47.1, elapsed mins 176.6
-Iteration 360, epsilon 0.389, ESS 170.3, elapsed mins 177.0
-Iteration 361, epsilon 0.389, ESS 83.1, elapsed mins 177.6
-Iteration 362, epsilon 0.389, ESS 148.7, elapsed mins 178.0
-Iteration 363, epsilon 0.389, ESS 156.8, elapsed mins 178.4
-Truncating 2 weights
-Iteration 364, epsilon 0.389, ESS 44.0, elapsed mins 178.9
-Iteration 365, epsilon 0.389, ESS 149.0, elapsed mins 179.3
-Iteration 366, epsilon 0.389, ESS 132.2, elapsed mins 179.8
-Iteration 367, epsilon 0.389, ESS 80.3, elapsed mins 180.2
-Iteration 368, epsilon 0.389, ESS 111.6, elapsed mins 180.7
-Iteration 369, epsilon 0.389, ESS 96.2, elapsed mins 181.1
-Iteration 370, epsilon 0.389, ESS 71.7, elapsed mins 181.5
-Truncating 1 weights
-Iteration 371, epsilon 0.389, ESS 43.7, elapsed mins 182.0
-Iteration 372, epsilon 0.389, ESS 142.5, elapsed mins 182.4
-Truncating 1 weights
-Iteration 373, epsilon 0.389, ESS 44.1, elapsed mins 182.9
-Iteration 374, epsilon 0.389, ESS 113.4, elapsed mins 183.3
-Truncating 1 weights
-Iteration 375, epsilon 0.389, ESS 62.6, elapsed mins 183.7
-Truncating 1 weights
-Iteration 376, epsilon 0.389, ESS 68.1, elapsed mins 184.1
-Iteration 377, epsilon 0.389, ESS 122.6, elapsed mins 184.6
-Iteration 378, epsilon 0.389, ESS 56.4, elapsed mins 185.1
-Iteration 379, epsilon 0.389, ESS 153.5, elapsed mins 185.5
-Iteration 380, epsilon 0.389, ESS 172.2, elapsed mins 185.9
-Iteration 381, epsilon 0.389, ESS 131.6, elapsed mins 186.5
-Iteration 382, epsilon 0.389, ESS 137.1, elapsed mins 186.9
-Iteration 383, epsilon 0.389, ESS 123.4, elapsed mins 187.4
-Truncating 1 weights
-Iteration 384, epsilon 0.389, ESS 70.8, elapsed mins 187.8
-Truncating 1 weights
-Iteration 385, epsilon 0.389, ESS 69.8, elapsed mins 188.3
-Iteration 386, epsilon 0.389, ESS 184.9, elapsed mins 188.7
-Iteration 387, epsilon 0.389, ESS 170.1, elapsed mins 189.1
-Iteration 388, epsilon 0.389, ESS 84.1, elapsed mins 189.6
-Iteration 389, epsilon 0.389, ESS 122.4, elapsed mins 190.0
-Iteration 390, epsilon 0.389, ESS 71.2, elapsed mins 190.5
-Iteration 391, epsilon 0.389, ESS 99.1, elapsed mins 190.9
-Iteration 392, epsilon 0.389, ESS 99.2, elapsed mins 191.4
-Truncating 1 weights
-Iteration 393, epsilon 0.389, ESS 60.4, elapsed mins 191.8
-Iteration 394, epsilon 0.389, ESS 71.4, elapsed mins 192.2
-Iteration 395, epsilon 0.389, ESS 134.3, elapsed mins 192.7
-Iteration 396, epsilon 0.389, ESS 81.2, elapsed mins 193.1
-Truncating 1 weights
-Iteration 397, epsilon 0.389, ESS 62.7, elapsed mins 193.5
-Iteration 398, epsilon 0.389, ESS 127.7, elapsed mins 194.0
-Iteration 399, epsilon 0.389, ESS 115.1, elapsed mins 194.4
-Iteration 400, epsilon 0.389, ESS 112.1, elapsed mins 194.9
-Iteration 401, epsilon 0.389, ESS 122.1, elapsed mins 195.4
-Iteration 402, epsilon 0.389, ESS 119.4, elapsed mins 195.8
-Iteration 403, epsilon 0.389, ESS 124.4, elapsed mins 196.3
-Iteration 404, epsilon 0.389, ESS 120.8, elapsed mins 196.7
-Iteration 405, epsilon 0.389, ESS 80.9, elapsed mins 197.1
-Iteration 406, epsilon 0.389, ESS 89.2, elapsed mins 197.6
-Iteration 407, epsilon 0.389, ESS 135.8, elapsed mins 198.0
-Truncating 1 weights
-Iteration 408, epsilon 0.389, ESS 64.9, elapsed mins 198.4
-Iteration 409, epsilon 0.389, ESS 142.5, elapsed mins 198.9
-Iteration 410, epsilon 0.389, ESS 199.7, elapsed mins 199.3
-Iteration 411, epsilon 0.389, ESS 74.1, elapsed mins 199.8
-Iteration 412, epsilon 0.389, ESS 137.4, elapsed mins 200.2
+Iteration 272, epsilon 0.490, ESS (untruncated) 52.0, elapsed mins 133.6
+Iteration 273, epsilon 0.490, ESS (untruncated) 97.9, elapsed mins 134.1
+Iteration 274, epsilon 0.490, ESS (untruncated) 99.5, elapsed mins 134.6
+Iteration 275, epsilon 0.490, ESS (untruncated) 184.2, elapsed mins 135.0
+Iteration 276, epsilon 0.490, ESS (untruncated) 130.6, elapsed mins 135.5
+Iteration 277, epsilon 0.490, ESS (untruncated) 69.1, elapsed mins 136.0
+Iteration 278, epsilon 0.490, ESS (untruncated) 136.0, elapsed mins 136.5
+Iteration 279, epsilon 0.490, ESS (untruncated) 99.9, elapsed mins 136.9
+Iteration 280, epsilon 0.490, ESS (untruncated) 165.6, elapsed mins 137.4
+Iteration 281, epsilon 0.490, ESS (untruncated) 231.3, elapsed mins 137.8
 Truncating 1 weights
 Truncating 2 weights
-Iteration 413, epsilon 0.389, ESS 41.5, elapsed mins 200.6
+Iteration 282, epsilon 0.490, ESS (untruncated) 21.3, elapsed mins 138.3
+Iteration 283, epsilon 0.484, ESS (untruncated) 250.0, elapsed mins 138.8
+Iteration 284, epsilon 0.484, ESS (untruncated) 169.4, elapsed mins 139.2
+Iteration 285, epsilon 0.484, ESS (untruncated) 114.8, elapsed mins 139.7
+Iteration 286, epsilon 0.484, ESS (untruncated) 128.5, elapsed mins 140.1
+Iteration 287, epsilon 0.484, ESS (untruncated) 110.4, elapsed mins 140.6
+Iteration 288, epsilon 0.484, ESS (untruncated) 47.2, elapsed mins 141.1
+Iteration 289, epsilon 0.484, ESS (untruncated) 137.4, elapsed mins 141.6
 Truncating 1 weights
-Iteration 414, epsilon 0.389, ESS 63.7, elapsed mins 201.1
-Iteration 415, epsilon 0.389, ESS 159.1, elapsed mins 201.5
-Iteration 416, epsilon 0.389, ESS 176.5, elapsed mins 202.0
-Iteration 417, epsilon 0.389, ESS 175.0, elapsed mins 202.4
-Iteration 418, epsilon 0.389, ESS 213.4, elapsed mins 202.8
+Iteration 290, epsilon 0.484, ESS (untruncated) 57.0, elapsed mins 142.0
+Iteration 291, epsilon 0.484, ESS (untruncated) 242.8, elapsed mins 142.5
+Iteration 292, epsilon 0.484, ESS (untruncated) 216.7, elapsed mins 143.0
+Iteration 293, epsilon 0.484, ESS (untruncated) 114.8, elapsed mins 143.4
+Iteration 294, epsilon 0.484, ESS (untruncated) 73.5, elapsed mins 143.9
+Iteration 295, epsilon 0.471, ESS (untruncated) 250.0, elapsed mins 144.4
+Iteration 296, epsilon 0.471, ESS (untruncated) 119.9, elapsed mins 144.8
+Iteration 297, epsilon 0.471, ESS (untruncated) 114.6, elapsed mins 145.3
+Iteration 298, epsilon 0.471, ESS (untruncated) 110.9, elapsed mins 145.7
+Iteration 299, epsilon 0.471, ESS (untruncated) 139.1, elapsed mins 146.2
+Iteration 300, epsilon 0.471, ESS (untruncated) 133.8, elapsed mins 146.6
 Truncating 1 weights
-Iteration 419, epsilon 0.389, ESS 50.3, elapsed mins 203.3
-Truncating 1 weights
-Iteration 420, epsilon 0.389, ESS 66.8, elapsed mins 203.7
-Iteration 421, epsilon 0.389, ESS 155.5, elapsed mins 204.2
-Iteration 422, epsilon 0.389, ESS 209.5, elapsed mins 204.7
-Iteration 423, epsilon 0.389, ESS 133.7, elapsed mins 205.1
-Iteration 424, epsilon 0.389, ESS 150.5, elapsed mins 205.5
-Iteration 425, epsilon 0.389, ESS 180.5, elapsed mins 206.0
-Truncating 1 weights
-Iteration 426, epsilon 0.389, ESS 53.2, elapsed mins 206.4
-Iteration 427, epsilon 0.389, ESS 117.7, elapsed mins 206.9
-Iteration 428, epsilon 0.389, ESS 129.5, elapsed mins 207.3
-Iteration 429, epsilon 0.389, ESS 101.9, elapsed mins 207.8
-Iteration 430, epsilon 0.389, ESS 189.2, elapsed mins 208.2
-Iteration 431, epsilon 0.389, ESS 113.6, elapsed mins 208.7
-Iteration 432, epsilon 0.389, ESS 157.4, elapsed mins 209.1
-Iteration 433, epsilon 0.389, ESS 85.2, elapsed mins 209.5
-Iteration 434, epsilon 0.389, ESS 218.9, elapsed mins 210.0
-Iteration 435, epsilon 0.389, ESS 90.9, elapsed mins 210.4
-Truncating 1 weights
-Iteration 436, epsilon 0.389, ESS 75.6, elapsed mins 210.9
-Truncating 1 weights
-Iteration 437, epsilon 0.389, ESS 64.4, elapsed mins 211.3
-Iteration 438, epsilon 0.389, ESS 120.1, elapsed mins 211.8
-Iteration 439, epsilon 0.389, ESS 154.2, elapsed mins 212.3
-Iteration 440, epsilon 0.389, ESS 195.1, elapsed mins 212.7
-Iteration 441, epsilon 0.389, ESS 180.7, elapsed mins 213.2
-Iteration 442, epsilon 0.389, ESS 202.1, elapsed mins 213.7
-Iteration 443, epsilon 0.389, ESS 77.6, elapsed mins 214.1
-Iteration 444, epsilon 0.389, ESS 138.4, elapsed mins 214.6
-Iteration 445, epsilon 0.389, ESS 119.1, elapsed mins 215.0
-Iteration 446, epsilon 0.389, ESS 114.8, elapsed mins 215.4
-Iteration 447, epsilon 0.389, ESS 154.0, elapsed mins 215.9
-Iteration 448, epsilon 0.389, ESS 170.5, elapsed mins 216.3
-Truncating 1 weights
-Iteration 449, epsilon 0.389, ESS 65.7, elapsed mins 216.7
-Iteration 450, epsilon 0.389, ESS 182.8, elapsed mins 217.2
-Iteration 451, epsilon 0.389, ESS 148.9, elapsed mins 217.6
-Iteration 452, epsilon 0.389, ESS 165.4, elapsed mins 218.0
-Iteration 453, epsilon 0.389, ESS 172.3, elapsed mins 218.5
-Iteration 454, epsilon 0.381, ESS 250.0, elapsed mins 218.9
-Truncating 1 weights
-Iteration 455, epsilon 0.381, ESS 38.3, elapsed mins 219.3
-Iteration 456, epsilon 0.381, ESS 130.3, elapsed mins 219.8
-Iteration 457, epsilon 0.381, ESS 147.6, elapsed mins 220.2
-Iteration 458, epsilon 0.381, ESS 219.5, elapsed mins 220.7
-Iteration 459, epsilon 0.381, ESS 128.3, elapsed mins 221.1
-Truncating 1 weights
-Iteration 460, epsilon 0.381, ESS 60.2, elapsed mins 221.5
-Truncating 1 weights
-Iteration 461, epsilon 0.381, ESS 58.6, elapsed mins 222.1
+Iteration 301, epsilon 0.471, ESS (untruncated) 9.1, elapsed mins 147.1
+Iteration 302, epsilon 0.471, ESS (untruncated) 155.6, elapsed mins 147.6
+Iteration 303, epsilon 0.471, ESS (untruncated) 95.8, elapsed mins 148.0
+Iteration 304, epsilon 0.471, ESS (untruncated) 76.7, elapsed mins 148.5
+Iteration 305, epsilon 0.471, ESS (untruncated) 133.2, elapsed mins 149.0
 Truncating 2 weights
-Iteration 462, epsilon 0.381, ESS 42.3, elapsed mins 222.5
-Iteration 463, epsilon 0.381, ESS 124.0, elapsed mins 223.0
-Iteration 464, epsilon 0.381, ESS 96.5, elapsed mins 223.4
+Iteration 306, epsilon 0.471, ESS (untruncated) 21.4, elapsed mins 149.4
+Iteration 307, epsilon 0.471, ESS (untruncated) 63.9, elapsed mins 149.9
+Iteration 308, epsilon 0.471, ESS (untruncated) 118.5, elapsed mins 150.3
+Iteration 309, epsilon 0.471, ESS (untruncated) 128.1, elapsed mins 150.8
+Iteration 310, epsilon 0.471, ESS (untruncated) 38.6, elapsed mins 151.2
 Truncating 1 weights
-Iteration 465, epsilon 0.381, ESS 56.2, elapsed mins 223.8
-Iteration 466, epsilon 0.381, ESS 52.4, elapsed mins 224.3
-Iteration 467, epsilon 0.381, ESS 83.7, elapsed mins 224.7
-Iteration 468, epsilon 0.381, ESS 87.4, elapsed mins 225.1
+Iteration 311, epsilon 0.471, ESS (untruncated) 50.4, elapsed mins 151.6
+Iteration 312, epsilon 0.471, ESS (untruncated) 181.8, elapsed mins 152.1
+Iteration 313, epsilon 0.471, ESS (untruncated) 74.3, elapsed mins 152.6
+Iteration 314, epsilon 0.471, ESS (untruncated) 172.7, elapsed mins 153.0
 Truncating 1 weights
-Iteration 469, epsilon 0.381, ESS 61.9, elapsed mins 225.5
-Iteration 470, epsilon 0.381, ESS 117.1, elapsed mins 226.0
-Iteration 471, epsilon 0.381, ESS 182.2, elapsed mins 226.4
-Iteration 472, epsilon 0.381, ESS 194.2, elapsed mins 226.9
+Iteration 315, epsilon 0.471, ESS (untruncated) 17.3, elapsed mins 153.5
+Iteration 316, epsilon 0.471, ESS (untruncated) 130.0, elapsed mins 154.0
+Iteration 317, epsilon 0.471, ESS (untruncated) 86.1, elapsed mins 154.4
+Iteration 318, epsilon 0.471, ESS (untruncated) 87.5, elapsed mins 154.9
+Iteration 319, epsilon 0.471, ESS (untruncated) 131.2, elapsed mins 155.3
+Iteration 320, epsilon 0.471, ESS (untruncated) 84.1, elapsed mins 155.7
+Iteration 321, epsilon 0.471, ESS (untruncated) 166.5, elapsed mins 156.2
+Iteration 322, epsilon 0.471, ESS (untruncated) 207.7, elapsed mins 156.6
+Iteration 323, epsilon 0.471, ESS (untruncated) 57.0, elapsed mins 157.1
+Iteration 324, epsilon 0.471, ESS (untruncated) 121.6, elapsed mins 157.6
+Iteration 325, epsilon 0.471, ESS (untruncated) 166.1, elapsed mins 158.0
+Iteration 326, epsilon 0.471, ESS (untruncated) 154.0, elapsed mins 158.5
+Iteration 327, epsilon 0.471, ESS (untruncated) 135.4, elapsed mins 159.0
+Iteration 328, epsilon 0.471, ESS (untruncated) 145.4, elapsed mins 159.4
+Iteration 329, epsilon 0.468, ESS (untruncated) 250.0, elapsed mins 159.9
+Iteration 330, epsilon 0.468, ESS (untruncated) 210.9, elapsed mins 160.4
+Iteration 331, epsilon 0.468, ESS (untruncated) 147.4, elapsed mins 160.8
+Iteration 332, epsilon 0.468, ESS (untruncated) 133.8, elapsed mins 161.3
+Iteration 333, epsilon 0.468, ESS (untruncated) 193.1, elapsed mins 161.7
+Iteration 334, epsilon 0.468, ESS (untruncated) 145.0, elapsed mins 162.2
+Iteration 335, epsilon 0.468, ESS (untruncated) 122.0, elapsed mins 162.6
+Iteration 336, epsilon 0.468, ESS (untruncated) 193.3, elapsed mins 163.1
+Iteration 337, epsilon 0.468, ESS (untruncated) 158.4, elapsed mins 163.5
+Iteration 338, epsilon 0.468, ESS (untruncated) 218.8, elapsed mins 164.0
+Iteration 339, epsilon 0.468, ESS (untruncated) 154.5, elapsed mins 164.4
 Truncating 1 weights
-Iteration 473, epsilon 0.381, ESS 70.0, elapsed mins 227.3
-Iteration 474, epsilon 0.381, ESS 163.8, elapsed mins 227.7
-Iteration 475, epsilon 0.381, ESS 100.6, elapsed mins 228.2
-Iteration 476, epsilon 0.381, ESS 73.6, elapsed mins 228.6
-Iteration 477, epsilon 0.381, ESS 213.2, elapsed mins 229.1
-Iteration 478, epsilon 0.381, ESS 146.5, elapsed mins 229.5
-Iteration 479, epsilon 0.381, ESS 158.0, elapsed mins 229.9
-Iteration 480, epsilon 0.381, ESS 153.4, elapsed mins 230.4
-Iteration 481, epsilon 0.381, ESS 180.1, elapsed mins 230.9
-Iteration 482, epsilon 0.381, ESS 157.2, elapsed mins 231.3
-Iteration 483, epsilon 0.381, ESS 135.9, elapsed mins 231.8
-Iteration 484, epsilon 0.381, ESS 153.2, elapsed mins 232.2
-Iteration 485, epsilon 0.381, ESS 67.3, elapsed mins 232.7
+Iteration 340, epsilon 0.468, ESS (untruncated) 24.7, elapsed mins 164.9
+Iteration 341, epsilon 0.468, ESS (untruncated) 144.9, elapsed mins 165.3
+Iteration 342, epsilon 0.468, ESS (untruncated) 148.0, elapsed mins 165.8
+Iteration 343, epsilon 0.468, ESS (untruncated) 124.5, elapsed mins 166.3
 Truncating 1 weights
-Iteration 486, epsilon 0.381, ESS 69.3, elapsed mins 233.1
-Iteration 487, epsilon 0.381, ESS 124.6, elapsed mins 233.5
-Iteration 488, epsilon 0.381, ESS 106.7, elapsed mins 234.0
-Iteration 489, epsilon 0.381, ESS 166.0, elapsed mins 234.4
-Iteration 490, epsilon 0.381, ESS 138.1, elapsed mins 234.9
-Iteration 491, epsilon 0.381, ESS 140.1, elapsed mins 235.3
-Iteration 492, epsilon 0.381, ESS 93.4, elapsed mins 235.8
-Iteration 493, epsilon 0.381, ESS 168.6, elapsed mins 236.2
-Iteration 494, epsilon 0.381, ESS 177.6, elapsed mins 236.6
-Iteration 495, epsilon 0.381, ESS 177.8, elapsed mins 237.1
+Iteration 344, epsilon 0.468, ESS (untruncated) 65.1, elapsed mins 166.8
+Iteration 345, epsilon 0.468, ESS (untruncated) 169.1, elapsed mins 167.2
+Iteration 346, epsilon 0.468, ESS (untruncated) 211.4, elapsed mins 167.7
+Iteration 347, epsilon 0.468, ESS (untruncated) 167.7, elapsed mins 168.2
 Truncating 1 weights
-Iteration 496, epsilon 0.381, ESS 73.1, elapsed mins 237.5
-Iteration 497, epsilon 0.381, ESS 135.4, elapsed mins 237.9
-Iteration 498, epsilon 0.381, ESS 160.8, elapsed mins 238.4
+Iteration 348, epsilon 0.468, ESS (untruncated) 41.4, elapsed mins 168.6
+Iteration 349, epsilon 0.468, ESS (untruncated) 67.2, elapsed mins 169.1
+Iteration 350, epsilon 0.463, ESS (untruncated) 250.0, elapsed mins 169.5
+Iteration 351, epsilon 0.463, ESS (untruncated) 166.8, elapsed mins 170.0
+Iteration 352, epsilon 0.442, ESS (untruncated) 250.0, elapsed mins 170.5
+Iteration 353, epsilon 0.442, ESS (untruncated) 82.3, elapsed mins 170.9
+Iteration 354, epsilon 0.442, ESS (untruncated) 201.8, elapsed mins 171.4
+Iteration 355, epsilon 0.442, ESS (untruncated) 61.2, elapsed mins 171.8
 Truncating 1 weights
-Iteration 499, epsilon 0.381, ESS 66.8, elapsed mins 238.8
-Iteration 500, epsilon 0.381, ESS 113.6, elapsed mins 239.2
-Truncating 1 weights
-Iteration 501, epsilon 0.381, ESS 60.3, elapsed mins 239.8
-Iteration 502, epsilon 0.381, ESS 69.3, elapsed mins 240.2
-Iteration 503, epsilon 0.381, ESS 148.3, elapsed mins 240.6
-Iteration 504, epsilon 0.381, ESS 72.8, elapsed mins 241.1
-Iteration 505, epsilon 0.381, ESS 172.0, elapsed mins 241.5
-Iteration 506, epsilon 0.381, ESS 227.9, elapsed mins 242.0
-Iteration 507, epsilon 0.381, ESS 108.7, elapsed mins 242.4
-Iteration 508, epsilon 0.381, ESS 138.1, elapsed mins 242.8
-Truncating 1 weights
-Iteration 509, epsilon 0.381, ESS 61.0, elapsed mins 243.3
-Iteration 510, epsilon 0.381, ESS 76.9, elapsed mins 243.7
-Iteration 511, epsilon 0.381, ESS 140.4, elapsed mins 244.1
-Iteration 512, epsilon 0.381, ESS 161.6, elapsed mins 244.6
-Iteration 513, epsilon 0.381, ESS 158.5, elapsed mins 245.0
-Iteration 514, epsilon 0.381, ESS 66.9, elapsed mins 245.5
-Iteration 515, epsilon 0.381, ESS 187.6, elapsed mins 245.9
-Iteration 516, epsilon 0.381, ESS 89.3, elapsed mins 246.3
-Iteration 517, epsilon 0.381, ESS 171.4, elapsed mins 246.8
-Iteration 518, epsilon 0.381, ESS 83.0, elapsed mins 247.2
-Iteration 519, epsilon 0.381, ESS 93.6, elapsed mins 247.7
-Iteration 520, epsilon 0.381, ESS 169.1, elapsed mins 248.1
-Iteration 521, epsilon 0.381, ESS 138.3, elapsed mins 248.6
-Truncating 1 weights
-Iteration 522, epsilon 0.381, ESS 56.5, elapsed mins 249.0
-Iteration 523, epsilon 0.381, ESS 83.2, elapsed mins 249.5
-Iteration 524, epsilon 0.381, ESS 78.8, elapsed mins 249.9
-Iteration 525, epsilon 0.381, ESS 58.4, elapsed mins 250.3
-Iteration 526, epsilon 0.381, ESS 87.7, elapsed mins 250.8
-Iteration 527, epsilon 0.381, ESS 136.2, elapsed mins 251.2
-Iteration 528, epsilon 0.381, ESS 98.5, elapsed mins 251.7
-Iteration 529, epsilon 0.381, ESS 116.9, elapsed mins 252.1
-Iteration 530, epsilon 0.381, ESS 103.2, elapsed mins 252.5
-Iteration 531, epsilon 0.381, ESS 205.6, elapsed mins 253.0
-Iteration 532, epsilon 0.381, ESS 78.2, elapsed mins 253.4
-Iteration 533, epsilon 0.381, ESS 104.0, elapsed mins 253.8
+Iteration 356, epsilon 0.442, ESS (untruncated) 52.3, elapsed mins 172.3
 Truncating 2 weights
-Iteration 534, epsilon 0.381, ESS 41.1, elapsed mins 254.3
-Iteration 535, epsilon 0.381, ESS 126.3, elapsed mins 254.7
-Iteration 536, epsilon 0.381, ESS 126.9, elapsed mins 255.2
+Truncating 3 weights
+Iteration 357, epsilon 0.442, ESS (untruncated) 8.0, elapsed mins 172.7
+Iteration 358, epsilon 0.442, ESS (untruncated) 143.2, elapsed mins 173.1
+Iteration 359, epsilon 0.442, ESS (untruncated) 97.1, elapsed mins 173.6
+Iteration 360, epsilon 0.442, ESS (untruncated) 146.0, elapsed mins 174.0
+Iteration 361, epsilon 0.442, ESS (untruncated) 69.3, elapsed mins 174.4
+Iteration 362, epsilon 0.442, ESS (untruncated) 186.0, elapsed mins 174.9
+Iteration 363, epsilon 0.442, ESS (untruncated) 161.7, elapsed mins 175.3
 Truncating 1 weights
-Iteration 537, epsilon 0.381, ESS 61.8, elapsed mins 255.6
-Iteration 538, epsilon 0.381, ESS 122.4, elapsed mins 256.0
-Iteration 539, epsilon 0.381, ESS 202.1, elapsed mins 256.5
-Iteration 540, epsilon 0.381, ESS 249.6, elapsed mins 256.9
-Iteration 541, epsilon 0.381, ESS 158.8, elapsed mins 257.4
-Iteration 542, epsilon 0.381, ESS 85.7, elapsed mins 257.9
-Iteration 543, epsilon 0.381, ESS 182.1, elapsed mins 258.3
-Iteration 544, epsilon 0.381, ESS 129.5, elapsed mins 258.7
-Iteration 545, epsilon 0.381, ESS 100.6, elapsed mins 259.2
-Iteration 546, epsilon 0.381, ESS 79.3, elapsed mins 259.6
-Iteration 547, epsilon 0.333, ESS 250.0, elapsed mins 260.1
+Iteration 364, epsilon 0.442, ESS (untruncated) 37.9, elapsed mins 175.8
+Iteration 365, epsilon 0.442, ESS (untruncated) 151.0, elapsed mins 176.2
+Iteration 366, epsilon 0.442, ESS (untruncated) 143.2, elapsed mins 176.7
+Iteration 367, epsilon 0.442, ESS (untruncated) 205.0, elapsed mins 177.2
+Iteration 368, epsilon 0.442, ESS (untruncated) 118.2, elapsed mins 177.6
+Iteration 369, epsilon 0.442, ESS (untruncated) 184.2, elapsed mins 178.1
+Iteration 370, epsilon 0.442, ESS (untruncated) 132.1, elapsed mins 178.6
+Iteration 371, epsilon 0.442, ESS (untruncated) 166.1, elapsed mins 179.0
 Truncating 1 weights
-Iteration 548, epsilon 0.333, ESS 70.8, elapsed mins 260.5
-Iteration 549, epsilon 0.333, ESS 127.2, elapsed mins 261.0
+Iteration 372, epsilon 0.442, ESS (untruncated) 10.9, elapsed mins 179.5
+Iteration 373, epsilon 0.442, ESS (untruncated) 117.1, elapsed mins 179.9
+Iteration 374, epsilon 0.442, ESS (untruncated) 162.5, elapsed mins 180.4
 Truncating 1 weights
-Iteration 550, epsilon 0.333, ESS 60.0, elapsed mins 261.4
-Iteration 551, epsilon 0.333, ESS 198.6, elapsed mins 261.8
-Iteration 552, epsilon 0.333, ESS 128.3, elapsed mins 262.2
-Iteration 553, epsilon 0.333, ESS 173.6, elapsed mins 262.7
-Iteration 554, epsilon 0.333, ESS 106.7, elapsed mins 263.1
+Iteration 375, epsilon 0.442, ESS (untruncated) 57.9, elapsed mins 180.8
 Truncating 1 weights
-Iteration 555, epsilon 0.333, ESS 71.6, elapsed mins 263.5
-Iteration 556, epsilon 0.333, ESS 82.5, elapsed mins 263.9
-Iteration 557, epsilon 0.333, ESS 119.4, elapsed mins 264.4
-Iteration 558, epsilon 0.333, ESS 193.6, elapsed mins 264.8
-Iteration 559, epsilon 0.333, ESS 137.9, elapsed mins 265.2
-Iteration 560, epsilon 0.333, ESS 139.9, elapsed mins 265.6
-Iteration 561, epsilon 0.333, ESS 122.3, elapsed mins 266.2
-Iteration 562, epsilon 0.333, ESS 187.5, elapsed mins 266.6
-Iteration 563, epsilon 0.333, ESS 111.6, elapsed mins 267.0
-Iteration 564, epsilon 0.333, ESS 86.4, elapsed mins 267.4
-Iteration 565, epsilon 0.333, ESS 81.8, elapsed mins 267.8
-Iteration 566, epsilon 0.333, ESS 71.0, elapsed mins 268.2
-Iteration 567, epsilon 0.333, ESS 240.3, elapsed mins 268.7
-Iteration 568, epsilon 0.333, ESS 115.6, elapsed mins 269.1
-Iteration 569, epsilon 0.333, ESS 152.3, elapsed mins 269.5
-Iteration 570, epsilon 0.333, ESS 123.3, elapsed mins 269.9
-Iteration 571, epsilon 0.333, ESS 96.9, elapsed mins 270.3
-Iteration 572, epsilon 0.333, ESS 83.4, elapsed mins 270.8
-Iteration 573, epsilon 0.333, ESS 174.1, elapsed mins 271.2
-Iteration 574, epsilon 0.333, ESS 100.0, elapsed mins 271.6
-Iteration 575, epsilon 0.333, ESS 69.9, elapsed mins 272.0
-Iteration 576, epsilon 0.333, ESS 126.7, elapsed mins 272.5
-Iteration 577, epsilon 0.333, ESS 165.5, elapsed mins 272.9
-Iteration 578, epsilon 0.333, ESS 143.1, elapsed mins 273.3
-Iteration 579, epsilon 0.333, ESS 182.0, elapsed mins 273.7
-Iteration 580, epsilon 0.333, ESS 131.8, elapsed mins 274.2
-Iteration 581, epsilon 0.333, ESS 174.3, elapsed mins 274.7
-Iteration 582, epsilon 0.333, ESS 101.1, elapsed mins 275.1
-Iteration 583, epsilon 0.333, ESS 86.1, elapsed mins 275.6
-Iteration 584, epsilon 0.333, ESS 135.6, elapsed mins 276.0
-Iteration 585, epsilon 0.333, ESS 148.4, elapsed mins 276.4
-Iteration 586, epsilon 0.333, ESS 77.9, elapsed mins 276.8
-Iteration 587, epsilon 0.333, ESS 158.1, elapsed mins 277.2
-Iteration 588, epsilon 0.333, ESS 173.8, elapsed mins 277.6
-Iteration 589, epsilon 0.333, ESS 74.5, elapsed mins 278.1
-Iteration 590, epsilon 0.333, ESS 148.0, elapsed mins 278.5
-Iteration 591, epsilon 0.333, ESS 157.4, elapsed mins 278.9
+Iteration 376, epsilon 0.442, ESS (untruncated) 26.8, elapsed mins 181.2
+Iteration 377, epsilon 0.442, ESS (untruncated) 102.3, elapsed mins 181.7
+Iteration 378, epsilon 0.442, ESS (untruncated) 124.3, elapsed mins 182.1
 Truncating 1 weights
-Iteration 592, epsilon 0.333, ESS 63.7, elapsed mins 279.3
-Iteration 593, epsilon 0.333, ESS 146.6, elapsed mins 279.8
-Iteration 594, epsilon 0.333, ESS 151.9, elapsed mins 280.2
-Iteration 595, epsilon 0.333, ESS 113.1, elapsed mins 280.6
-Iteration 596, epsilon 0.333, ESS 228.4, elapsed mins 281.0
-Iteration 597, epsilon 0.333, ESS 122.0, elapsed mins 281.4
-Iteration 598, epsilon 0.333, ESS 120.4, elapsed mins 281.9
-Iteration 599, epsilon 0.333, ESS 103.3, elapsed mins 282.3
+Iteration 379, epsilon 0.442, ESS (untruncated) 6.8, elapsed mins 182.6
 Truncating 1 weights
-Iteration 600, epsilon 0.333, ESS 74.1, elapsed mins 282.7
-Iteration 601, epsilon 0.333, ESS 195.9, elapsed mins 283.2
-Iteration 602, epsilon 0.333, ESS 138.9, elapsed mins 283.7
-Iteration 603, epsilon 0.306, ESS 250.0, elapsed mins 284.1
-Iteration 604, epsilon 0.306, ESS 233.8, elapsed mins 284.5
-Iteration 605, epsilon 0.306, ESS 232.8, elapsed mins 284.9
-Iteration 606, epsilon 0.306, ESS 227.2, elapsed mins 285.4
-Iteration 607, epsilon 0.306, ESS 99.4, elapsed mins 285.8
-Iteration 608, epsilon 0.306, ESS 120.9, elapsed mins 286.2
-Iteration 609, epsilon 0.306, ESS 127.0, elapsed mins 286.6
-Iteration 610, epsilon 0.000, ESS 261.9, elapsed mins 287.1
-Iteration 611, epsilon 0.000, ESS 167.4, elapsed mins 287.5
-Iteration 612, epsilon 0.000, ESS 91.3, elapsed mins 287.9
-Iteration 613, epsilon 0.000, ESS 76.7, elapsed mins 288.3
-Iteration 614, epsilon 0.000, ESS 200.8, elapsed mins 288.7
+Iteration 380, epsilon 0.442, ESS (untruncated) 54.2, elapsed mins 183.0
+Iteration 381, epsilon 0.442, ESS (untruncated) 71.4, elapsed mins 183.5
+Iteration 382, epsilon 0.442, ESS (untruncated) 107.1, elapsed mins 183.9
 Truncating 1 weights
-Iteration 615, epsilon 0.000, ESS 62.3, elapsed mins 289.1
-Iteration 616, epsilon 0.000, ESS 248.7, elapsed mins 289.6
-Iteration 617, epsilon 0.000, ESS 164.8, elapsed mins 290.0
-Iteration 618, epsilon 0.000, ESS 136.5, elapsed mins 290.4
-Iteration 619, epsilon 0.000, ESS 213.2, elapsed mins 290.8
-Iteration 620, epsilon 0.000, ESS 224.9, elapsed mins 291.3
-Iteration 621, epsilon 0.000, ESS 285.4, elapsed mins 291.8
-Iteration 622, epsilon 0.000, ESS 122.9, elapsed mins 292.2
-Iteration 623, epsilon 0.000, ESS 98.2, elapsed mins 292.6
-Iteration 624, epsilon 0.000, ESS 162.8, elapsed mins 293.1
-Iteration 625, epsilon 0.000, ESS 199.8, elapsed mins 293.5
-Iteration 626, epsilon 0.000, ESS 95.0, elapsed mins 293.9
-Iteration 627, epsilon 0.000, ESS 104.2, elapsed mins 294.3
-Iteration 628, epsilon 0.000, ESS 135.2, elapsed mins 294.7
-Iteration 629, epsilon 0.000, ESS 74.9, elapsed mins 295.2
-Iteration 630, epsilon 0.000, ESS 121.1, elapsed mins 295.6
-Iteration 631, epsilon 0.000, ESS 171.6, elapsed mins 296.0
-Iteration 632, epsilon 0.000, ESS 164.4, elapsed mins 296.4
-Iteration 633, epsilon 0.000, ESS 78.9, elapsed mins 296.8
-Iteration 634, epsilon 0.000, ESS 201.4, elapsed mins 297.3
-Iteration 635, epsilon 0.000, ESS 226.0, elapsed mins 297.7
-Iteration 636, epsilon 0.000, ESS 80.2, elapsed mins 298.1
-Iteration 637, epsilon 0.000, ESS 209.3, elapsed mins 298.5
-Iteration 638, epsilon 0.000, ESS 219.1, elapsed mins 298.9
-Iteration 639, epsilon 0.000, ESS 191.8, elapsed mins 299.3
-Iteration 640, epsilon 0.000, ESS 150.4, elapsed mins 299.8
-Iteration 641, epsilon 0.000, ESS 223.4, elapsed mins 300.3
-Iteration 642, epsilon 0.000, ESS 201.2, elapsed mins 300.7
-Iteration 643, epsilon 0.000, ESS 319.3, elapsed mins 301.1
-Iteration 644, epsilon 0.000, ESS 296.3, elapsed mins 301.5
+Iteration 383, epsilon 0.442, ESS (untruncated) 8.6, elapsed mins 184.4
 Truncating 1 weights
-Iteration 645, epsilon 0.000, ESS 75.0, elapsed mins 301.9
-Iteration 646, epsilon 0.000, ESS 271.6, elapsed mins 302.4
+Iteration 384, epsilon 0.442, ESS (untruncated) 59.8, elapsed mins 184.8
+Iteration 385, epsilon 0.442, ESS (untruncated) 166.0, elapsed mins 185.3
+Iteration 386, epsilon 0.442, ESS (untruncated) 123.7, elapsed mins 185.7
+Iteration 387, epsilon 0.442, ESS (untruncated) 174.7, elapsed mins 186.2
+Iteration 388, epsilon 0.442, ESS (untruncated) 119.6, elapsed mins 186.6
 Truncating 1 weights
-Iteration 647, epsilon 0.000, ESS 78.8, elapsed mins 302.8
-Iteration 648, epsilon 0.000, ESS 160.8, elapsed mins 303.2
-Iteration 649, epsilon 0.000, ESS 140.4, elapsed mins 303.6
-Iteration 650, epsilon 0.000, ESS 128.2, elapsed mins 304.0
-Iteration 651, epsilon 0.000, ESS 93.4, elapsed mins 304.4
-Iteration 652, epsilon 0.000, ESS 244.4, elapsed mins 304.8
-Iteration 653, epsilon 0.000, ESS 115.4, elapsed mins 305.2
-Iteration 654, epsilon 0.000, ESS 303.9, elapsed mins 305.6
-Iteration 655, epsilon 0.000, ESS 91.4, elapsed mins 306.1
-Iteration 656, epsilon 0.000, ESS 192.2, elapsed mins 306.5
-Iteration 657, epsilon 0.000, ESS 175.5, elapsed mins 306.9
-Iteration 658, epsilon 0.000, ESS 303.4, elapsed mins 307.3
-Iteration 659, epsilon 0.000, ESS 218.8, elapsed mins 307.8
-Iteration 660, epsilon 0.000, ESS 231.2, elapsed mins 308.2
-Iteration 661, epsilon 0.000, ESS 269.4, elapsed mins 308.7
+Iteration 389, epsilon 0.442, ESS (untruncated) 7.8, elapsed mins 187.1
 Truncating 1 weights
-Iteration 662, epsilon 0.000, ESS 58.0, elapsed mins 309.1
-Iteration 663, epsilon 0.000, ESS 295.4, elapsed mins 309.5
-Iteration 664, epsilon 0.000, ESS 324.1, elapsed mins 310.0
-Iteration 665, epsilon 0.000, ESS 232.7, elapsed mins 310.4
-Iteration 666, epsilon 0.000, ESS 316.2, elapsed mins 310.8
-Iteration 667, epsilon 0.000, ESS 161.8, elapsed mins 311.2
-Iteration 668, epsilon 0.000, ESS 225.7, elapsed mins 311.6
-Iteration 669, epsilon 0.000, ESS 259.8, elapsed mins 312.1
-Iteration 670, epsilon 0.000, ESS 272.6, elapsed mins 312.5
-Iteration 671, epsilon 0.000, ESS 230.1, elapsed mins 312.9
-Iteration 672, epsilon 0.000, ESS 188.3, elapsed mins 313.3
-Iteration 673, epsilon 0.000, ESS 314.1, elapsed mins 313.8
-Iteration 674, epsilon 0.000, ESS 139.8, elapsed mins 314.2
-Iteration 675, epsilon 0.000, ESS 108.8, elapsed mins 314.6
-Iteration 676, epsilon 0.000, ESS 323.0, elapsed mins 315.0
-Iteration 677, epsilon 0.000, ESS 183.7, elapsed mins 315.4
-Iteration 678, epsilon 0.000, ESS 243.7, elapsed mins 315.8
-Iteration 679, epsilon 0.000, ESS 331.7, elapsed mins 316.3
-Iteration 680, epsilon 0.000, ESS 256.5, elapsed mins 316.7
+Iteration 390, epsilon 0.442, ESS (untruncated) 65.8, elapsed mins 187.5
+Iteration 391, epsilon 0.442, ESS (untruncated) 201.7, elapsed mins 187.9
+Truncating 1 weights
+Iteration 392, epsilon 0.442, ESS (untruncated) 68.5, elapsed mins 188.4
+Iteration 393, epsilon 0.442, ESS (untruncated) 183.5, elapsed mins 188.8
+Iteration 394, epsilon 0.442, ESS (untruncated) 101.4, elapsed mins 189.3
+Iteration 395, epsilon 0.442, ESS (untruncated) 124.9, elapsed mins 189.7
+Truncating 1 weights
+Iteration 396, epsilon 0.442, ESS (untruncated) 4.8, elapsed mins 190.2
+Truncating 1 weights
+Iteration 397, epsilon 0.442, ESS (untruncated) 13.1, elapsed mins 190.6
+Iteration 398, epsilon 0.442, ESS (untruncated) 76.6, elapsed mins 191.0
+Iteration 399, epsilon 0.442, ESS (untruncated) 123.2, elapsed mins 191.5
+Iteration 400, epsilon 0.442, ESS (untruncated) 112.2, elapsed mins 191.9
+Iteration 401, epsilon 0.442, ESS (untruncated) 201.1, elapsed mins 192.4
+Iteration 402, epsilon 0.442, ESS (untruncated) 126.5, elapsed mins 192.8
+Truncating 1 weights
+Iteration 403, epsilon 0.442, ESS (untruncated) 6.6, elapsed mins 193.3
+Iteration 404, epsilon 0.442, ESS (untruncated) 173.3, elapsed mins 193.7
+Truncating 1 weights
+Iteration 405, epsilon 0.442, ESS (untruncated) 23.7, elapsed mins 194.2
+Iteration 406, epsilon 0.442, ESS (untruncated) 216.2, elapsed mins 194.6
+Truncating 1 weights
+Iteration 407, epsilon 0.442, ESS (untruncated) 53.2, elapsed mins 195.1
+Iteration 408, epsilon 0.442, ESS (untruncated) 93.0, elapsed mins 195.5
+Iteration 409, epsilon 0.442, ESS (untruncated) 186.4, elapsed mins 195.9
+Truncating 1 weights
+Iteration 410, epsilon 0.442, ESS (untruncated) 26.2, elapsed mins 196.4
+Iteration 411, epsilon 0.442, ESS (untruncated) 212.7, elapsed mins 196.8
+Iteration 412, epsilon 0.442, ESS (untruncated) 167.0, elapsed mins 197.3
+Truncating 1 weights
+Iteration 413, epsilon 0.442, ESS (untruncated) 10.6, elapsed mins 197.7
+Iteration 414, epsilon 0.442, ESS (untruncated) 157.8, elapsed mins 198.1
+Iteration 415, epsilon 0.442, ESS (untruncated) 135.4, elapsed mins 198.6
+Iteration 416, epsilon 0.442, ESS (untruncated) 80.1, elapsed mins 199.0
+Iteration 417, epsilon 0.442, ESS (untruncated) 87.1, elapsed mins 199.5
+Iteration 418, epsilon 0.442, ESS (untruncated) 183.8, elapsed mins 199.9
+Iteration 419, epsilon 0.442, ESS (untruncated) 74.1, elapsed mins 200.3
+Iteration 420, epsilon 0.442, ESS (untruncated) 158.8, elapsed mins 200.8
+Iteration 421, epsilon 0.442, ESS (untruncated) 65.2, elapsed mins 201.2
+Iteration 422, epsilon 0.442, ESS (untruncated) 110.4, elapsed mins 201.7
+Iteration 423, epsilon 0.442, ESS (untruncated) 195.5, elapsed mins 202.1
+Iteration 424, epsilon 0.442, ESS (untruncated) 180.4, elapsed mins 202.6
+Iteration 425, epsilon 0.442, ESS (untruncated) 86.4, elapsed mins 203.0
+Iteration 426, epsilon 0.442, ESS (untruncated) 141.7, elapsed mins 203.5
+Iteration 427, epsilon 0.440, ESS (untruncated) 250.0, elapsed mins 203.9
+Truncating 2 weights
+Iteration 428, epsilon 0.440, ESS (untruncated) 28.2, elapsed mins 204.4
+Iteration 429, epsilon 0.440, ESS (untruncated) 142.4, elapsed mins 204.8
+Iteration 430, epsilon 0.440, ESS (untruncated) 118.1, elapsed mins 205.2
+Iteration 431, epsilon 0.440, ESS (untruncated) 166.1, elapsed mins 205.7
+Iteration 432, epsilon 0.440, ESS (untruncated) 167.3, elapsed mins 206.1
+Iteration 433, epsilon 0.440, ESS (untruncated) 127.3, elapsed mins 206.5
+Iteration 434, epsilon 0.440, ESS (untruncated) 136.2, elapsed mins 207.0
+Iteration 435, epsilon 0.440, ESS (untruncated) 82.5, elapsed mins 207.4
+Truncating 1 weights
+Iteration 436, epsilon 0.440, ESS (untruncated) 10.6, elapsed mins 207.9
+Iteration 437, epsilon 0.440, ESS (untruncated) 160.6, elapsed mins 208.3
+Iteration 438, epsilon 0.440, ESS (untruncated) 115.2, elapsed mins 208.8
+Iteration 439, epsilon 0.440, ESS (untruncated) 103.8, elapsed mins 209.2
+Iteration 440, epsilon 0.440, ESS (untruncated) 160.5, elapsed mins 209.6
+Iteration 441, epsilon 0.440, ESS (untruncated) 116.1, elapsed mins 210.1
+Iteration 442, epsilon 0.440, ESS (untruncated) 172.2, elapsed mins 210.5
+Iteration 443, epsilon 0.440, ESS (untruncated) 94.5, elapsed mins 210.9
+Iteration 444, epsilon 0.440, ESS (untruncated) 190.5, elapsed mins 211.4
+Iteration 445, epsilon 0.440, ESS (untruncated) 140.8, elapsed mins 211.8
+Iteration 446, epsilon 0.440, ESS (untruncated) 117.5, elapsed mins 212.3
+Iteration 447, epsilon 0.440, ESS (untruncated) 178.1, elapsed mins 212.7
+Iteration 448, epsilon 0.440, ESS (untruncated) 57.9, elapsed mins 213.2
+Iteration 449, epsilon 0.440, ESS (untruncated) 60.9, elapsed mins 213.6
+Iteration 450, epsilon 0.440, ESS (untruncated) 161.7, elapsed mins 214.1
+Iteration 451, epsilon 0.440, ESS (untruncated) 128.6, elapsed mins 214.5
+Iteration 452, epsilon 0.440, ESS (untruncated) 167.1, elapsed mins 214.9
+Iteration 453, epsilon 0.440, ESS (untruncated) 45.5, elapsed mins 215.3
+Iteration 454, epsilon 0.440, ESS (untruncated) 155.7, elapsed mins 215.8
+Iteration 455, epsilon 0.440, ESS (untruncated) 127.6, elapsed mins 216.2
+Iteration 456, epsilon 0.440, ESS (untruncated) 218.6, elapsed mins 216.6
+Truncating 1 weights
+Iteration 457, epsilon 0.440, ESS (untruncated) 1.3, elapsed mins 217.0
+Iteration 458, epsilon 0.440, ESS (untruncated) 170.8, elapsed mins 217.5
+Iteration 459, epsilon 0.440, ESS (untruncated) 114.6, elapsed mins 217.9
+Iteration 460, epsilon 0.437, ESS (untruncated) 250.0, elapsed mins 218.4
+Iteration 461, epsilon 0.437, ESS (untruncated) 93.5, elapsed mins 218.9
+Iteration 462, epsilon 0.437, ESS (untruncated) 69.0, elapsed mins 219.3
+Iteration 463, epsilon 0.437, ESS (untruncated) 203.8, elapsed mins 219.8
+Iteration 464, epsilon 0.437, ESS (untruncated) 188.0, elapsed mins 220.2
+Iteration 465, epsilon 0.437, ESS (untruncated) 184.1, elapsed mins 220.6
+Iteration 466, epsilon 0.437, ESS (untruncated) 132.4, elapsed mins 221.1
+Iteration 467, epsilon 0.437, ESS (untruncated) 171.3, elapsed mins 221.5
+Iteration 468, epsilon 0.431, ESS (untruncated) 250.0, elapsed mins 222.0
+Iteration 469, epsilon 0.431, ESS (untruncated) 74.1, elapsed mins 222.4
+Iteration 470, epsilon 0.431, ESS (untruncated) 77.7, elapsed mins 222.8
+Iteration 471, epsilon 0.431, ESS (untruncated) 137.6, elapsed mins 223.3
+Iteration 472, epsilon 0.431, ESS (untruncated) 115.2, elapsed mins 223.7
+Iteration 473, epsilon 0.431, ESS (untruncated) 145.6, elapsed mins 224.2
+Iteration 474, epsilon 0.431, ESS (untruncated) 122.1, elapsed mins 224.6
+Iteration 475, epsilon 0.431, ESS (untruncated) 176.7, elapsed mins 225.1
+Iteration 476, epsilon 0.431, ESS (untruncated) 160.1, elapsed mins 225.5
+Iteration 477, epsilon 0.431, ESS (untruncated) 160.0, elapsed mins 226.0
+Iteration 478, epsilon 0.431, ESS (untruncated) 76.7, elapsed mins 226.4
+Iteration 479, epsilon 0.431, ESS (untruncated) 82.4, elapsed mins 226.8
+Iteration 480, epsilon 0.431, ESS (untruncated) 101.4, elapsed mins 227.3
+Truncating 1 weights
+Iteration 481, epsilon 0.431, ESS (untruncated) 51.4, elapsed mins 227.7
+Iteration 482, epsilon 0.431, ESS (untruncated) 122.7, elapsed mins 228.2
+Iteration 483, epsilon 0.431, ESS (untruncated) 66.5, elapsed mins 228.6
+Iteration 484, epsilon 0.431, ESS (untruncated) 115.2, elapsed mins 229.1
+Iteration 485, epsilon 0.431, ESS (untruncated) 108.4, elapsed mins 229.5
+Iteration 486, epsilon 0.431, ESS (untruncated) 80.1, elapsed mins 230.0
+Iteration 487, epsilon 0.431, ESS (untruncated) 133.6, elapsed mins 230.4
+Iteration 488, epsilon 0.431, ESS (untruncated) 202.0, elapsed mins 230.8
+Truncating 1 weights
+Truncating 2 weights
+Iteration 489, epsilon 0.431, ESS (untruncated) 25.2, elapsed mins 231.3
+Iteration 490, epsilon 0.431, ESS (untruncated) 55.4, elapsed mins 231.7
+Iteration 491, epsilon 0.431, ESS (untruncated) 84.6, elapsed mins 232.2
+Iteration 492, epsilon 0.431, ESS (untruncated) 84.2, elapsed mins 232.6
+Iteration 493, epsilon 0.431, ESS (untruncated) 123.5, elapsed mins 233.0
+Iteration 494, epsilon 0.431, ESS (untruncated) 124.6, elapsed mins 233.5
+Iteration 495, epsilon 0.431, ESS (untruncated) 169.9, elapsed mins 233.9
+Iteration 496, epsilon 0.431, ESS (untruncated) 144.9, elapsed mins 234.3
+Iteration 497, epsilon 0.431, ESS (untruncated) 84.4, elapsed mins 234.7
+Iteration 498, epsilon 0.431, ESS (untruncated) 104.8, elapsed mins 235.2
+Iteration 499, epsilon 0.431, ESS (untruncated) 162.4, elapsed mins 235.6
+Iteration 500, epsilon 0.431, ESS (untruncated) 133.9, elapsed mins 236.0
+Iteration 501, epsilon 0.431, ESS (untruncated) 143.4, elapsed mins 236.5
+Truncating 1 weights
+Iteration 502, epsilon 0.431, ESS (untruncated) 42.0, elapsed mins 236.9
+Iteration 503, epsilon 0.431, ESS (untruncated) 150.5, elapsed mins 237.3
+Iteration 504, epsilon 0.431, ESS (untruncated) 81.0, elapsed mins 237.8
+Iteration 505, epsilon 0.431, ESS (untruncated) 147.7, elapsed mins 238.2
+Iteration 506, epsilon 0.431, ESS (untruncated) 117.3, elapsed mins 238.7
+Iteration 507, epsilon 0.431, ESS (untruncated) 177.3, elapsed mins 239.1
+Truncating 1 weights
+Iteration 508, epsilon 0.431, ESS (untruncated) 13.6, elapsed mins 239.5
+Truncating 1 weights
+Iteration 509, epsilon 0.431, ESS (untruncated) 46.9, elapsed mins 240.0
+Iteration 510, epsilon 0.431, ESS (untruncated) 189.3, elapsed mins 240.4
+Iteration 511, epsilon 0.431, ESS (untruncated) 75.0, elapsed mins 240.8
+Iteration 512, epsilon 0.431, ESS (untruncated) 80.0, elapsed mins 241.3
+Truncating 1 weights
+Iteration 513, epsilon 0.431, ESS (untruncated) 48.1, elapsed mins 241.7
+Iteration 514, epsilon 0.431, ESS (untruncated) 132.0, elapsed mins 242.2
+Iteration 515, epsilon 0.431, ESS (untruncated) 137.2, elapsed mins 242.6
+Iteration 516, epsilon 0.431, ESS (untruncated) 117.2, elapsed mins 243.1
+Iteration 517, epsilon 0.431, ESS (untruncated) 160.9, elapsed mins 243.5
+Iteration 518, epsilon 0.431, ESS (untruncated) 153.6, elapsed mins 244.0
+Iteration 519, epsilon 0.431, ESS (untruncated) 229.7, elapsed mins 244.4
+Iteration 520, epsilon 0.431, ESS (untruncated) 72.0, elapsed mins 244.8
+Truncating 1 weights
+Iteration 521, epsilon 0.431, ESS (untruncated) 44.6, elapsed mins 245.3
+Truncating 1 weights
+Iteration 522, epsilon 0.431, ESS (untruncated) 34.4, elapsed mins 245.7
+Iteration 523, epsilon 0.431, ESS (untruncated) 137.5, elapsed mins 246.1
+Truncating 1 weights
+Iteration 524, epsilon 0.431, ESS (untruncated) 32.5, elapsed mins 246.6
+Iteration 525, epsilon 0.431, ESS (untruncated) 178.1, elapsed mins 247.0
+Iteration 526, epsilon 0.431, ESS (untruncated) 168.7, elapsed mins 247.5
+Iteration 527, epsilon 0.431, ESS (untruncated) 238.0, elapsed mins 247.9
+Iteration 528, epsilon 0.431, ESS (untruncated) 148.6, elapsed mins 248.4
+Iteration 529, epsilon 0.431, ESS (untruncated) 116.3, elapsed mins 248.8
+Iteration 530, epsilon 0.431, ESS (untruncated) 154.3, elapsed mins 249.3
+Iteration 531, epsilon 0.431, ESS (untruncated) 217.4, elapsed mins 249.7
+Iteration 532, epsilon 0.431, ESS (untruncated) 214.4, elapsed mins 250.1
+Iteration 533, epsilon 0.431, ESS (untruncated) 163.1, elapsed mins 250.6
+Iteration 534, epsilon 0.431, ESS (untruncated) 144.4, elapsed mins 251.0
+Iteration 535, epsilon 0.431, ESS (untruncated) 148.0, elapsed mins 251.4
+Iteration 536, epsilon 0.431, ESS (untruncated) 99.0, elapsed mins 251.9
+Iteration 537, epsilon 0.431, ESS (untruncated) 125.8, elapsed mins 252.3
+Iteration 538, epsilon 0.414, ESS (untruncated) 250.0, elapsed mins 252.8
+Iteration 539, epsilon 0.414, ESS (untruncated) 136.1, elapsed mins 253.2
+Iteration 540, epsilon 0.414, ESS (untruncated) 110.2, elapsed mins 253.7
+Truncating 1 weights
+Iteration 541, epsilon 0.414, ESS (untruncated) 50.1, elapsed mins 254.1
+Iteration 542, epsilon 0.414, ESS (untruncated) 133.6, elapsed mins 254.6
+Truncating 1 weights
+Iteration 543, epsilon 0.414, ESS (untruncated) 24.2, elapsed mins 255.0
+Iteration 544, epsilon 0.414, ESS (untruncated) 165.3, elapsed mins 255.4
+Iteration 545, epsilon 0.414, ESS (untruncated) 156.8, elapsed mins 255.9
+Iteration 546, epsilon 0.414, ESS (untruncated) 125.5, elapsed mins 256.3
+Iteration 547, epsilon 0.414, ESS (untruncated) 123.1, elapsed mins 256.7
+Iteration 548, epsilon 0.414, ESS (untruncated) 156.9, elapsed mins 257.1
+Iteration 549, epsilon 0.414, ESS (untruncated) 145.7, elapsed mins 257.6
+Iteration 550, epsilon 0.414, ESS (untruncated) 148.1, elapsed mins 258.0
+Iteration 551, epsilon 0.414, ESS (untruncated) 134.9, elapsed mins 258.5
+Iteration 552, epsilon 0.414, ESS (untruncated) 166.3, elapsed mins 258.9
+Iteration 553, epsilon 0.414, ESS (untruncated) 113.8, elapsed mins 259.4
+Truncating 1 weights
+Iteration 554, epsilon 0.414, ESS (untruncated) 42.9, elapsed mins 259.8
+Iteration 555, epsilon 0.414, ESS (untruncated) 84.5, elapsed mins 260.3
+Iteration 556, epsilon 0.414, ESS (untruncated) 109.9, elapsed mins 260.7
+Iteration 557, epsilon 0.414, ESS (untruncated) 70.7, elapsed mins 261.1
+Iteration 558, epsilon 0.414, ESS (untruncated) 163.1, elapsed mins 261.5
+Iteration 559, epsilon 0.414, ESS (untruncated) 125.7, elapsed mins 262.0
+Iteration 560, epsilon 0.414, ESS (untruncated) 213.9, elapsed mins 262.4
+Iteration 561, epsilon 0.414, ESS (untruncated) 172.4, elapsed mins 262.8
+Iteration 562, epsilon 0.410, ESS (untruncated) 250.0, elapsed mins 263.2
+Iteration 563, epsilon 0.410, ESS (untruncated) 61.0, elapsed mins 263.7
+Iteration 564, epsilon 0.410, ESS (untruncated) 116.2, elapsed mins 264.1
+Iteration 565, epsilon 0.410, ESS (untruncated) 137.5, elapsed mins 264.5
+Iteration 566, epsilon 0.410, ESS (untruncated) 68.7, elapsed mins 265.0
+Truncating 1 weights
+Iteration 567, epsilon 0.410, ESS (untruncated) 38.8, elapsed mins 265.4
+Truncating 1 weights
+Iteration 568, epsilon 0.410, ESS (untruncated) 36.0, elapsed mins 265.9
+Iteration 569, epsilon 0.410, ESS (untruncated) 91.1, elapsed mins 266.3
+Truncating 1 weights
+Iteration 570, epsilon 0.410, ESS (untruncated) 9.4, elapsed mins 266.7
+Iteration 571, epsilon 0.410, ESS (untruncated) 93.9, elapsed mins 267.1
+Iteration 572, epsilon 0.410, ESS (untruncated) 95.0, elapsed mins 267.6
+Iteration 573, epsilon 0.410, ESS (untruncated) 137.4, elapsed mins 268.0
+Iteration 574, epsilon 0.410, ESS (untruncated) 76.1, elapsed mins 268.4
+Iteration 575, epsilon 0.410, ESS (untruncated) 113.2, elapsed mins 268.9
+Iteration 576, epsilon 0.410, ESS (untruncated) 118.9, elapsed mins 269.3
+Truncating 1 weights
+Iteration 577, epsilon 0.410, ESS (untruncated) 49.8, elapsed mins 269.7
+Iteration 578, epsilon 0.410, ESS (untruncated) 83.1, elapsed mins 270.2
+Truncating 1 weights
+Iteration 579, epsilon 0.410, ESS (untruncated) 35.3, elapsed mins 270.6
+Iteration 580, epsilon 0.410, ESS (untruncated) 118.7, elapsed mins 271.0
+Iteration 581, epsilon 0.410, ESS (untruncated) 149.9, elapsed mins 271.5
+Truncating 1 weights
+Iteration 582, epsilon 0.410, ESS (untruncated) 31.0, elapsed mins 271.9
+Iteration 583, epsilon 0.410, ESS (untruncated) 76.4, elapsed mins 272.3
+Iteration 584, epsilon 0.410, ESS (untruncated) 85.1, elapsed mins 272.7
+Iteration 585, epsilon 0.410, ESS (untruncated) 101.0, elapsed mins 273.2
+Iteration 586, epsilon 0.410, ESS (untruncated) 163.2, elapsed mins 273.6
+Iteration 587, epsilon 0.410, ESS (untruncated) 100.3, elapsed mins 274.0
+Iteration 588, epsilon 0.410, ESS (untruncated) 201.0, elapsed mins 274.5
+Truncating 1 weights
+Iteration 589, epsilon 0.410, ESS (untruncated) 58.9, elapsed mins 274.9
+Iteration 590, epsilon 0.410, ESS (untruncated) 156.9, elapsed mins 275.3
+Iteration 591, epsilon 0.410, ESS (untruncated) 142.5, elapsed mins 275.7
+Iteration 592, epsilon 0.410, ESS (untruncated) 131.5, elapsed mins 276.2
+Iteration 593, epsilon 0.410, ESS (untruncated) 81.2, elapsed mins 276.6
+Truncating 1 weights
+Iteration 594, epsilon 0.410, ESS (untruncated) 52.4, elapsed mins 277.0
+Truncating 1 weights
+Iteration 595, epsilon 0.410, ESS (untruncated) 27.4, elapsed mins 277.4
+Iteration 596, epsilon 0.410, ESS (untruncated) 57.0, elapsed mins 277.9
+Iteration 597, epsilon 0.410, ESS (untruncated) 169.4, elapsed mins 278.3
+Iteration 598, epsilon 0.410, ESS (untruncated) 116.1, elapsed mins 278.7
+Iteration 599, epsilon 0.410, ESS (untruncated) 225.7, elapsed mins 279.2
+Truncating 1 weights
+Iteration 600, epsilon 0.410, ESS (untruncated) 29.7, elapsed mins 279.6
+Iteration 601, epsilon 0.410, ESS (untruncated) 162.9, elapsed mins 280.0
+Iteration 602, epsilon 0.410, ESS (untruncated) 145.4, elapsed mins 280.4
+Iteration 603, epsilon 0.410, ESS (untruncated) 163.7, elapsed mins 280.9
+Iteration 604, epsilon 0.410, ESS (untruncated) 159.0, elapsed mins 281.3
+Iteration 605, epsilon 0.410, ESS (untruncated) 137.7, elapsed mins 281.8
+Iteration 606, epsilon 0.410, ESS (untruncated) 108.7, elapsed mins 282.2
+Iteration 607, epsilon 0.410, ESS (untruncated) 112.7, elapsed mins 282.6
+Iteration 608, epsilon 0.410, ESS (untruncated) 154.4, elapsed mins 283.0
+Iteration 609, epsilon 0.410, ESS (untruncated) 133.8, elapsed mins 283.5
+Iteration 610, epsilon 0.410, ESS (untruncated) 151.3, elapsed mins 283.9
+Iteration 611, epsilon 0.410, ESS (untruncated) 170.6, elapsed mins 284.3
+Truncating 1 weights
+Iteration 612, epsilon 0.410, ESS (untruncated) 58.1, elapsed mins 284.8
+Iteration 613, epsilon 0.410, ESS (untruncated) 222.2, elapsed mins 285.2
+Iteration 614, epsilon 0.410, ESS (untruncated) 174.4, elapsed mins 285.6
+Iteration 615, epsilon 0.410, ESS (untruncated) 159.9, elapsed mins 286.1
+Iteration 616, epsilon 0.410, ESS (untruncated) 117.3, elapsed mins 286.5
+Iteration 617, epsilon 0.410, ESS (untruncated) 238.1, elapsed mins 286.9
+Iteration 618, epsilon 0.410, ESS (untruncated) 142.8, elapsed mins 287.3
+Truncating 1 weights
+Iteration 619, epsilon 0.410, ESS (untruncated) 15.4, elapsed mins 287.7
+Iteration 620, epsilon 0.410, ESS (untruncated) 141.0, elapsed mins 288.2
+Iteration 621, epsilon 0.410, ESS (untruncated) 235.8, elapsed mins 288.6
+Iteration 622, epsilon 0.410, ESS (untruncated) 151.7, elapsed mins 289.0
+Iteration 623, epsilon 0.410, ESS (untruncated) 156.9, elapsed mins 289.5
+Truncating 1 weights
+Iteration 624, epsilon 0.410, ESS (untruncated) 46.4, elapsed mins 289.9
+Iteration 625, epsilon 0.410, ESS (untruncated) 171.1, elapsed mins 290.4
+Iteration 626, epsilon 0.410, ESS (untruncated) 135.1, elapsed mins 290.8
+Iteration 627, epsilon 0.410, ESS (untruncated) 142.0, elapsed mins 291.2
+Iteration 628, epsilon 0.410, ESS (untruncated) 149.1, elapsed mins 291.7
+Truncating 1 weights
+Iteration 629, epsilon 0.410, ESS (untruncated) 24.5, elapsed mins 292.1
+Iteration 630, epsilon 0.410, ESS (untruncated) 60.1, elapsed mins 292.5
+Iteration 631, epsilon 0.410, ESS (untruncated) 142.0, elapsed mins 293.0
+Iteration 632, epsilon 0.410, ESS (untruncated) 109.8, elapsed mins 293.4
+Iteration 633, epsilon 0.410, ESS (untruncated) 178.2, elapsed mins 293.8
+Iteration 634, epsilon 0.410, ESS (untruncated) 187.4, elapsed mins 294.2
+Iteration 635, epsilon 0.410, ESS (untruncated) 171.1, elapsed mins 294.7
+Iteration 636, epsilon 0.410, ESS (untruncated) 246.9, elapsed mins 295.1
+Truncating 1 weights
+Iteration 637, epsilon 0.410, ESS (untruncated) 5.1, elapsed mins 295.5
+Iteration 638, epsilon 0.410, ESS (untruncated) 160.3, elapsed mins 296.0
+Iteration 639, epsilon 0.410, ESS (untruncated) 121.4, elapsed mins 296.4
+Iteration 640, epsilon 0.410, ESS (untruncated) 112.2, elapsed mins 296.9
+Truncating 1 weights
+Iteration 641, epsilon 0.410, ESS (untruncated) 44.9, elapsed mins 297.4
+Iteration 642, epsilon 0.410, ESS (untruncated) 146.9, elapsed mins 297.8
+Iteration 643, epsilon 0.410, ESS (untruncated) 164.8, elapsed mins 298.2
+Iteration 644, epsilon 0.410, ESS (untruncated) 83.0, elapsed mins 298.7
+Iteration 645, epsilon 0.410, ESS (untruncated) 239.6, elapsed mins 299.1
+Truncating 1 weights
+Iteration 646, epsilon 0.410, ESS (untruncated) 5.9, elapsed mins 299.5
+Truncating 1 weights
+Truncating 2 weights
+Iteration 647, epsilon 0.410, ESS (untruncated) 2.9, elapsed mins 300.0
+Iteration 648, epsilon 0.410, ESS (untruncated) 204.2, elapsed mins 300.4
+Iteration 649, epsilon 0.410, ESS (untruncated) 211.4, elapsed mins 300.9
+Iteration 650, epsilon 0.392, ESS (untruncated) 250.0, elapsed mins 301.3
+Iteration 651, epsilon 0.392, ESS (untruncated) 135.8, elapsed mins 301.7
+Iteration 652, epsilon 0.392, ESS (untruncated) 142.5, elapsed mins 302.1
+Iteration 653, epsilon 0.369, ESS (untruncated) 250.0, elapsed mins 302.5
+Iteration 654, epsilon 0.369, ESS (untruncated) 127.2, elapsed mins 303.0
+Iteration 655, epsilon 0.369, ESS (untruncated) 136.7, elapsed mins 303.4
+Iteration 656, epsilon 0.369, ESS (untruncated) 169.0, elapsed mins 303.8
+Iteration 657, epsilon 0.369, ESS (untruncated) 70.0, elapsed mins 304.2
+Iteration 658, epsilon 0.369, ESS (untruncated) 157.9, elapsed mins 304.7
+Iteration 659, epsilon 0.369, ESS (untruncated) 127.2, elapsed mins 305.1
+Iteration 660, epsilon 0.369, ESS (untruncated) 114.1, elapsed mins 305.5
+Truncating 1 weights
+Iteration 661, epsilon 0.369, ESS (untruncated) 47.7, elapsed mins 306.0
+Iteration 662, epsilon 0.369, ESS (untruncated) 126.2, elapsed mins 306.4
+Truncating 1 weights
+Iteration 663, epsilon 0.369, ESS (untruncated) 29.2, elapsed mins 306.8
+Truncating 2 weights
+Iteration 664, epsilon 0.369, ESS (untruncated) 25.7, elapsed mins 307.2
+Iteration 665, epsilon 0.369, ESS (untruncated) 128.8, elapsed mins 307.6
+Iteration 666, epsilon 0.369, ESS (untruncated) 98.2, elapsed mins 308.1
+Iteration 667, epsilon 0.369, ESS (untruncated) 122.0, elapsed mins 308.5
+Iteration 668, epsilon 0.369, ESS (untruncated) 154.3, elapsed mins 308.9
+Truncating 1 weights
+Iteration 669, epsilon 0.369, ESS (untruncated) 48.3, elapsed mins 309.3
+Iteration 670, epsilon 0.369, ESS (untruncated) 94.5, elapsed mins 309.8
+Iteration 671, epsilon 0.369, ESS (untruncated) 178.5, elapsed mins 310.2
+Iteration 672, epsilon 0.369, ESS (untruncated) 76.5, elapsed mins 310.6
+Truncating 1 weights
+Iteration 673, epsilon 0.369, ESS (untruncated) 32.5, elapsed mins 311.0
+Iteration 674, epsilon 0.369, ESS (untruncated) 177.1, elapsed mins 311.4
+Truncating 1 weights
+Iteration 675, epsilon 0.369, ESS (untruncated) 42.2, elapsed mins 311.8
+Iteration 676, epsilon 0.369, ESS (untruncated) 155.6, elapsed mins 312.2
+Iteration 677, epsilon 0.369, ESS (untruncated) 200.7, elapsed mins 312.6
+Iteration 678, epsilon 0.369, ESS (untruncated) 181.4, elapsed mins 313.1
+Iteration 679, epsilon 0.369, ESS (untruncated) 146.3, elapsed mins 313.5
+Iteration 680, epsilon 0.369, ESS (untruncated) 113.2, elapsed mins 313.9
+Iteration 681, epsilon 0.369, ESS (untruncated) 143.7, elapsed mins 314.3
+Iteration 682, epsilon 0.369, ESS (untruncated) 117.4, elapsed mins 314.7
+Iteration 683, epsilon 0.369, ESS (untruncated) 132.7, elapsed mins 315.2
+Truncating 1 weights
+Iteration 684, epsilon 0.369, ESS (untruncated) 9.8, elapsed mins 315.6
+Iteration 685, epsilon 0.369, ESS (untruncated) 172.5, elapsed mins 316.0
+Iteration 686, epsilon 0.369, ESS (untruncated) 78.9, elapsed mins 316.4
+Iteration 687, epsilon 0.369, ESS (untruncated) 104.8, elapsed mins 316.8
+Iteration 688, epsilon 0.369, ESS (untruncated) 112.8, elapsed mins 317.3
+Iteration 689, epsilon 0.369, ESS (untruncated) 208.5, elapsed mins 317.7
+Iteration 690, epsilon 0.369, ESS (untruncated) 213.7, elapsed mins 318.1
+Truncating 1 weights
+Iteration 691, epsilon 0.369, ESS (untruncated) 39.1, elapsed mins 318.6
+Iteration 692, epsilon 0.369, ESS (untruncated) 66.3, elapsed mins 319.0
+Iteration 693, epsilon 0.369, ESS (untruncated) 101.0, elapsed mins 319.4
+Iteration 694, epsilon 0.369, ESS (untruncated) 132.9, elapsed mins 319.8
+Truncating 1 weights
+Iteration 695, epsilon 0.369, ESS (untruncated) 1.2, elapsed mins 320.2
+Iteration 696, epsilon 0.369, ESS (untruncated) 91.2, elapsed mins 320.7
+Truncating 1 weights
+Iteration 697, epsilon 0.369, ESS (untruncated) 32.3, elapsed mins 321.1
+Iteration 698, epsilon 0.369, ESS (untruncated) 125.1, elapsed mins 321.5
+Iteration 699, epsilon 0.369, ESS (untruncated) 153.2, elapsed mins 321.9
+Iteration 700, epsilon 0.369, ESS (untruncated) 165.3, elapsed mins 322.3
+Iteration 701, epsilon 0.369, ESS (untruncated) 159.9, elapsed mins 322.7
+Iteration 702, epsilon 0.369, ESS (untruncated) 102.0, elapsed mins 323.2
+Iteration 703, epsilon 0.369, ESS (untruncated) 100.1, elapsed mins 323.6
+Iteration 704, epsilon 0.369, ESS (untruncated) 61.7, elapsed mins 324.0
+Iteration 705, epsilon 0.369, ESS (untruncated) 141.8, elapsed mins 324.4
+Iteration 706, epsilon 0.369, ESS (untruncated) 230.7, elapsed mins 324.9
+Iteration 707, epsilon 0.369, ESS (untruncated) 115.6, elapsed mins 325.3
+Truncating 1 weights
+Iteration 708, epsilon 0.369, ESS (untruncated) 49.1, elapsed mins 325.7
+Iteration 709, epsilon 0.369, ESS (untruncated) 138.4, elapsed mins 326.1
+Iteration 710, epsilon 0.369, ESS (untruncated) 205.9, elapsed mins 326.5
+Iteration 711, epsilon 0.369, ESS (untruncated) 120.1, elapsed mins 326.9
+Iteration 712, epsilon 0.369, ESS (untruncated) 160.2, elapsed mins 327.3
+Iteration 713, epsilon 0.369, ESS (untruncated) 158.3, elapsed mins 327.8
+Iteration 714, epsilon 0.369, ESS (untruncated) 234.3, elapsed mins 328.2
+Iteration 715, epsilon 0.369, ESS (untruncated) 143.5, elapsed mins 328.6
+Iteration 716, epsilon 0.369, ESS (untruncated) 232.9, elapsed mins 329.0
+Iteration 717, epsilon 0.369, ESS (untruncated) 165.8, elapsed mins 329.5
+Iteration 718, epsilon 0.353, ESS (untruncated) 250.0, elapsed mins 329.9
+Iteration 719, epsilon 0.353, ESS (untruncated) 140.0, elapsed mins 330.3
+Iteration 720, epsilon 0.353, ESS (untruncated) 176.0, elapsed mins 330.7
+Iteration 721, epsilon 0.353, ESS (untruncated) 153.3, elapsed mins 331.1
+Iteration 722, epsilon 0.353, ESS (untruncated) 117.5, elapsed mins 331.6
+Iteration 723, epsilon 0.353, ESS (untruncated) 135.2, elapsed mins 332.0
+Iteration 724, epsilon 0.353, ESS (untruncated) 159.1, elapsed mins 332.4
+Iteration 725, epsilon 0.353, ESS (untruncated) 140.4, elapsed mins 332.8
+Truncating 1 weights
+Iteration 726, epsilon 0.353, ESS (untruncated) 52.0, elapsed mins 333.2
+Iteration 727, epsilon 0.353, ESS (untruncated) 57.1, elapsed mins 333.7
+Iteration 728, epsilon 0.353, ESS (untruncated) 139.8, elapsed mins 334.1
+Iteration 729, epsilon 0.353, ESS (untruncated) 101.0, elapsed mins 334.5
+Iteration 730, epsilon 0.353, ESS (untruncated) 149.2, elapsed mins 334.9
+Iteration 731, epsilon 0.353, ESS (untruncated) 135.0, elapsed mins 335.3
+Iteration 732, epsilon 0.353, ESS (untruncated) 133.5, elapsed mins 335.7
+Iteration 733, epsilon 0.353, ESS (untruncated) 113.8, elapsed mins 336.1
+Iteration 734, epsilon 0.353, ESS (untruncated) 142.2, elapsed mins 336.5
+Iteration 735, epsilon 0.353, ESS (untruncated) 160.0, elapsed mins 337.0
+Iteration 736, epsilon 0.353, ESS (untruncated) 129.1, elapsed mins 337.4
+Iteration 737, epsilon 0.353, ESS (untruncated) 131.9, elapsed mins 337.8
+Iteration 738, epsilon 0.353, ESS (untruncated) 142.9, elapsed mins 338.2
+Iteration 739, epsilon 0.343, ESS (untruncated) 250.0, elapsed mins 338.6
+Iteration 740, epsilon 0.343, ESS (untruncated) 145.6, elapsed mins 339.0
+Iteration 741, epsilon 0.341, ESS (untruncated) 250.0, elapsed mins 339.5
+Iteration 742, epsilon 0.341, ESS (untruncated) 135.3, elapsed mins 339.9
+Iteration 743, epsilon 0.341, ESS (untruncated) 111.3, elapsed mins 340.3
+Iteration 744, epsilon 0.341, ESS (untruncated) 74.7, elapsed mins 340.7
+Iteration 745, epsilon 0.341, ESS (untruncated) 86.4, elapsed mins 341.2
+Iteration 746, epsilon 0.341, ESS (untruncated) 166.7, elapsed mins 341.6
+Iteration 747, epsilon 0.341, ESS (untruncated) 156.9, elapsed mins 342.0
+Iteration 748, epsilon 0.341, ESS (untruncated) 145.9, elapsed mins 342.4
+Iteration 749, epsilon 0.341, ESS (untruncated) 93.2, elapsed mins 342.8
+Iteration 750, epsilon 0.337, ESS (untruncated) 250.0, elapsed mins 343.2
+Iteration 751, epsilon 0.337, ESS (untruncated) 140.1, elapsed mins 343.7
+Iteration 752, epsilon 0.337, ESS (untruncated) 218.0, elapsed mins 344.1
+Iteration 753, epsilon 0.337, ESS (untruncated) 99.0, elapsed mins 344.5
+Iteration 754, epsilon 0.337, ESS (untruncated) 83.8, elapsed mins 344.9
+Iteration 755, epsilon 0.337, ESS (untruncated) 95.5, elapsed mins 345.3
+Iteration 756, epsilon 0.337, ESS (untruncated) 237.6, elapsed mins 345.7
+Iteration 757, epsilon 0.337, ESS (untruncated) 132.3, elapsed mins 346.1
+Iteration 758, epsilon 0.337, ESS (untruncated) 179.6, elapsed mins 346.5
+Iteration 759, epsilon 0.337, ESS (untruncated) 85.0, elapsed mins 346.9
+Iteration 760, epsilon 0.337, ESS (untruncated) 141.0, elapsed mins 347.4
+Iteration 761, epsilon 0.337, ESS (untruncated) 122.6, elapsed mins 347.8
+Iteration 762, epsilon 0.337, ESS (untruncated) 151.2, elapsed mins 348.2
+Iteration 763, epsilon 0.337, ESS (untruncated) 187.7, elapsed mins 348.6
+Iteration 764, epsilon 0.337, ESS (untruncated) 55.8, elapsed mins 349.0
+Truncating 1 weights
+Iteration 765, epsilon 0.337, ESS (untruncated) 57.0, elapsed mins 349.4
+Truncating 1 weights
+Iteration 766, epsilon 0.337, ESS (untruncated) 34.0, elapsed mins 349.8
+Iteration 767, epsilon 0.337, ESS (untruncated) 160.5, elapsed mins 350.2
+Truncating 1 weights
+Iteration 768, epsilon 0.337, ESS (untruncated) 33.4, elapsed mins 350.6
+Iteration 769, epsilon 0.337, ESS (untruncated) 133.9, elapsed mins 351.1
+Iteration 770, epsilon 0.337, ESS (untruncated) 142.2, elapsed mins 351.5
+Iteration 771, epsilon 0.337, ESS (untruncated) 187.8, elapsed mins 351.9
+Iteration 772, epsilon 0.337, ESS (untruncated) 164.2, elapsed mins 352.3
+Truncating 1 weights
+Iteration 773, epsilon 0.337, ESS (untruncated) 15.2, elapsed mins 352.7
+Iteration 774, epsilon 0.337, ESS (untruncated) 144.1, elapsed mins 353.1
+Truncating 2 weights
+Iteration 775, epsilon 0.337, ESS (untruncated) 30.5, elapsed mins 353.5
+Iteration 776, epsilon 0.337, ESS (untruncated) 162.5, elapsed mins 354.0
+Iteration 777, epsilon 0.337, ESS (untruncated) 109.9, elapsed mins 354.4
+Iteration 778, epsilon 0.337, ESS (untruncated) 91.9, elapsed mins 354.8
+Iteration 779, epsilon 0.337, ESS (untruncated) 199.7, elapsed mins 355.2
+Iteration 780, epsilon 0.337, ESS (untruncated) 129.4, elapsed mins 355.6
+Iteration 781, epsilon 0.337, ESS (untruncated) 133.9, elapsed mins 356.0
+Iteration 782, epsilon 0.337, ESS (untruncated) 44.8, elapsed mins 356.4
+Iteration 783, epsilon 0.337, ESS (untruncated) 145.1, elapsed mins 356.8
+Iteration 784, epsilon 0.337, ESS (untruncated) 144.3, elapsed mins 357.2
+Iteration 785, epsilon 0.337, ESS (untruncated) 204.9, elapsed mins 357.6
+Iteration 786, epsilon 0.337, ESS (untruncated) 208.2, elapsed mins 358.0
+Iteration 787, epsilon 0.337, ESS (untruncated) 137.3, elapsed mins 358.5
+Iteration 788, epsilon 0.337, ESS (untruncated) 116.1, elapsed mins 358.9
+Truncating 1 weights
+Iteration 789, epsilon 0.337, ESS (untruncated) 61.6, elapsed mins 359.3
+Iteration 790, epsilon 0.337, ESS (untruncated) 109.3, elapsed mins 359.7
+Iteration 791, epsilon 0.337, ESS (untruncated) 207.9, elapsed mins 360.1
+Truncating 1 weights
+Iteration 792, epsilon 0.337, ESS (untruncated) 29.4, elapsed mins 360.5
+Iteration 793, epsilon 0.337, ESS (untruncated) 150.1, elapsed mins 360.9
+Iteration 794, epsilon 0.337, ESS (untruncated) 112.3, elapsed mins 361.3
+Iteration 795, epsilon 0.337, ESS (untruncated) 154.1, elapsed mins 361.7
+Iteration 796, epsilon 0.337, ESS (untruncated) 149.9, elapsed mins 362.1
+Iteration 797, epsilon 0.337, ESS (untruncated) 77.6, elapsed mins 362.5
+Iteration 798, epsilon 0.337, ESS (untruncated) 178.2, elapsed mins 362.9
+Iteration 799, epsilon 0.337, ESS (untruncated) 93.2, elapsed mins 363.3
+Iteration 800, epsilon 0.337, ESS (untruncated) 130.8, elapsed mins 363.7
+Iteration 801, epsilon 0.337, ESS (untruncated) 200.2, elapsed mins 364.1
+Truncating 1 weights
+Iteration 802, epsilon 0.337, ESS (untruncated) 45.8, elapsed mins 364.5
+Truncating 1 weights
+Iteration 803, epsilon 0.337, ESS (untruncated) 56.9, elapsed mins 364.9
+Iteration 804, epsilon 0.337, ESS (untruncated) 157.3, elapsed mins 365.4
+Iteration 805, epsilon 0.337, ESS (untruncated) 163.5, elapsed mins 365.8
+Iteration 806, epsilon 0.337, ESS (untruncated) 159.0, elapsed mins 366.2
+Iteration 807, epsilon 0.337, ESS (untruncated) 181.3, elapsed mins 366.6
+Iteration 808, epsilon 0.337, ESS (untruncated) 151.3, elapsed mins 367.0
+Iteration 809, epsilon 0.337, ESS (untruncated) 206.6, elapsed mins 367.4
+Iteration 810, epsilon 0.337, ESS (untruncated) 215.8, elapsed mins 367.8
+Iteration 811, epsilon 0.337, ESS (untruncated) 214.3, elapsed mins 368.3
+Iteration 812, epsilon 0.337, ESS (untruncated) 163.9, elapsed mins 368.7
+Iteration 813, epsilon 0.337, ESS (untruncated) 217.1, elapsed mins 369.1
+Iteration 814, epsilon 0.337, ESS (untruncated) 242.8, elapsed mins 369.5
+Iteration 815, epsilon 0.337, ESS (untruncated) 144.8, elapsed mins 369.9
+Iteration 816, epsilon 0.337, ESS (untruncated) 176.0, elapsed mins 370.3
+Iteration 817, epsilon 0.337, ESS (untruncated) 188.9, elapsed mins 370.7
+Iteration 818, epsilon 0.337, ESS (untruncated) 214.1, elapsed mins 371.1
+Iteration 819, epsilon 0.337, ESS (untruncated) 192.4, elapsed mins 371.5
+Iteration 820, epsilon 0.337, ESS (untruncated) 209.1, elapsed mins 371.9
+Iteration 821, epsilon 0.337, ESS (untruncated) 112.1, elapsed mins 372.4
+Iteration 822, epsilon 0.337, ESS (untruncated) 165.8, elapsed mins 372.8
+Iteration 823, epsilon 0.337, ESS (untruncated) 73.9, elapsed mins 373.2
+Iteration 824, epsilon 0.337, ESS (untruncated) 223.4, elapsed mins 373.6
+Iteration 825, epsilon 0.337, ESS (untruncated) 227.6, elapsed mins 374.0
+Iteration 826, epsilon 0.337, ESS (untruncated) 115.6, elapsed mins 374.4
+Iteration 827, epsilon 0.337, ESS (untruncated) 157.1, elapsed mins 374.8
+Iteration 828, epsilon 0.337, ESS (untruncated) 89.2, elapsed mins 375.2
+Iteration 829, epsilon 0.337, ESS (untruncated) 197.2, elapsed mins 375.6
+Iteration 830, epsilon 0.337, ESS (untruncated) 176.6, elapsed mins 376.0
+Iteration 831, epsilon 0.337, ESS (untruncated) 232.7, elapsed mins 376.4
+Truncating 1 weights
+Iteration 832, epsilon 0.337, ESS (untruncated) 9.6, elapsed mins 376.8
+Iteration 833, epsilon 0.337, ESS (untruncated) 79.2, elapsed mins 377.2
+Iteration 834, epsilon 0.337, ESS (untruncated) 242.9, elapsed mins 377.6
+Iteration 835, epsilon 0.337, ESS (untruncated) 165.2, elapsed mins 378.0
+Iteration 836, epsilon 0.337, ESS (untruncated) 186.8, elapsed mins 378.5
+Iteration 837, epsilon 0.337, ESS (untruncated) 124.2, elapsed mins 378.9
+Iteration 838, epsilon 0.337, ESS (untruncated) 143.2, elapsed mins 379.3
+Iteration 839, epsilon 0.337, ESS (untruncated) 222.7, elapsed mins 379.7
+Iteration 840, epsilon 0.337, ESS (untruncated) 232.7, elapsed mins 380.1
+Iteration 841, epsilon 0.337, ESS (untruncated) 135.5, elapsed mins 380.5
+Truncating 1 weights
+Iteration 842, epsilon 0.337, ESS (untruncated) 30.0, elapsed mins 380.9
+Iteration 843, epsilon 0.337, ESS (untruncated) 184.1, elapsed mins 381.3
+Truncating 1 weights
+Iteration 844, epsilon 0.337, ESS (untruncated) 15.5, elapsed mins 381.8
+Iteration 845, epsilon 0.337, ESS (untruncated) 100.4, elapsed mins 382.2
+Iteration 846, epsilon 0.337, ESS (untruncated) 70.5, elapsed mins 382.6
+Iteration 847, epsilon 0.337, ESS (untruncated) 82.7, elapsed mins 383.0
+Iteration 848, epsilon 0.337, ESS (untruncated) 200.9, elapsed mins 383.4
+Iteration 849, epsilon 0.337, ESS (untruncated) 133.1, elapsed mins 383.8
+Iteration 850, epsilon 0.337, ESS (untruncated) 194.6, elapsed mins 384.2
+Iteration 851, epsilon 0.337, ESS (untruncated) 192.7, elapsed mins 384.6
+Iteration 852, epsilon 0.337, ESS (untruncated) 91.2, elapsed mins 385.0
+Iteration 853, epsilon 0.337, ESS (untruncated) 237.4, elapsed mins 385.4
+Iteration 854, epsilon 0.337, ESS (untruncated) 243.1, elapsed mins 385.8
+Truncating 1 weights
+Iteration 855, epsilon 0.337, ESS (untruncated) 14.7, elapsed mins 386.2
+Iteration 856, epsilon 0.332, ESS (untruncated) 250.0, elapsed mins 386.6
+Iteration 857, epsilon 0.332, ESS (untruncated) 140.0, elapsed mins 387.0
+Iteration 858, epsilon 0.000, ESS (untruncated) 266.4, elapsed mins 387.4

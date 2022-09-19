@@ -1,5 +1,6 @@
 import torch
 from torch.nn.functional import relu
+from torch.distributions import MultivariateNormal
 from models.models import SimulatorModel
 
 class MG1Model(SimulatorModel):
@@ -24,8 +25,9 @@ class MG1Model(SimulatorModel):
             nobs = observations.shape[0]
         self.nobs = nobs
         self.max_arrival = max_arrival
-        self.max_eps = 10. ## Initial ABC threshold
         self.standard_normal = torch.distributions.Normal(0., 1.)
+        n_inputs = 3+2*nobs
+        self.prior = MultivariateNormal(torch.zeros(n_inputs), torch.eye(n_inputs))
         super().__init__(observations, observations_are_data=True)
 
     def log_prior(self, inputs):
@@ -48,7 +50,7 @@ class MG1Model(SimulatorModel):
 
         Alternatively, if `inputs` has 3 columns, only parameters are calculated, with `None` returned for the latent variables.
         """
-        inputs_u = self.standard_normal.cdf(inputs)
+        inputs_u = self.standard_normal.cdf(inputs) # TODO: update to use utils.norm_to_unif instead
         ## Get standard form of parameters
         arrival_rate = inputs_u[:,0] / 3.
         min_service = inputs_u[:,1] * 10.

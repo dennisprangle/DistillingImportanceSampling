@@ -38,15 +38,14 @@ class SInetworkModel(SimulatorModel):
             infection_start_point = torch.Tensor(observations[0][0])
             time_observed = list(range(len(observations[0])))
             n_timestep = len(time_observed)  
-            
-        self.max_eps = 10.    #Initial ABC threshold
+
         self.infection_start_point = infection_start_point
         self.time_observed = time_observed
         self.standard_normal = torch.distributions.Normal(0., 1.)
         self.n_timestep = n_timestep
         self.n_nodes = n_nodes
         self.n_inputs = n_inputs
-        self.initial_target = MultivariateNormal(torch.zeros(self.n_inputs), torch.eye(self.n_inputs))
+        self.prior = MultivariateNormal(torch.zeros(self.n_inputs), torch.eye(self.n_inputs))
         super().__init__(observations, observations_are_data)
 
     def log_prior(self, inputs):

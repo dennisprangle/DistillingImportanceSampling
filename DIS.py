@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from utils import resample, effective_sample_size
-from models.models import Model
+from models.models import SimulatorModel
 from random import shuffle
 from time import time
 from copy import deepcopy
@@ -12,7 +12,7 @@ class DIS:
                  max_weight=1., nbatches=None):
        """Class to perform a distilled importance sampling analysis
 
-       `model` a `Model` object encapsulating model and prior
+       `model` a `SimulatorModel` object encapsulating model and prior
        `approx_dist` is a trainable distribution which will approximate the target. Any object with `sample` and `log_prob` methods can be used. This allows the user to choose between various libraries for distributions.
        `optimizer` is a torch `Optimizer` object for the variables used in `approx_dist`
        `importance_sample_size` is number of importance samples (`N` in paper)
@@ -37,7 +37,7 @@ class DIS:
        else:
            self.nbatches = nbatches
        self.iterations_done = 0
-       self.eps = model.max_eps
+       self.eps = np.infty
        self.history = {
            'elapsed_time':[],
            'epsilon':[],
@@ -65,13 +65,7 @@ class DIS:
         """Calculate loss under parameters from current target distribution"""
         return -torch.sum(self.approx_dist.log_prob(params))
 
-    def get_weighted_loss(self, weighted_sample):
-        """Calculate loss under parameters from current target distribution"""
-        l = self.approx_dist.log_prob(weighted_sample.particles)
-        w = weighted_sample.weights
-        return -torch.sum(l*w)
-
-    def pretrain(self, initial_target, goal=0.9, report_every=100):
+    def pretrain(self, initial_target, goal=0.75, report_every=100):
         """Train approximation to match an initial target
 
         `initial_target` distribution. Any object with `log_prob` and `sample` method can be used. This allows the user to choose between various libraries for distributions.
@@ -104,13 +98,15 @@ class DIS:
         `iterations` is how many iterations to perform.
         Training can then be continued by calling `train` again."""
         for i in range(iterations):
-            self.train_sample = self.get_sample()
-            new_eps = self.train_sample.find_eps(self.ess_target, self.eps)
-            # nb new_eps will equal self.eps if ess_target can't be met
-            self.train_sample.update_epsilon(new_eps)
-            self.eps = new_eps
-            S = self.train_sample.truncate_weights(self.max_weight)
-            total_loss = 0.
+            with torch.no_grad():
+                self.train_sample = self.get_sample()
+                new_eps = self.train_sample.find_eps(self.ess_target, self.eps, self.max_bisection_its)
+                self.train_sample.update_epsilon(new_eps)
+                self.ess = effective_sample_size(self.train_sample.weights)
+                self.eps = new_eps
+                self.is_sample = self.train_sample.sample(1000).detach() # Useful for plots
+                S = self.train_sample.truncate_weights(self.max_weight)
+                total_loss = 0.
             for _ in range(self.nbatches):
                 batch = self.train_sample.sample(self.batch_size).detach()
                 loss = S * self.get_loss(batch)
@@ -124,12 +120,11 @@ class DIS:
             self.history['elapsed_time'].append(self.elapsed_time)
             self.history['epsilon'].append(self.eps)
             self.history['iterations_done'].append(self.iterations_done)
-            self.ess = effective_sample_size(self.train_sample.weights)
 
             # Report status
             print(
                 f"Iteration {self.iterations_done:2d}, "
                 f"epsilon {self.eps:.3f}, "
-                f"ESS {self.ess:.1f}, "
+                f"ESS (untruncated) {self.ess:.1f}, "
                 f"elapsed mins {self.elapsed_time/60:.1f}"
             )

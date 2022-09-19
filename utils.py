@@ -35,3 +35,11 @@ def effective_sample_size(w, log_input=False):
 
     ess = (sum_weights ** 2.0) / (weights ** 2.0).sum()
     return ess
+
+def norm_to_unif(x, a=0., b=1.):
+    """Convert N(0,1) draws to U(a,b) draws"""
+    ## TODO: avoid repeatedly initialising standard_normal, by just pasting cdf code here
+    standard_normal = torch.distributions.Normal(0., 1.)
+    y = standard_normal.cdf(x)
+    y = a + (b-a)*y
+    return y
