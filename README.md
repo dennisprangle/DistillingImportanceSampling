@@ -1,6 +1,6 @@
 # Code for "Distilling importance sampling" paper
 
-This code is to reproduce the experiments in the paper [Distilling importance sampling](https://arxiv.org/abs/1910.03632).
+This code is to reproduce the experiments in the paper [Distilling importance sampling for likelihood-free inference](https://arxiv.org/abs/1910.03632).
 
 ## Version history
 
@@ -9,6 +9,7 @@ This code is to reproduce the experiments in the paper [Distilling importance sa
 * v2.0 is PyTorch code for version 4 of the arxiv paper
 * V2.1 has some minor modifications to plotting code 
 * V2.2 is PyTorch code for version 5 of the arxiv paper
+* V2.3 is PyTorch code for version 6 of the arxiv paper
 
 ## Python package versions
 

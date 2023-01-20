@@ -2,339 +2,343 @@ Iteration 1, epsilon inf
 ESS 250, simulations 100000, progress 0.0%, minutes 0.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 2, epsilon 51.48
-ESS 237, simulations 131033, progress 0.1%, minutes 0.0
+Iteration 2, epsilon 50.96
+ESS 239, simulations 130453, progress 0.1%, minutes 0.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 3, epsilon 34.51
-ESS 236, simulations 165581, progress 0.1%, minutes 0.1
+Iteration 3, epsilon 35.06
+ESS 234, simulations 166967, progress 0.1%, minutes 0.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 4, epsilon 27.56
-ESS 232, simulations 200344, progress 0.2%, minutes 0.1
+Iteration 4, epsilon 27.88
+ESS 235, simulations 203811, progress 0.2%, minutes 0.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 5, epsilon 23.55
-ESS 232, simulations 238590, progress 0.3%, minutes 0.2
+Iteration 5, epsilon 23.75
+ESS 236, simulations 240803, progress 0.3%, minutes 0.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 6, epsilon 20.86
-ESS 226, simulations 278539, progress 0.3%, minutes 0.2
+Iteration 6, epsilon 20.99
+ESS 224, simulations 279408, progress 0.3%, minutes 0.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 7, epsilon 18.96
-ESS 237, simulations 315412, progress 0.4%, minutes 0.2
+Iteration 7, epsilon 18.98
+ESS 226, simulations 317121, progress 0.4%, minutes 0.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 8, epsilon 17.45
-ESS 222, simulations 354092, progress 0.4%, minutes 0.3
+Iteration 8, epsilon 17.49
+ESS 234, simulations 354064, progress 0.4%, minutes 0.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 9, epsilon 16.26
-ESS 235, simulations 391109, progress 0.5%, minutes 0.3
+ESS 232, simulations 390838, progress 0.5%, minutes 0.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 10, epsilon 15.24
-ESS 230, simulations 433830, progress 0.5%, minutes 0.3
+ESS 233, simulations 429707, progress 0.6%, minutes 0.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 11, epsilon 14.39
-ESS 226, simulations 473093, progress 0.6%, minutes 0.4
+Iteration 11, epsilon 14.37
+ESS 209, simulations 472273, progress 0.6%, minutes 0.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 12, epsilon 13.66
-ESS 230, simulations 515546, progress 0.7%, minutes 0.4
+Iteration 12, epsilon 13.64
+ESS 227, simulations 510553, progress 0.7%, minutes 0.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 13, epsilon 13.01
-ESS 161, simulations 555837, progress 0.7%, minutes 0.4
+Iteration 13, epsilon 13.00
+ESS 232, simulations 549564, progress 0.8%, minutes 0.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 14, epsilon 12.44
-ESS 226, simulations 596008, progress 0.8%, minutes 0.5
+ESS 225, simulations 594415, progress 0.8%, minutes 0.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 15, epsilon 11.95
-ESS 233, simulations 637171, progress 0.8%, minutes 0.5
+ESS 223, simulations 638578, progress 0.9%, minutes 0.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 16, epsilon 11.51
-ESS 222, simulations 723245, progress 0.9%, minutes 0.5
+ESS 199, simulations 722358, progress 0.9%, minutes 0.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 17, epsilon 11.10
-ESS 222, simulations 806884, progress 1.0%, minutes 0.6
+Iteration 17, epsilon 11.11
+ESS 237, simulations 845881, progress 1.0%, minutes 0.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 18, epsilon 10.73
-ESS 228, simulations 936814, progress 1.1%, minutes 0.6
+Iteration 18, epsilon 10.74
+ESS 232, simulations 981798, progress 1.1%, minutes 0.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 19, epsilon 10.39
-ESS 229, simulations 1107900, progress 1.1%, minutes 0.7
+Iteration 19, epsilon 10.40
+ESS 190, simulations 1161002, progress 1.2%, minutes 0.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 20, epsilon 10.08
-ESS 229, simulations 1358208, progress 1.2%, minutes 0.7
+Iteration 20, epsilon 10.10
+ESS 234, simulations 1410109, progress 1.3%, minutes 0.9
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 21, epsilon 9.79
-ESS 176, simulations 1760194, progress 1.3%, minutes 0.8
+Iteration 21, epsilon 9.81
+ESS 128, simulations 1755217, progress 1.4%, minutes 1.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 22, epsilon 9.53
-ESS 228, simulations 2270044, progress 1.5%, minutes 0.9
+Iteration 22, epsilon 9.54
+ESS 213, simulations 2306247, progress 1.5%, minutes 1.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 23, epsilon 9.28
-ESS 223, simulations 2898923, progress 1.6%, minutes 1.0
+ESS 219, simulations 2919805, progress 1.7%, minutes 1.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 24, epsilon 9.04
-ESS 234, simulations 3766015, progress 1.8%, minutes 1.1
+Iteration 24, epsilon 9.05
+ESS 234, simulations 3737049, progress 1.9%, minutes 1.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 25, epsilon 8.82
-ESS 214, simulations 4858121, progress 2.0%, minutes 1.2
+Iteration 25, epsilon 8.83
+ESS 230, simulations 4863377, progress 2.1%, minutes 1.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 26, epsilon 8.60
-ESS 231, simulations 6517792, progress 2.3%, minutes 1.4
+Iteration 26, epsilon 8.62
+ESS 192, simulations 6488212, progress 2.4%, minutes 1.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 27, epsilon 8.40
-ESS 198, simulations 8937420, progress 2.8%, minutes 1.7
+Iteration 27, epsilon 8.41
+ESS 223, simulations 9000595, progress 2.9%, minutes 2.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 28, epsilon 8.21
-ESS 234, simulations 13027167, progress 3.5%, minutes 2.1
+Iteration 28, epsilon 8.22
+ESS 233, simulations 12212591, progress 3.5%, minutes 2.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 29, epsilon 8.02
-ESS 154, simulations 18439910, progress 4.3%, minutes 2.6
+Iteration 29, epsilon 8.03
+ESS 220, simulations 16979622, progress 4.3%, minutes 3.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 30, epsilon 7.82
-ESS 236, simulations 27078921, progress 5.8%, minutes 3.5
+Iteration 30, epsilon 7.85
+ESS 212, simulations 24098932, progress 5.4%, minutes 3.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 31, epsilon 7.65
-ESS 211, simulations 37662893, progress 7.4%, minutes 4.4
+Iteration 31, epsilon 7.67
+ESS 235, simulations 34909181, progress 7.2%, minutes 5.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 32, epsilon 7.47
-ESS 232, simulations 54213402, progress 10.0%, minutes 6.0
+Iteration 32, epsilon 7.49
+ESS 216, simulations 48256120, progress 9.2%, minutes 6.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 33, epsilon 7.31
-ESS 224, simulations 76917239, progress 13.5%, minutes 8.1
+Iteration 33, epsilon 7.33
+ESS 226, simulations 70315144, progress 12.6%, minutes 8.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 34, epsilon 7.15
-ESS 224, simulations 106647355, progress 18.0%, minutes 10.8
+Iteration 34, epsilon 7.16
+ESS 218, simulations 101217512, progress 17.2%, minutes 12.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 35, epsilon 7.00
-ESS 179, simulations 150926943, progress 24.8%, minutes 14.9
+ESS 228, simulations 141442847, progress 23.2%, minutes 16.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 36, epsilon 6.85
-ESS 231, simulations 218412609, progress 35.2%, minutes 21.1
+Iteration 36, epsilon 6.86
+ESS 235, simulations 206398898, progress 33.0%, minutes 23.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 37, epsilon 6.71
-ESS 214, simulations 306750044, progress 47.8%, minutes 28.7
+ESS 210, simulations 285220572, progress 44.1%, minutes 30.9
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 38, epsilon 6.57
-ESS 219, simulations 438071298, progress 67.5%, minutes 40.5
+ESS 224, simulations 413560814, progress 62.4%, minutes 43.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 39, epsilon 6.43
-ESS 225, simulations 614530932, progress 94.0%, minutes 56.4
+Iteration 39, epsilon 6.44
+ESS 215, simulations 583166163, progress 86.3%, minutes 60.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 40, epsilon 6.31
-ESS 206, simulations 854733739, progress 127.7%, minutes 76.6
+Iteration 40, epsilon 6.32
+ESS 220, simulations 823325323, progress 121.0%, minutes 84.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 1, epsilon inf
 ESS 250, simulations 100000, progress 0.0%, minutes 0.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 2, epsilon 25.93
-ESS 238, simulations 130093, progress 0.1%, minutes 0.0
+Iteration 2, epsilon 25.31
+ESS 235, simulations 131628, progress 0.1%, minutes 0.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 3, epsilon 16.56
-ESS 228, simulations 165416, progress 0.1%, minutes 0.1
+Iteration 3, epsilon 17.03
+ESS 235, simulations 166367, progress 0.1%, minutes 0.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 4, epsilon 13.25
-ESS 237, simulations 198123, progress 0.2%, minutes 0.1
+Iteration 4, epsilon 13.42
+ESS 234, simulations 199656, progress 0.2%, minutes 0.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 5, epsilon 10.75
-ESS 237, simulations 232218, progress 0.3%, minutes 0.2
+Iteration 5, epsilon 11.11
+ESS 230, simulations 236131, progress 0.3%, minutes 0.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 6, epsilon 8.89
-ESS 231, simulations 268291, progress 0.3%, minutes 0.2
+Iteration 6, epsilon 9.27
+ESS 235, simulations 273205, progress 0.3%, minutes 0.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 7, epsilon 7.34
-ESS 235, simulations 307848, progress 0.4%, minutes 0.2
+Iteration 7, epsilon 7.67
+ESS 231, simulations 312860, progress 0.4%, minutes 0.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 8, epsilon 6.20
-ESS 217, simulations 352554, progress 0.5%, minutes 0.3
+Iteration 8, epsilon 6.39
+ESS 222, simulations 357879, progress 0.4%, minutes 0.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 9, epsilon 5.27
-ESS 204, simulations 395348, progress 0.5%, minutes 0.3
+Iteration 9, epsilon 5.40
+ESS 232, simulations 402497, progress 0.5%, minutes 0.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 10, epsilon 4.45
-ESS 234, simulations 440386, progress 0.6%, minutes 0.3
+Iteration 10, epsilon 4.64
+ESS 226, simulations 448483, progress 0.6%, minutes 0.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 11, epsilon 3.83
-ESS 215, simulations 488435, progress 0.6%, minutes 0.4
+Iteration 11, epsilon 3.96
+ESS 209, simulations 496655, progress 0.6%, minutes 0.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 12, epsilon 3.34
-ESS 216, simulations 539119, progress 0.7%, minutes 0.4
+Iteration 12, epsilon 3.43
+ESS 210, simulations 552768, progress 0.7%, minutes 0.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 13, epsilon 2.93
-ESS 230, simulations 591605, progress 0.8%, minutes 0.5
+Iteration 13, epsilon 3.00
+ESS 228, simulations 604226, progress 0.8%, minutes 0.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 14, epsilon 2.58
-ESS 215, simulations 647069, progress 0.8%, minutes 0.5
+Iteration 14, epsilon 2.63
+ESS 217, simulations 657095, progress 0.8%, minutes 0.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 15, epsilon 2.26
-ESS 225, simulations 700103, progress 0.9%, minutes 0.5
+Iteration 15, epsilon 2.32
+ESS 218, simulations 713007, progress 0.9%, minutes 0.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 16, epsilon 2.01
-ESS 230, simulations 757926, progress 1.0%, minutes 0.6
+Iteration 16, epsilon 2.07
+ESS 230, simulations 770165, progress 1.0%, minutes 0.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 17, epsilon 1.80
-ESS 185, simulations 817896, progress 1.0%, minutes 0.6
+Iteration 17, epsilon 1.84
+ESS 221, simulations 829118, progress 1.0%, minutes 0.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 18, epsilon 1.62
-ESS 234, simulations 878648, progress 1.1%, minutes 0.7
+Iteration 18, epsilon 1.65
+ESS 203, simulations 888756, progress 1.1%, minutes 0.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 19, epsilon 1.47
-ESS 222, simulations 1013258, progress 1.2%, minutes 0.7
+Iteration 19, epsilon 1.50
+ESS 180, simulations 1006833, progress 1.2%, minutes 0.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 20, epsilon 1.33
-ESS 219, simulations 1142583, progress 1.2%, minutes 0.7
+Iteration 20, epsilon 1.35
+ESS 229, simulations 1125582, progress 1.2%, minutes 0.9
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 21, epsilon 1.22
-ESS 219, simulations 1344380, progress 1.3%, minutes 0.8
+Iteration 21, epsilon 1.24
+ESS 197, simulations 1259718, progress 1.3%, minutes 0.9
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 22, epsilon 1.12
-ESS 222, simulations 1601824, progress 1.4%, minutes 0.9
+ESS 219, simulations 1461364, progress 1.4%, minutes 1.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 23, epsilon 1.02
-ESS 229, simulations 1930799, progress 1.5%, minutes 0.9
+ESS 223, simulations 1729337, progress 1.5%, minutes 1.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 24, epsilon 0.93
-ESS 203, simulations 2281314, progress 1.6%, minutes 1.0
+ESS 207, simulations 2097697, progress 1.6%, minutes 1.1
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 25, epsilon 0.86
-ESS 203, simulations 2826675, progress 1.8%, minutes 1.1
+Iteration 25, epsilon 0.85
+ESS 168, simulations 2575564, progress 1.7%, minutes 1.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 26, epsilon 0.79
-ESS 211, simulations 3498761, progress 1.9%, minutes 1.1
+Iteration 26, epsilon 0.78
+ESS 229, simulations 3290186, progress 1.9%, minutes 1.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 27, epsilon 0.73
-ESS 206, simulations 4416542, progress 2.1%, minutes 1.3
+Iteration 27, epsilon 0.72
+ESS 189, simulations 4151678, progress 2.0%, minutes 1.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 28, epsilon 0.67
-ESS 162, simulations 5560165, progress 2.3%, minutes 1.4
+Iteration 28, epsilon 0.66
+ESS 170, simulations 5445254, progress 2.3%, minutes 1.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 29, epsilon 0.62
-ESS 202, simulations 7558755, progress 2.6%, minutes 1.6
+Iteration 29, epsilon 0.61
+ESS 203, simulations 7716145, progress 2.7%, minutes 1.9
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 30, epsilon 0.57
-ESS 101, simulations 10213937, progress 3.1%, minutes 1.8
+Iteration 30, epsilon 0.56
+ESS 207, simulations 10389313, progress 3.1%, minutes 2.2
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 31, epsilon 0.53
-ESS 166, simulations 13949050, progress 3.6%, minutes 2.2
+Iteration 31, epsilon 0.52
+ESS 173, simulations 13048329, progress 3.5%, minutes 2.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 32, epsilon 0.48
-ESS 200, simulations 18244066, progress 4.3%, minutes 2.6
+ESS 197, simulations 18497692, progress 4.3%, minutes 3.0
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 33, epsilon 0.44
-ESS 209, simulations 23302984, progress 5.0%, minutes 3.0
+ESS 208, simulations 24613828, progress 5.3%, minutes 3.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 34, epsilon 0.41
-ESS 197, simulations 30298211, progress 6.0%, minutes 3.6
+ESS 225, simulations 33505586, progress 6.6%, minutes 4.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 35, epsilon 0.38
-ESS 198, simulations 41342287, progress 7.6%, minutes 4.5
+Iteration 35, epsilon 0.37
+ESS 210, simulations 42904984, progress 7.9%, minutes 5.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 36, epsilon 0.35
-ESS 151, simulations 54404755, progress 9.4%, minutes 5.6
+ESS 201, simulations 54175245, progress 9.5%, minutes 6.7
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 37, epsilon 0.32
-ESS 183, simulations 79401934, progress 12.7%, minutes 7.6
+ESS 218, simulations 70286915, progress 11.8%, minutes 8.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 38, epsilon 0.30
-ESS 184, simulations 112259050, progress 17.2%, minutes 10.3
+Iteration 38, epsilon 0.29
+ESS 82, simulations 94102802, progress 15.2%, minutes 10.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 39, epsilon 0.27
-ESS 191, simulations 153111459, progress 22.8%, minutes 13.7
+ESS 158, simulations 132485862, progress 20.9%, minutes 14.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 40, epsilon 0.25
-ESS 191, simulations 207466458, progress 30.1%, minutes 18.1
+ESS 136, simulations 172730656, progress 26.4%, minutes 18.5
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 41, epsilon 0.23
-ESS 187, simulations 265672784, progress 38.1%, minutes 22.8
+ESS 221, simulations 243935134, progress 36.3%, minutes 25.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 42, epsilon 0.21
-ESS 212, simulations 356114940, progress 50.0%, minutes 30.0
+ESS 144, simulations 309177355, progress 45.1%, minutes 31.6
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
-Iteration 43, epsilon 0.20
-ESS 137, simulations 465137084, progress 64.3%, minutes 38.6
+Iteration 43, epsilon 0.19
+ESS 220, simulations 406569793, progress 58.2%, minutes 40.8
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 44, epsilon 0.18
-ESS 195, simulations 620125318, progress 85.2%, minutes 51.1
+ESS 166, simulations 509515842, progress 71.9%, minutes 50.3
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)
 Iteration 45, epsilon 0.17
-ESS 208, simulations 800243076, progress 109.0%, minutes 65.4
+ESS 200, simulations 685667323, progress 95.2%, minutes 66.7
+/home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
+  warnings.warn(msg, FutureWarning)
+Iteration 46, epsilon 0.16
+ESS 170, simulations 907849284, progress 124.8%, minutes 87.4
 /home/nf21083/research_projects/torch_venv/lib/python3.8/site-packages/seaborn/distributions.py:2619: FutureWarning: `distplot` is a deprecated function and will be removed in a future version. Please adapt your code to use either `displot` (a figure-level function with similar flexibility) or `histplot` (an axes-level function for histograms).
   warnings.warn(msg, FutureWarning)

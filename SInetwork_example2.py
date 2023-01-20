@@ -19,7 +19,7 @@ from models.SInetwork import SInetworkModel
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
-
+from time import time
 from collections import Counter
 import statistics as st
 plt.ion()
@@ -86,9 +86,14 @@ while dis12.eps > 0. or dis12.ess < 250.:
 Results visualization
 """
 nsamp = 1000
+is_start_time = time()
 with torch.no_grad():
     weighted_params = dis12.get_sample(20*nsamp)
 weighted_params.update_epsilon(dis12.eps)
+is_end_time = time()
+is_time = (is_end_time - is_start_time) / 60.
+print(f'Time for final IS using DIS proposal {is_time:.1f} mins')
+
 params = weighted_params.sample(nsamp).detach()
 sel_infection, sel_contact = model.convert_inputs(params)[0:2]
 

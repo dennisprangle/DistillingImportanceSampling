@@ -7,6 +7,7 @@ import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
+from time import time
 plt.ion()
 
 # Prepare MCMC output
@@ -50,10 +51,15 @@ dis_obj = DIS(model, approx_dist, None,
           ess_target=250, max_weight=0.1)
 
 torch.manual_seed(1)
+is_start_time = time()
 with torch.no_grad():
     weighted_params = dis_obj.get_sample(750000) # Limited by my PC's memory
 weighted_params.update_epsilon(eps)
 params = weighted_params.sample(10000).detach()
+is_end_time = time()
+is_time = (is_end_time - is_start_time) / 60.
+print(f'Time for IS using DIS proposal {is_time:.1f} mins')
+
 arrival_rate, min_service, service_width, _, _ = model.convert_inputs(params)
 max_service = min_service + service_width
 pars_samp = torch.stack([arrival_rate, min_service, max_service], axis=1)

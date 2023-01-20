@@ -280,9 +280,21 @@ deps_obs = np.array(
     17.13184198,  4.64447435, 12.10859597,  6.86436748,  4.199275  ,
     11.70312317,  7.06592802, 16.28106949,  8.66159665,  4.33875566])
 
-df_no_summaries = abc_pmc(deps_obs, n_to_accept=250, prob_fraction=0.7,
-                          batch_size=10**5, use_summaries=False)
+df_no_summaries = abc_pmc(
+    deps_obs,
+    n_to_accept=250,
+    prob_fraction=0.7,
+    batch_size=10**5,
+    use_summaries=False,
+    max_mins=70.
+)
 df_no_summaries.to_pickle("MG1_ABC_sample_no_summaries.pkl")
-df_summaries = abc_pmc(deps_obs, n_to_accept=250, prob_fraction=0.7,
-                       batch_size=10**5, use_summaries=True)
+df_summaries = abc_pmc(
+    deps_obs,
+    n_to_accept=250,
+    prob_fraction=0.7,
+    batch_size=10**5,
+    use_summaries=True,
+    max_mins=70.
+)
 df_summaries.to_pickle("MG1_ABC_sample_summaries.pkl")
